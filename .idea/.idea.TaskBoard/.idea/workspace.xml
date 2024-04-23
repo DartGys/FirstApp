@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/List.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Priority.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="entities">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/ApplicationDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/List.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/CardList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713888464162</updated>
-      <workItem from="1713888464358" duration="1294000" />
+      <workItem from="1713888464358" duration="1597000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -79,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713893313389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="entities">
+      <option name="closed" value="true" />
+      <created>1713893915769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713893915769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="entities" />
   </component>
 </project>

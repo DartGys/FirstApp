@@ -10,5 +10,5 @@ public class Card
     public Guid PriorityId { get; set; }
     public Priority Priority { get; set; }
     public Guid ListId { get; set; }
-    public List List { get; set; }
+    public CardList CardList { get; set; }
 }

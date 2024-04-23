@@ -1,6 +1,6 @@
 namespace TaskBoard.DAL.Data.Entities;
 
-public class List
+public class CardList
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
