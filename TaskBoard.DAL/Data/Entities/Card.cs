@@ -9,6 +9,6 @@ public class Card
     public DateTime DueDate { get; set; }
     public Guid PriorityId { get; set; }
     public Priority Priority { get; set; }
-    public Guid ListId { get; set; }
+    public Guid CardListId { get; set; }
     public CardList CardList { get; set; }
 }
