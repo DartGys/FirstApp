@@ -16,5 +16,10 @@ public class HistoryLogConfiguration : IEntityTypeConfiguration<HistoryLog>
 
         builder.Property(h => h.ChangeDate)
             .IsRequired();
+
+        builder.HasOne(h => h.Card)
+            .WithMany(c => c.HistoryLogs)
+            .HasForeignKey(h => h.CardId)
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }

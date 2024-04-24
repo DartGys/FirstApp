@@ -11,4 +11,5 @@ public class Card
     public Priority Priority { get; set; }
     public Guid CardListId { get; set; }
     public CardList CardList { get; set; }
+    public virtual ICollection<HistoryLog> HistoryLogs { get; set; }
 }
