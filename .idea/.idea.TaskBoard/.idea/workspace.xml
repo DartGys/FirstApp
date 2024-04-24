@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="business-logic project created">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/CardListVm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/Details/CardVmDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/HistoryLogVm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/PriorityVm.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="Vm created">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/CardInputModels/CardUpdateModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,26 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "business-logic",
-    "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;business-logic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/home/bohdan/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/bohdan/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -165,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713977195876</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Vm created">
+      <option name="closed" value="true" />
+      <created>1713978272636</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713978272636</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +213,7 @@
     <MESSAGE value="business logic project created" />
     <MESSAGE value="add Card foreign key to HistoryLog entity" />
     <MESSAGE value="business-logic project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="business-logic project created" />
+    <MESSAGE value="Vm created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vm created" />
   </component>
 </project>
