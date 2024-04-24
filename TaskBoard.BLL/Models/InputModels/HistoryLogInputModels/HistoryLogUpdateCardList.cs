@@ -1,3 +1,6 @@
+using AutoMapper;
+using TaskBoard.DAL.Data.Entities;
+
 namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 
 public class HistoryLogUpdateCardList
@@ -8,4 +11,9 @@ public class HistoryLogUpdateCardList
     public static string NewCardList { get; set; }
     public string ChangeDescription { get; private set; } =
         $"You moved <strong>{CardName}</strong> from <strong>{PreviousCardList}</strong> to strong>{NewCardList}</strong>";
+    
+    public void Mapping(Profile profile)
+    {
+        profile.CreateMap<HistoryLogUpdateCardList, HistoryLog>();
+    }
 }
