@@ -3,9 +3,10 @@ using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 
-public class HistoryLogUpdateCardPriority
+public class HistoryLogUpdateCardPriority : HistoryLogInputModel
 {
-    public Guid CardId { get; set; }
+    public HistoryLogUpdateCardPriority(Guid cardId) : base(cardId) { }
+
     public static string CardName { get; set; }
     public static string PreviousCardPriority { get; set; }
     public static string NewCardPriority { get; set; }
