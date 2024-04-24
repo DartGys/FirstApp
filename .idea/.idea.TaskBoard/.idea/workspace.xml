@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="Input models created">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="HistoryLog input model created">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/ICardListService.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/ICardService.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogAddCard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogDeleteCard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IPriorityService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogAddCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogDeleteCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogDeleteCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713979035280</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="HistoryLog input model created">
+      <option name="closed" value="true" />
+      <created>1713982969745</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713982969745</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +240,7 @@
     <MESSAGE value="business-logic project created" />
     <MESSAGE value="Vm created" />
     <MESSAGE value="Input models created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Input models created" />
+    <MESSAGE value="HistoryLog input model created" />
+    <option name="LAST_COMMIT_MESSAGE" value="HistoryLog input model created" />
   </component>
 </project>
