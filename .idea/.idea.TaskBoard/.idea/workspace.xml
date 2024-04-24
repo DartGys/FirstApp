@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="business logic project created">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="business-logic project created">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/CardListVm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/Details/CardVmDetails.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/HistoryLogVm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/PriorityVm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "business-logic",
     "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -148,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713976451235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add Card foreign key to HistoryLog entity">
+      <option name="closed" value="true" />
+      <created>1713977140116</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713977140116</updated>
+    </task>
+    <task id="LOCAL-00011" summary="business-logic project created">
+      <option name="closed" value="true" />
+      <created>1713977195876</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713977195876</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +207,8 @@
     <MESSAGE value="IUnitOfWork interface" />
     <MESSAGE value="repository implementation" />
     <MESSAGE value="business logic project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="business logic project created" />
+    <MESSAGE value="add Card foreign key to HistoryLog entity" />
+    <MESSAGE value="business-logic project created" />
+    <option name="LAST_COMMIT_MESSAGE" value="business-logic project created" />
   </component>
 </project>
