@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "oT4xhaSs8GWOMfetj5rbmTus2FPzBF/YwaLx21MFg05RFfOzeCrstZYHnoNB73GPDBVCXigidByYw4V6Z2TqeQ==",
+  "dgSpecHash": "3hg9GqvyBfvH4+4E6gYqF7NEscc+eWHDaUWi4E+u4F/j5yKh0ndevuF8QR/U90F+DQxUDAx2d3sAMaRMpixGIg==",
   "success": true,
   "projectFilePath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/bohdan/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
