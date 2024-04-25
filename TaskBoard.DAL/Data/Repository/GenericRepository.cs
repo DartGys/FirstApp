@@ -6,7 +6,7 @@ namespace TaskBoard.DAL.Data.Repository;
 
 public class GenericRepository<T> : IGenericRepository<T> where T : class, IEntity
 {
-    private readonly ApplicationDbContext _context;
+    protected readonly ApplicationDbContext _context;
     
     public GenericRepository(ApplicationDbContext context)
     {

@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="mapping configuration added to models">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogInputModel.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="update method created in GenericRepository">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/CardService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogDeleteCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogDeleteCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/CardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/CardRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/GenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/ICardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/ICardRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/TaskBoard.DAL.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +49,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/Models/InputModels/CardInputModels/CardInputModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/Card.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/CardList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/HistoryLog.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/Priority.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Repository/GenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Interfaces/Repository/IGenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -76,7 +101,7 @@
       <updated>1713888464162</updated>
       <workItem from="1713888464358" duration="8391000" />
       <workItem from="1713976016186" duration="209000" />
-      <workItem from="1713987026995" duration="2341000" />
+      <workItem from="1713987026995" duration="8471000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -214,7 +239,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713988964335</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="HistoryLog abstract input model added">
+      <option name="closed" value="true" />
+      <created>1713989406962</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713989406962</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implement IEntity">
+      <option name="closed" value="true" />
+      <created>1714066711578</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714066711578</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update method created in GenericRepository">
+      <option name="closed" value="true" />
+      <created>1714066750203</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714066750204</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +313,9 @@
     <MESSAGE value="Service interfaces created" />
     <MESSAGE value="Autommaper configuration created" />
     <MESSAGE value="mapping configuration added to models" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapping configuration added to models" />
+    <MESSAGE value="HistoryLog abstract input model added" />
+    <MESSAGE value="Implement IEntity" />
+    <MESSAGE value="update method created in GenericRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="update method created in GenericRepository" />
   </component>
 </project>
