@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="business logic project created">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="PriorityService implemented">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +25,17 @@
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/Models/InputModels/CardInputModels/CardInputModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/Card.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/CardList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/HistoryLog.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Entities/Priority.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Repository/CardRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/Repository/GenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Interfaces/Repository/IGenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -45,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;business-logic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/home/bohdan/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/bohdan/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +79,7 @@
       <updated>1713888464162</updated>
       <workItem from="1713888464358" duration="8391000" />
       <workItem from="1713976016186" duration="209000" />
+      <workItem from="1713987026995" duration="9413000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -148,7 +153,119 @@
       <option name="project" value="LOCAL" />
       <updated>1713976451235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add Card foreign key to HistoryLog entity">
+      <option name="closed" value="true" />
+      <created>1713977140116</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713977140116</updated>
+    </task>
+    <task id="LOCAL-00011" summary="business-logic project created">
+      <option name="closed" value="true" />
+      <created>1713977195876</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713977195876</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Vm created">
+      <option name="closed" value="true" />
+      <created>1713978272636</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713978272636</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Input models created">
+      <option name="closed" value="true" />
+      <created>1713979035280</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713979035280</updated>
+    </task>
+    <task id="LOCAL-00014" summary="HistoryLog input model created">
+      <option name="closed" value="true" />
+      <created>1713982969745</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713982969745</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Service interfaces created">
+      <option name="closed" value="true" />
+      <created>1713983349740</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713983349740</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Autommaper configuration created">
+      <option name="closed" value="true" />
+      <created>1713987259250</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713987259250</updated>
+    </task>
+    <task id="LOCAL-00017" summary="mapping configuration added to models">
+      <option name="closed" value="true" />
+      <created>1713988964335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713988964335</updated>
+    </task>
+    <task id="LOCAL-00018" summary="HistoryLog abstract input model added">
+      <option name="closed" value="true" />
+      <created>1713989406962</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713989406962</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implement IEntity">
+      <option name="closed" value="true" />
+      <created>1714066711578</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714066711578</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update method created in GenericRepository">
+      <option name="closed" value="true" />
+      <created>1714066750203</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714066750204</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Card service implementation + card repository UpdateList method created">
+      <option name="closed" value="true" />
+      <created>1714067692246</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714067692246</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CardListService implemented">
+      <option name="closed" value="true" />
+      <created>1714067944891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714067944891</updated>
+    </task>
+    <task id="LOCAL-00023" summary="PriorityService implemented">
+      <option name="closed" value="true" />
+      <created>1714068056850</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714068056850</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +307,20 @@
     <MESSAGE value="IUnitOfWork interface" />
     <MESSAGE value="repository implementation" />
     <MESSAGE value="business logic project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="business logic project created" />
+    <MESSAGE value="add Card foreign key to HistoryLog entity" />
+    <MESSAGE value="business-logic project created" />
+    <MESSAGE value="Vm created" />
+    <MESSAGE value="Input models created" />
+    <MESSAGE value="HistoryLog input model created" />
+    <MESSAGE value="Service interfaces created" />
+    <MESSAGE value="Autommaper configuration created" />
+    <MESSAGE value="mapping configuration added to models" />
+    <MESSAGE value="HistoryLog abstract input model added" />
+    <MESSAGE value="Implement IEntity" />
+    <MESSAGE value="update method created in GenericRepository" />
+    <MESSAGE value="Card service implementation + card repository UpdateList method created" />
+    <MESSAGE value="CardListService implemented" />
+    <MESSAGE value="PriorityService implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="PriorityService implemented" />
   </component>
 </project>

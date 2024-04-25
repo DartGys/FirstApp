@@ -1,6 +1,8 @@
+using TaskBoard.DAL.Data.Repository;
+
 namespace TaskBoard.DAL.Data.Entities;
 
-public class Card
+public class Card : IEntity
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

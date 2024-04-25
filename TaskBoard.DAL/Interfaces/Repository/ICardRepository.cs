@@ -4,4 +4,5 @@ namespace TaskBoard.DAL.Interfaces.Repository;
 
 public interface ICardRepository : IGenericRepository<Card>
 {
+    Task UpdateCardList(Guid id, Guid listId);
 }
