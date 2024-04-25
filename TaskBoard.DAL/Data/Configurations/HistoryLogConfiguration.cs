@@ -8,7 +8,7 @@ public class HistoryLogConfiguration : IEntityTypeConfiguration<HistoryLog>
 {
     public void Configure(EntityTypeBuilder<HistoryLog> builder)
     {
-        builder.HasNoKey();
+        builder.HasKey(x => x.Id);
 
         builder.Property(h => h.ChangeDescription)
             .HasMaxLength(255)

@@ -10,3 +10,5 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.runtimeconfig.json
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.genruntimeconfig.cache

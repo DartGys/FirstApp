@@ -41,3 +41,5 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.genruntimeconfig.cache
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.Design.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
