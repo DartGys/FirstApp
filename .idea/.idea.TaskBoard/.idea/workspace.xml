@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="Card service implementation + card repository UpdateList method created">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/CardListService.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="PriorityService implemented">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <updated>1713888464162</updated>
       <workItem from="1713888464358" duration="8391000" />
       <workItem from="1713976016186" duration="209000" />
-      <workItem from="1713987026995" duration="8726000" />
+      <workItem from="1713987026995" duration="9413000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -247,7 +249,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714067692246</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="CardListService implemented">
+      <option name="closed" value="true" />
+      <created>1714067944891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714067944891</updated>
+    </task>
+    <task id="LOCAL-00023" summary="PriorityService implemented">
+      <option name="closed" value="true" />
+      <created>1714068056850</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714068056850</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +319,8 @@
     <MESSAGE value="Implement IEntity" />
     <MESSAGE value="update method created in GenericRepository" />
     <MESSAGE value="Card service implementation + card repository UpdateList method created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Card service implementation + card repository UpdateList method created" />
+    <MESSAGE value="CardListService implemented" />
+    <MESSAGE value="PriorityService implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="PriorityService implemented" />
   </component>
 </project>

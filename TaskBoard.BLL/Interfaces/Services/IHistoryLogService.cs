@@ -8,7 +8,7 @@ public interface IHistoryLogService
     Task<IEnumerable<HistoryLogVm>> GetAllAsync();
     Task<IEnumerable<HistoryLogVm>> GetByCardIdAsync(Guid cardId);
     Task LogAddCardAsync(HistoryLogInputModel input);
-    Task LogMoveCardASync(HistoryLogInputModel input);
+    Task LogMoveCardAsync(HistoryLogInputModel input);
     Task LogUpdateCardNameAsync(HistoryLogInputModel input);
     Task LogUpdateCardPriority(HistoryLogInputModel input);
     Task LogDeleteCard(HistoryLogInputModel input);
