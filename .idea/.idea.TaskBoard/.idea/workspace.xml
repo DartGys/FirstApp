@@ -8,24 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="WebApi project created">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/CardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/CardListController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/HistoryLogController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/PriorityController.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="controllers created">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714069214182</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="controllers created">
+      <option name="closed" value="true" />
+      <created>1714073451928</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714073451928</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +360,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="entities" />
     <MESSAGE value="dbcontext" />
     <MESSAGE value="history log entity" />
@@ -390,6 +384,7 @@
     <MESSAGE value="PriorityService implemented" />
     <MESSAGE value="DependencyInjection added" />
     <MESSAGE value="WebApi project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebApi project created" />
+    <MESSAGE value="controllers created" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers created" />
   </component>
 </project>

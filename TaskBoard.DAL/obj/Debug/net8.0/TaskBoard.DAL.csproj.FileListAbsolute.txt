@@ -1,0 +1,12 @@
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.deps.json
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.AssemblyReference.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.CoreCompileInputs.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll

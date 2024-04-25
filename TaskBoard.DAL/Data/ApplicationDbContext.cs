@@ -4,9 +4,12 @@ using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.DAL.Data;
 
-public class ApplicationDbContext : DbContext
+public sealed class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
+        Database.EnsureCreated();
+    }
 
     public DbSet<Card> Cards => Set<Card>();
     public DbSet<HistoryLog> HistoryLogs => Set<HistoryLog>();
