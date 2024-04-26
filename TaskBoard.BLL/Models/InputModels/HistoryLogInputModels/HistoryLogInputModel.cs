@@ -1,16 +1,14 @@
-using TaskBoard.BLL.Common.Mapping;
-using TaskBoard.DAL.Data.Entities;
-
 namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 
-public class HistoryLogInputModel : IMapWith<HistoryLog>
+public abstract class HistoryLogInputModel
 {
-    public HistoryLogInputModel() {}
-
-    protected HistoryLogInputModel(Guid cardId)
+    public HistoryLogInputModel(Guid cardId)
     {
         CardId = cardId;
     }
+
+    public HistoryLogInputModel() { }
+
     public Guid CardId { get; set; }
     public DateTime ChangeDate { get; private set; } = DateTime.UtcNow;
 }
