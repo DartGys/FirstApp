@@ -32,7 +32,7 @@ public class HistoryLogController : ControllerBase
     }
     
     [HttpPost("add")]
-    public async Task<IActionResult> LogCardAdd(HistoryLogInputModel input)
+    public async Task<IActionResult> LogCardAdd(HistoryLogAddCard input)
     {
         await _historyLogService.LogAddCardAsync(input);
 
@@ -40,7 +40,7 @@ public class HistoryLogController : ControllerBase
     }
     
     [HttpPost("move")]
-    public async Task<IActionResult> LogCardMove(HistoryLogInputModel input)
+    public async Task<IActionResult> LogCardMove(HistoryLogUpdateCardList input)
     {
         await _historyLogService.LogMoveCardAsync(input);
 
@@ -48,7 +48,7 @@ public class HistoryLogController : ControllerBase
     }
     
     [HttpPost("name")]
-    public async Task<IActionResult> LogCardUpdateName(HistoryLogInputModel input)
+    public async Task<IActionResult> LogCardUpdateName(HistoryLogUpdateCardName input)
     {
         await _historyLogService.LogUpdateCardNameAsync(input);
 
@@ -56,7 +56,7 @@ public class HistoryLogController : ControllerBase
     }
     
     [HttpPost("priority")]
-    public async Task<IActionResult> LogCardUpdatePriority(HistoryLogInputModel input)
+    public async Task<IActionResult> LogCardUpdatePriority(HistoryLogUpdateCardPriority input)
     {
         await _historyLogService.LogUpdateCardPriority(input);
 
@@ -64,7 +64,7 @@ public class HistoryLogController : ControllerBase
     }
     
     [HttpPost("delete")]
-    public async Task<IActionResult> LogCardDelete(HistoryLogInputModel input)
+    public async Task<IActionResult> LogCardDelete(HistoryLogDeleteCard input)
     {
         await _historyLogService.LogDeleteCard(input);
 

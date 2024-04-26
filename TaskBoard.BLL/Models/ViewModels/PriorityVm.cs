@@ -1,9 +1,10 @@
 using AutoMapper;
+using TaskBoard.BLL.Common.Mapping;
 using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.BLL.Models.ViewModels.List;
 
-public class PriorityVm
+public class PriorityVm : IMapWith<Priority>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

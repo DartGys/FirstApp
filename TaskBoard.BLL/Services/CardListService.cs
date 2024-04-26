@@ -20,14 +20,21 @@ public class CardListService : ICardListService
     
     public async Task<IEnumerable<CardListVm>> GetAsync()
     {
-        var entities = await _unitOfWork.CardList.GetAllAsync();
-
+        var entities = await _unitOfWork.CardList.GetAllAsyncNoTracking();
+        
+        foreach (var cardList in entities)
+        {
+            var cards = await _unitOfWork.Card.FindAsyncNoTracking(x => x.CardListId == cardList.Id, 
+                new CancellationToken(), x => x.Priority);
+            cardList.Cards = cards.ToList();
+        }
+        
         var cardLists = _mapper.Map<IEnumerable<CardListVm>>(entities);
 
         return cardLists;
     }
 
-    public async Task AddASync(CardListInputModel input)
+    public async Task AddAsync(CardListInputModel input)
     {
         var entity = _mapper.Map<CardList>(input);
 

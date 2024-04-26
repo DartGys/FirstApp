@@ -1,9 +1,10 @@
 using AutoMapper;
+using TaskBoard.BLL.Common.Mapping;
 using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.BLL.Models.InputModels;
 
-public class CardInputModel
+public class CardInputModel : IMapWith<Card>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

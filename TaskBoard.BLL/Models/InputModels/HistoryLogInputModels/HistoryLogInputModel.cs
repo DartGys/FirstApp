@@ -1,8 +1,13 @@
+using TaskBoard.BLL.Common.Mapping;
+using TaskBoard.DAL.Data.Entities;
+
 namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 
-public abstract class HistoryLogInputModel
+public class HistoryLogInputModel : IMapWith<HistoryLog>
 {
-    public HistoryLogInputModel(Guid cardId)
+    public HistoryLogInputModel() {}
+
+    protected HistoryLogInputModel(Guid cardId)
     {
         CardId = cardId;
     }

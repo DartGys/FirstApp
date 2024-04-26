@@ -1,10 +1,11 @@
 using AutoMapper;
+using TaskBoard.BLL.Common.Mapping;
 using TaskBoard.BLL.Models.ViewModels.Details;
 using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.BLL.Models.ViewModels.List;
 
-public class CardVmList
+public class CardVmList : IMapWith<Card>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

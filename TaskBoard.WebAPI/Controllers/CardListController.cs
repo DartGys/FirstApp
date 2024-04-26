@@ -26,7 +26,7 @@ public class CardListController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] CardListInputModel input)
     {
-        await _cardListService.AddASync(input);
+        await _cardListService.AddAsync(input);
 
         return Ok();
     }
