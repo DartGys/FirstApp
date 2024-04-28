@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x38lUWzv9/Y8l647uH8zqU/4n2pD7fj9GxnFRHv0hBa1N2EdIF6LSPQwSGc/Irmi1Iz5K9LlgmHsBrnN3z4eZQ==",
+  "dgSpecHash": "bHEgzcb+YGlTsKRYP5aqecjSGLlEfE6LX564UxPIzGZbiTRqMXY9j83VdL7Gk8Y49cuAvtqHWNMtoiReHpaASw==",
   "success": true,
   "projectFilePath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore/8.0.4/microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.4/microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.4/microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
-    "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.4/microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.0/microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

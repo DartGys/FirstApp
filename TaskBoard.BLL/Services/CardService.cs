@@ -39,15 +39,19 @@ public class CardService : ICardService
 
     public async Task UpdateEntityAsync(CardUpdateModel model)
     {
-        var entity = _mapper.Map<Card>(model);
-        
-        _unitOfWork.Card.Update(entity);
+        await _unitOfWork.Card.UpdateEntity(model.Id, model.Name, model.Description, model.DueDate);
         await _unitOfWork.SaveChangeAsync();
     }
 
     public async Task UpdateListAsync(Guid cardId, Guid listId)
     {
         await _unitOfWork.Card.UpdateCardList(cardId, listId);
+        await _unitOfWork.SaveChangeAsync();
+    }
+
+    public async Task UpdatePriorityAsync(Guid cardId, Guid priorityId)
+    {
+        await _unitOfWork.Card.UpdateCardPriority(cardId, priorityId);
         await _unitOfWork.SaveChangeAsync();
     }
 

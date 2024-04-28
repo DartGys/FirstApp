@@ -10,7 +10,6 @@ public class CardUpdateModel : IMapWith<Card>
     public string Name { get; set; }
     public string Description { get; set; }
     public DateTime DueDate { get; set; }
-    public Guid PriorityId { get; set; }
     
     public void Mapping(Profile profile)
     {
