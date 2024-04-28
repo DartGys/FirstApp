@@ -6,9 +6,8 @@ namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 public class HistoryLogDeleteCard : HistoryLogInputModel
 {
     public HistoryLogDeleteCard() { }
-    public HistoryLogDeleteCard(Guid cardId) : base(cardId) { }
+    public HistoryLogDeleteCard(Guid cardId, string cardName) : base(cardId, cardName) { }
 
-    public string CardName { get; set; }
     public string CardList { get; set; }
 
     public string ChangeDescription => $"You deleted <strong>{CardName}</strong> from <strong>{CardList}</strong>";

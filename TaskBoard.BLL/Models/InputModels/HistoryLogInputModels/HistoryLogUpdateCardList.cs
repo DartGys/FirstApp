@@ -6,9 +6,8 @@ namespace TaskBoard.BLL.Models.HistoryLogInputModels;
 public class HistoryLogUpdateCardList : HistoryLogInputModel
 {
     public HistoryLogUpdateCardList() { }
-    public HistoryLogUpdateCardList(Guid cardId) : base(cardId) { }
+    public HistoryLogUpdateCardList(Guid cardId, string cardName) : base(cardId, cardName) { }
 
-    public string CardName { get; set; }
     public string PreviousCardList { get; set; }
     public string NewCardList { get; set; }
 

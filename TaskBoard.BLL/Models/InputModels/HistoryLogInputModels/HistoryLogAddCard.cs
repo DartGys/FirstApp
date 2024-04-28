@@ -7,8 +7,7 @@ public class HistoryLogAddCard : HistoryLogInputModel
 {
     public HistoryLogAddCard() { }
 
-    public HistoryLogAddCard(Guid cardId) : base(cardId) { }
-    public string CardName { get; set; }
+    public HistoryLogAddCard(Guid cardId, string cardName) : base(cardId, cardName) { }
     public string ListName { get; set; }
 
     public string ChangeDescription => $"You added <strong>{CardName}</strong> to <strong>{ListName}</strong>";
