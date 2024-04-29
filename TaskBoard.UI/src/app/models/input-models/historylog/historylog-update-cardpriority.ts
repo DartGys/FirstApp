@@ -1,6 +1,6 @@
 import {HistorylogInputModel} from "./historylog-input-model";
 
 export class HistorylogUpdateCardpriority extends HistorylogInputModel{
-  previousCardPriority: string;
-  newCardPriority: string;
+  previousCardPriority= '';
+  newCardPriority= '';
 }

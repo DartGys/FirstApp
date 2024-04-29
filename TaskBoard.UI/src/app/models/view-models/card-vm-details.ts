@@ -1,13 +1,13 @@
 import {HistorylogVm} from "./historylog-vm";
 
 export class CardVmDetails{
-  id: string;
-  name: string;
-  description: string;
-  createdDate: Date;
-  dueDate: Date;
-  priorityId: string;
-  priorityName: string;
-  cardListId: string;
-  historyLog: HistorylogVm[];
+  id= '';
+  name= '';
+  description= '';
+  createdDate: Date = new Date();
+  dueDate: Date = new Date();
+  priorityId= '';
+  priorityName= '';
+  cardListId= '';
+  historyLog: HistorylogVm[] = [];
 }

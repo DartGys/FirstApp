@@ -1,13 +1,13 @@
 export class CardlistVm{
-  id: string;
-  name: string;
-  cards: CardVmList[];
+  id= '';
+  name= '';
+  cards: CardVmList[] = [];
 }
 
 export class CardVmList{
-  id: string;
-  name: string;
-  description: string;
-  dueDate: Date;
-  priorityName: string;
+  id= '';
+  name= '';
+  description= '';
+  dueDate: Date = new Date();
+  priorityName= '';
 }

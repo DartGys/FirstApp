@@ -1,8 +1,8 @@
 export class CardInputModel{
-  id: string;
-  name: string;
-  description: string;
-  dueDate: Date;
-  priorityId: string;
-  cardListId: string;
+  id= '';
+  name= '';
+  description= '';
+  dueDate: Date = new Date();
+  priorityId= '';
+  cardListId= '';
 }

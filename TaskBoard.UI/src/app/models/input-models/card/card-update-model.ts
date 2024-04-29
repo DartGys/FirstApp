@@ -1,6 +1,6 @@
 class CardUpdateModel{
-  id: string;
-  name: string;
-  description: string;
-  dueDate: Date;
+  id= '';
+  name= '';
+  description= '';
+  dueDate: Date = new Date();
 }
