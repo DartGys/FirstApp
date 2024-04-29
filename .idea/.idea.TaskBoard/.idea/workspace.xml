@@ -9,15 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="Card update fix">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/inputModels/cardInputModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/inputModels/historyLogInputModel.cs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card/card-input-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card/card-update-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/cardlist-input-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/historylog/historylog-inout-delete-add-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/historylog/historylog-input-model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/historylog/historylog-update-cardlist.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/historylog/historylog-update-cardname.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/historylog/historylog-update-cardpriority.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/card-vm-details.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/cardlist-vm.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/historylog-vm.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/priority-vm.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogAddCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogDeleteCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogDeleteCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/Details/CardVmDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/Details/CardVmDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -87,8 +95,9 @@
     ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "backend-fix",
+    "git-widget-placeholder": "ui",
     "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -474,24 +483,5 @@
     <MESSAGE value="SeedData filled" />
     <MESSAGE value="Card update fix" />
     <option name="LAST_COMMIT_MESSAGE" value="Card update fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TaskBoard.BLL/Services/CardService.cs</url>
-          <line>40</line>
-          <properties documentPath="$PROJECT_DIR$/TaskBoard.BLL/Services/CardService.cs" containingFunctionPresentation="Method 'UpdateEntityAsync'">
-            <startOffsets>
-              <option value="1068" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1069" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

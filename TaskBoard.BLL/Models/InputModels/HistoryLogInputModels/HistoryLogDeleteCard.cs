@@ -8,9 +8,9 @@ public class HistoryLogDeleteCard : HistoryLogInputModel
     public HistoryLogDeleteCard() { }
     public HistoryLogDeleteCard(Guid cardId, string cardName) : base(cardId, cardName) { }
 
-    public string CardList { get; set; }
+    public string ListName { get; set; }
 
-    public string ChangeDescription => $"You deleted <strong>{CardName}</strong> from <strong>{CardList}</strong>";
+    public string ChangeDescription => $"You deleted <strong>{CardName}</strong> from <strong>{ListName}</strong>";
 
     public void Mapping(Profile profile)
     {
