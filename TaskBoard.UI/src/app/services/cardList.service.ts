@@ -18,9 +18,6 @@ export class CardListService {
   }
 
   public createCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]> {
-    console.log(cardList);
-    let postUrl = `${environment.apiUrl}/${this.url}`;
-    console.log(postUrl);
     return this.http.post<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, cardList);
   }
 

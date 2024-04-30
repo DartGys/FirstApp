@@ -28,15 +28,26 @@ export class CardlistComponent implements OnInit{
       .subscribe((result: CardlistVm[]) => (this.cardLists = result));
   }
 
-  updateCardLists(){
-    this.cardListService.getCardLists().subscribe(
-      (cardlists: CardlistVm[]) => {
-        this.cardLists = cardlists;
-      });
+  updateCardLists(cardlists: CardlistVm[]){
+    this.cardLists = cardlists;
+
+    this.cardlistToEdit = undefined;
   }
 
   initNewCardList(){
     this.cardlistToEdit = new CardlistInputModel();
+  }
+
+  editCardList(cardlist: CardlistInputModel){
+    this.cardlistToEdit = cardlist;
+  }
+
+  deleteCardList(id: string){
+    this.cardListService.deleteCardList(id).subscribe(
+      (response) => {
+        this.cardLists = response;
+      },
+    );
   }
 
   addCardButton(){

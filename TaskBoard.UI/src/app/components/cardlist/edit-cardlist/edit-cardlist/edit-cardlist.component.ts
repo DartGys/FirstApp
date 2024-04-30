@@ -33,9 +33,9 @@ export class EditCardlistComponent {
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
   }
 
-  deleteCardList(cardlist: CardlistInputModel){
+  cancel(){
     this.cardListService
-      .deleteCardList(cardlist.id)
+      .getCardLists()
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
   }
 }

@@ -1,7 +1,8 @@
 <div *ngIf="cardlist">
     <input [(ngModel)]="cardlist.name" placeholder="Name" />
     <div>
-      <button (click)="createCardList(cardlist)">Add list</button>
-      <button type="button">Cancel</button>
+      <button (click)="createCardList(cardlist)" *ngIf="!cardlist.id">Add list</button>
+      <button (click)="updateCardList(cardlist)" *ngIf="cardlist.id">Update list</button>
+      <button (click)="cancel()">Cancel</button>
     </div>
 </div>

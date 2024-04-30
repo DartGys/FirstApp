@@ -6,8 +6,8 @@
       <div class="menu-button">
         <button class="menu-button-dots">&#8942;</button>
         <div class="menu">
-          <button class="edit-button">Edit</button>
-          <button class="delete-button">Delete</button>
+          <button class="edit-button" (click)="editCardList(cardList)">Edit</button>
+          <button class="delete-button" (click)="deleteCardList(cardList.id)">Delete</button>
         </div>
       </div>
     </div>
@@ -50,11 +50,11 @@
       </div>
     </div>
   </div>
-  <div class="card-list-add">
+  <div class="card-list-add" *ngIf="!cardlistToEdit">
     <button class="card-list-add-button" (click)="initNewCardList()">Add new card</button>
   </div>
   <app-edit-cardlist
     [cardlist]="cardlistToEdit"
-    (cardlistsUpdated)="updateCardLists()"
+    (cardlistsUpdated)="updateCardLists($event)"
   ></app-edit-cardlist>
 </div>
