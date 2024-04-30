@@ -7,9 +7,8 @@ public interface ICardService
 {
     Task<CardVmDetails> GetByIdAsync(Guid id);
     Task<Guid> AddAsync(CardInputModel input);
-    Task UpdateEntityAsync(CardUpdateModel model);
+    Task UpdateEntityAsync(CardInputModel model);
     Task UpdateListAsync(Guid cardId, Guid listId);
-    Task UpdatePriorityAsync(Guid cardId, Guid priorityId);
     Task DeleteAsync(Guid id);
     
 }

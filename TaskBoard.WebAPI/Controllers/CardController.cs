@@ -36,7 +36,7 @@ public class CardController : ControllerBase
     }
 
     [HttpPatch]
-    public async Task<IActionResult> UpdateCard([FromBody] CardUpdateModel input)
+    public async Task<IActionResult> UpdateCard([FromBody] CardInputModel input)
     {
         await _cardService.UpdateEntityAsync(input);
 
@@ -49,16 +49,6 @@ public class CardController : ControllerBase
     public async Task<IActionResult> UpdateListInCard(Guid cardId, Guid listId)
     {
         await _cardService.UpdateListAsync(cardId, listId);
-
-        var cardLists = await _cardListService.GetAsync();
-
-        return Ok(cardLists);
-    }
-    
-    [HttpPatch("{cardId}/priority/{priorityId}")]
-    public async Task<IActionResult> UpdatePriorityInCard(Guid cardId, Guid priorityId)
-    {
-        await _cardService.UpdatePriorityAsync(cardId, priorityId);
 
         var cardLists = await _cardListService.GetAsync();
 

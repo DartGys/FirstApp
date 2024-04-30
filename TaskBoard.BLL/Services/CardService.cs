@@ -37,21 +37,15 @@ public class CardService : ICardService
         return entity.Id;
     }
 
-    public async Task UpdateEntityAsync(CardUpdateModel model)
+    public async Task UpdateEntityAsync(CardInputModel model)
     {
-        await _unitOfWork.Card.UpdateEntity(model.Id, model.Name, model.Description, model.DueDate);
+        await _unitOfWork.Card.UpdateEntity(new Guid(model.Id), model.Name, model.Description, model.DueDate, model.PriorityId, model.CardListId);
         await _unitOfWork.SaveChangeAsync();
     }
 
     public async Task UpdateListAsync(Guid cardId, Guid listId)
     {
         await _unitOfWork.Card.UpdateCardList(cardId, listId);
-        await _unitOfWork.SaveChangeAsync();
-    }
-
-    public async Task UpdatePriorityAsync(Guid cardId, Guid priorityId)
-    {
-        await _unitOfWork.Card.UpdateCardPriority(cardId, priorityId);
         await _unitOfWork.SaveChangeAsync();
     }
 
