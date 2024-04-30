@@ -8,66 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="services created">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/images/kisspng-calendar-date-computer-icons-time-calendar-icon-5ac41db6e40e60.7695912015228021029341.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/CardListInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/CardListInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/List/CardVmList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/TaskBoard.BLL.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/cardlist-vm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/view-models/cardlist-vm.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/services/cardList.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/services/cardList.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/TaskBoard.WebAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="card list view" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="ui" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,7 +75,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Run",
+    ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
     "git-widget-placeholder": "ui",
@@ -482,7 +423,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714396570637</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="cardlist view">
+      <option name="closed" value="true" />
+      <created>1714476625239</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1714476625239</updated>
+    </task>
+    <task id="LOCAL-00037" summary="card list view">
+      <option name="closed" value="true" />
+      <created>1714476656479</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1714476656479</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,8 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="business-logic project created" />
-    <MESSAGE value="Vm created" />
     <MESSAGE value="Input models created" />
     <MESSAGE value="HistoryLog input model created" />
     <MESSAGE value="Service interfaces created" />
@@ -540,7 +495,9 @@
     <MESSAGE value="Card update fix" />
     <MESSAGE value="models created" />
     <MESSAGE value="services created" />
-    <option name="LAST_COMMIT_MESSAGE" value="services created" />
+    <MESSAGE value="cardlist view" />
+    <MESSAGE value="card list view" />
+    <option name="LAST_COMMIT_MESSAGE" value="card list view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

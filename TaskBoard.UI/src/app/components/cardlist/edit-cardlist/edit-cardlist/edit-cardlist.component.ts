@@ -23,7 +23,8 @@ export class EditCardlistComponent {
 
   createCardList(cardlist: CardlistInputModel){
     this.cardListService
-      .createCardList(cardlist);
+      .createCardList(cardlist)
+      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
   }
 
   updateCardList(cardlist: CardlistInputModel){

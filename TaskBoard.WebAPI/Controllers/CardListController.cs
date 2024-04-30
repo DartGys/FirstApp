@@ -28,7 +28,9 @@ public class CardListController : ControllerBase
     {
         await _cardListService.AddAsync(input);
 
-        return Ok();
+        var models = await _cardListService.GetAsync();
+    
+        return Ok(models);
     }
 
     [HttpPut]
@@ -36,7 +38,9 @@ public class CardListController : ControllerBase
     {
         await _cardListService.UpdateAsync(input);
 
-        return Ok();
+        var models = await _cardListService.GetAsync();
+
+        return Ok(models);
     }
 
     [HttpDelete("{id}")]
@@ -44,6 +48,8 @@ public class CardListController : ControllerBase
     {
         await _cardListService.DeleteAsync(id);
 
-        return Ok();
+        var models = await _cardListService.GetAsync();
+
+        return Ok(models);
     }
 }

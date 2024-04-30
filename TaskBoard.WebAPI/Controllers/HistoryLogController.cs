@@ -36,7 +36,9 @@ public class HistoryLogController : ControllerBase
     {
         await _historyLogService.LogAddCardAsync(input);
 
-        return Ok();
+        var models = await _historyLogService.GetAllAsync();
+
+        return Ok(models);
     }
     
     [HttpPost("move")]
@@ -44,7 +46,9 @@ public class HistoryLogController : ControllerBase
     {
         await _historyLogService.LogMoveCardAsync(input);
 
-        return Ok();
+        var models = await _historyLogService.GetAllAsync();
+
+        return Ok(models);
     }
     
     [HttpPost("name")]
@@ -52,7 +56,9 @@ public class HistoryLogController : ControllerBase
     {
         await _historyLogService.LogUpdateCardNameAsync(input);
 
-        return Ok();
+        var models = await _historyLogService.GetAllAsync();
+
+        return Ok(models);
     }
     
     [HttpPost("priority")]
@@ -60,7 +66,9 @@ public class HistoryLogController : ControllerBase
     {
         await _historyLogService.LogUpdateCardPriority(input);
 
-        return Ok();
+        var models = await _historyLogService.GetAllAsync();
+
+        return Ok(models);
     }
     
     [HttpPost("delete")]
@@ -68,6 +76,8 @@ public class HistoryLogController : ControllerBase
     {
         await _historyLogService.LogDeleteCard(input);
 
-        return Ok();
+        var models = await _historyLogService.GetAllAsync();
+
+        return Ok(models);
     }
 }

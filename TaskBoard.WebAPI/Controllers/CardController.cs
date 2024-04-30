@@ -9,10 +9,12 @@ namespace TaskBoard.WebAPI.Controllers;
 public class CardController : ControllerBase
 {
     private readonly ICardService _cardService;
+    private readonly ICardListService _cardListService;
 
-    public CardController(ICardService cardService)
+    public CardController(ICardService cardService, ICardListService cardListService)
     {
         _cardService = cardService;
+        _cardListService = cardListService;
     }
 
     [HttpGet("{id}")]
@@ -28,7 +30,9 @@ public class CardController : ControllerBase
     {
         var id = await _cardService.AddAsync(input);
 
-        return Ok(id);
+        var cardLists = await _cardListService.GetAsync();
+
+        return Ok(cardLists);
     }
 
     [HttpPatch]
@@ -36,7 +40,9 @@ public class CardController : ControllerBase
     {
         await _cardService.UpdateEntityAsync(input);
 
-        return Ok();
+        var cardLists = await _cardListService.GetAsync();
+
+        return Ok(cardLists);
     }
 
     [HttpPatch("{cardId}/list/{listId}")]
@@ -44,7 +50,9 @@ public class CardController : ControllerBase
     {
         await _cardService.UpdateListAsync(cardId, listId);
 
-        return Ok();
+        var cardLists = await _cardListService.GetAsync();
+
+        return Ok(cardLists);
     }
     
     [HttpPatch("{cardId}/priority/{priorityId}")]
@@ -52,7 +60,9 @@ public class CardController : ControllerBase
     {
         await _cardService.UpdatePriorityAsync(cardId, priorityId);
 
-        return Ok();
+        var cardLists = await _cardListService.GetAsync();
+
+        return Ok(cardLists);
     }
 
     [HttpDelete("{id}")]
@@ -60,6 +70,8 @@ public class CardController : ControllerBase
     {
         await _cardService.DeleteAsync(id);
 
-        return Ok();
+        var cardLists = await _cardListService.GetAsync();
+
+        return Ok(cardLists);
     }
 }
