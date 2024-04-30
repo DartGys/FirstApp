@@ -17,15 +17,18 @@ export class CardListService {
     return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}`);
   }
 
-  public createCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}`, cardList);
+  public createCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]> {
+    console.log(cardList);
+    let postUrl = `${environment.apiUrl}/${this.url}`;
+    console.log(postUrl);
+    return this.http.post<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, cardList);
   }
 
-  public updateCardList(cardList: CardlistInputModel) : Observable<CardlistVm>{
-    return this.http.put(`${environment.apiUrl}/${this.url}`, cardList);
+  public updateCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]>{
+    return this.http.put<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, cardList);
   }
 
-  public deleteCardList(cardListId: string) : Observable<CardlistVm>{
-    return this.http.delete(`${environment.apiUrl}/${this.url}/${cardListId}`);
+  public deleteCardList(cardListId: string) : Observable<CardlistVm[]>{
+    return this.http.delete<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardListId}`);
   }
 }

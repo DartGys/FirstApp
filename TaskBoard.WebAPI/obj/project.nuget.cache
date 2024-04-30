@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vOJ3wI0UFaiwgWNxOzY2Z1ocMp1yqV8RsusDdZY0OvoqO6NjhtcoWtPbfHImXnt1Tq/+HvdTVGgi5Y1w3HyoMw==",
+  "dgSpecHash": "to+/Z0RmIN0wRd/arVxaFrPHX3muI7fOlHI3evFVx6rEdgx1xoZ/obN7OlqfCmF+gHN06nqOOYK9m543wNCKTw==",
   "success": true,
   "projectFilePath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "/home/bohdan/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/home/bohdan/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/home/bohdan/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/home/bohdan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/home/bohdan/.nuget/packages/npgsql/8.0.2/npgsql.8.0.2.nupkg.sha512",
     "/home/bohdan/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.2/npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "/home/bohdan/.nuget/packages/npgsql.entityframeworkcore.postgresql.design/1.1.0/npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",

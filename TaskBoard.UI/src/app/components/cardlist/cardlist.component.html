@@ -1,0 +1,60 @@
+<div class="card-list-container">
+  <div class="card-list-group" *ngFor="let cardList of cardLists">
+    <div class="card-list-item">
+      <h4 class="card-list-name">{{ cardList.name }}</h4>
+      <h4 class="card-count">{{ cardList.cards.length }}</h4>
+      <div class="menu-button">
+        <button class="menu-button-dots">&#8942;</button>
+        <div class="menu">
+          <button class="edit-button">Edit</button>
+          <button class="delete-button">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="add-card-button" (click)="addCardButton()">+ Add new card</button>
+    </div>
+    <div class="cards-container">
+      <div class="card-item" *ngFor="let card of cardList.cards">
+        <div class="card-name-menu">
+          <div class="card-header">
+            <h4>{{ card.name }}</h4>
+          </div>
+          <div class="menu-button">
+            <button class="menu-button-dots">&#8942;</button>
+            <div class="menu">
+              <button class="edit-button">Edit</button>
+              <button class="delete-button">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="description">{{ card.description }}</p>
+          <p class="due-date">
+            <img src="https://img2.freepng.ru/20180403/rsq/kisspng-calendar-date-computer-icons-time-calendar-icon-5ac41db68edb81.1459769815228021025852.jpg" alt="Calendar Icon" class="calendar-icon">
+            Due Date: {{ card.dueDate | date:'EEE, d MMM' }}
+          </p>
+          <div class="priority-container">
+            <div class="priority-icon"></div>
+            <p class="priority">{{ card.priorityName }}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <select class="move-to-dropdown">
+            <option value="" disabled selected>Move to:</option>
+            <ng-container *ngFor="let list of cardLists">
+              <option [value]="list.id" *ngIf="list.id !== card.cardListId">{{ list.name }}</option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-list-add">
+    <button class="card-list-add-button" (click)="initNewCardList()">Add new card</button>
+  </div>
+  <app-edit-cardlist
+    [cardlist]="cardlistToEdit"
+    (cardlistsUpdated)="updateCardLists()"
+  ></app-edit-cardlist>
+</div>

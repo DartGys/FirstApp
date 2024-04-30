@@ -12,6 +12,8 @@ public class CardVmList : IMapWith<Card>
     public string Description { get; set; }
     public DateTime DueDate { get; set; }
     public string PriorityName { get; set; }
+    public Guid CardListId { get; set; }
+    
     public void Mapping(Profile profile)
     {
         profile.CreateMap<Card, CardVmList>()

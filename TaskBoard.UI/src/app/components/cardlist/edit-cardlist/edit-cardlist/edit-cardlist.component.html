@@ -1,0 +1,7 @@
+<div *ngIf="cardlist">
+    <input [(ngModel)]="cardlist.name" placeholder="Name" />
+    <div>
+      <button (click)="createCardList(cardlist)">Add list</button>
+      <button type="button">Cancel</button>
+    </div>
+</div>
