@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="card list view" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="controllers return fixed">
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/CardInputModels/CardInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/CardInputModels/CardInputModel.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +80,7 @@
     ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "ui",
+    "git-widget-placeholder": "back-hot-fixes",
     "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -439,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714476656479</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="controllers return fixed">
+      <option name="closed" value="true" />
+      <created>1714483602281</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1714483602281</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Input models created" />
     <MESSAGE value="HistoryLog input model created" />
     <MESSAGE value="Service interfaces created" />
     <MESSAGE value="Autommaper configuration created" />
@@ -497,7 +506,8 @@
     <MESSAGE value="services created" />
     <MESSAGE value="cardlist view" />
     <MESSAGE value="card list view" />
-    <option name="LAST_COMMIT_MESSAGE" value="card list view" />
+    <MESSAGE value="controllers return fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers return fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
