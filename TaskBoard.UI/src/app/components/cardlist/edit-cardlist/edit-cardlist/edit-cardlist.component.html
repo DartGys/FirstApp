@@ -1,8 +1,8 @@
-<div *ngIf="cardlist">
-    <input [(ngModel)]="cardlist.name" placeholder="Name" />
-    <div>
-      <button (click)="createCardList(cardlist)" *ngIf="!cardlist.id">Add list</button>
-      <button (click)="updateCardList(cardlist)" *ngIf="cardlist.id">Update list</button>
-      <button (click)="cancel()">Cancel</button>
+<div class="edit-form-container" *ngIf="cardlist">
+    <input class="input-title" [(ngModel)]="cardlist.name" placeholder="Enter list title..." />
+    <div class="button-container">
+      <button class="button-add" (click)="createCardList(cardlist)" *ngIf="!cardlist.id">Add list</button>
+      <button class="button-save" (click)="updateCardList(cardlist)" *ngIf="cardlist.id">Save</button>
+      <button class="button-cancel" (click)="cancel()">Cancel</button>
     </div>
 </div>

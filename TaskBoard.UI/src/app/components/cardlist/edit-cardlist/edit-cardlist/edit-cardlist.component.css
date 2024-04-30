@@ -1,0 +1,39 @@
+.button-add,
+.button-save {
+  background-color: #45538a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.button-cancel {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #cccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+  width: 50%;
+}
+
+.input-title {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #cccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+}
+
+.edit-form-container{
+  margin-top: 20px;
+}
