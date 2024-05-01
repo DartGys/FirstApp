@@ -15,14 +15,14 @@ public class CardRepository : GenericRepository<Card>, ICardRepository
                 .SetProperty(x => x.CardListId, listId));
     }
     
-    public async Task UpdateEntity(Guid id, string name, string description, DateTime dueDate, Guid priorityId, Guid listId)
+    public async Task UpdateEntity(Card entity)
     {
-        await _context.Cards.Where(x => x.Id == id)
+        await _context.Cards.Where(x => x.Id == entity.Id)
             .ExecuteUpdateAsync(e => e
-                .SetProperty(x => x.Name, name)
-                .SetProperty(x => x.Description, description)
-                .SetProperty(x => x.DueDate, dueDate)
-                .SetProperty(x => x.PriorityId, priorityId)
-                .SetProperty(x => x.CardListId, listId));
+                .SetProperty(x => x.Name, entity.Name)
+                .SetProperty(x => x.Description, entity.Description)
+                .SetProperty(x => x.DueDate, entity.DueDate)
+                .SetProperty(x => x.PriorityId, entity.PriorityId)
+                .SetProperty(x => x.CardListId, entity.CardListId));
     }
 }

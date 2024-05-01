@@ -10,6 +10,7 @@ namespace TaskBoard.BLL.Services;
 public class CardService : ICardService
 {
     private readonly IUnitOfWork _unitOfWork;
+    
     private readonly IMapper _mapper;
 
     public CardService(IUnitOfWork unitOfWork, IMapper mapper)
@@ -35,9 +36,11 @@ public class CardService : ICardService
         await _unitOfWork.SaveChangeAsync();
     }
 
-    public async Task UpdateEntityAsync(CardInputModel model)
+    public async Task UpdateEntityAsync(CardInputModel input)
     {
-        await _unitOfWork.Card.UpdateEntity(new Guid(model.Id), model.Name, model.Description, model.DueDate, model.PriorityId, model.CardListId);
+        var entity = _mapper.Map<Card>(input);
+        
+        await _unitOfWork.Card.UpdateEntity(entity);
         await _unitOfWork.SaveChangeAsync();
     }
 
