@@ -30,6 +30,14 @@ public class HistoryLogController : ControllerBase
 
         return Ok(models);
     }
+
+    [HttpGet("record/{lastRecord}")]
+    public async Task<IActionResult> GetRecords(int lastRecord)
+    {
+        var models = await _historyLogService.GetTwentyRecord(lastRecord);
+
+        return Ok(models);
+    }
     
     [HttpPost("add")]
     public async Task<IActionResult> LogCardAdd(HistoryLogAddCard input)

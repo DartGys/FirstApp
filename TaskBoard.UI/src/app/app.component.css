@@ -1,0 +1,15 @@
+.history-button {
+  background-color: transparent;
+  color: #777;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+
+.history-button:hover {
+  background-color: #f8f9fa;
+}

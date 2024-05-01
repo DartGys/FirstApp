@@ -22,23 +22,27 @@ private url = 'historylog';
     return this.http.get<HistorylogVm[]>(`${environment.apiUrl}/${this.url}`);
   }
 
+  public getTwentyRecords(lastRecord: number) : Observable<HistorylogVm[]>{
+    return this.http.get<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/record/${lastRecord}`);
+  }
+
   public logCardAdd(logAdd: HistorylogInputDeleteAddModel) : Observable<HistorylogVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}/move`, logAdd);
+    return this.http.post<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/move`, logAdd);
   }
 
   public logCardMove(logMove: HistorylogUpdateCardlist) : Observable<HistorylogVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}/move`, logMove);
+    return this.http.post<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/move`, logMove);
   }
 
   public logCardNameUpdate(logNameUpdate: HistorylogUpdateCardname) : Observable<HistorylogVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}/move`, logNameUpdate);
+    return this.http.post<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/move`, logNameUpdate);
   }
 
   public logCardPriorityUpdate(logPriorityUpdate: HistorylogUpdateCardpriority) : Observable<HistorylogVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}/move`, logPriorityUpdate);
+    return this.http.post<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/move`, logPriorityUpdate);
   }
 
   public logCardDelete(logDelete: HistorylogInputDeleteAddModel) : Observable<HistorylogVm[]>{
-    return this.http.post(`${environment.apiUrl}/${this.url}/move`, logDelete);
+    return this.http.post<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/move`, logDelete);
   }
 }

@@ -22,18 +22,27 @@ public class HistoryLogService : IHistoryLogService
     {
         var entities = await _unitOfWork.HistoryLog.GetAllAsync();
 
-        var historyLogs = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
 
-        return historyLogs;
+        return models;
     }
 
     public async Task<IEnumerable<HistoryLogVm>> GetByCardIdAsync(Guid cardId)
     {
         var entities = await _unitOfWork.HistoryLog.FindAsyncNoTracking(x => x.CardId == cardId);
 
-        var historyLog = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
 
-        return historyLog;
+        return models;
+    }
+
+    public async Task<IEnumerable<HistoryLogVm>> GetTwentyRecord(int lastRecord)
+    {
+        var entities = await _unitOfWork.HistoryLog.GetTwentyLogs(lastRecord);
+
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+
+        return models;
     }
 
     public async Task LogAddCardAsync(HistoryLogInputModel input)
