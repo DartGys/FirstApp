@@ -10,5 +10,6 @@ export class CardVmList{
   description= '';
   dueDate: Date = new Date();
   priorityName= '';
+  priorityId='';
   cardListId='';
 }

@@ -27,14 +27,12 @@ public class CardService : ICardService
         return card;
     }
 
-    public async Task<Guid> AddAsync(CardInputModel input)
+    public async Task AddAsync(CardInputModel input)
     {
         var entity = _mapper.Map<Card>(input);
 
         await _unitOfWork.Card.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
-
-        return entity.Id;
     }
 
     public async Task UpdateEntityAsync(CardInputModel model)

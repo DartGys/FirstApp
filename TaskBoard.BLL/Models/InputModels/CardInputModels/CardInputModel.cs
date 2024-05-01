@@ -17,6 +17,7 @@ public class CardInputModel : IMapWith<Card>
     public void Mapping(Profile profile)
     {
         profile.CreateMap<CardInputModel, Card>()
-            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => string.IsNullOrEmpty(src.Id) ? Guid.Empty : new Guid(src.Id)));
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => string.IsNullOrEmpty(src.Id) ? Guid.Empty : new Guid(src.Id)))
+            .ForMember(dest => dest.DueDate, opt => opt.MapFrom(src => src.DueDate.ToUniversalTime()));
     }
 }

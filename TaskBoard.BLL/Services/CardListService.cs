@@ -34,6 +34,15 @@ public class CardListService : ICardListService
         return cardLists;
     }
 
+    public async Task<IEnumerable<CardListVmList>> GetListAsync()
+    {
+        var entities = await _unitOfWork.CardList.GetAllAsyncNoTracking();
+
+        var models = _mapper.Map<IEnumerable<CardListVmList>>(entities);
+
+        return models;
+    }
+
     public async Task AddAsync(CardListInputModel input)
     {
         var entity = _mapper.Map<CardList>(input);

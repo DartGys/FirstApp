@@ -4,6 +4,7 @@ import {Observable} from "rxjs";
 import {CardlistVm} from "../models/view-models/cardlist-vm";
 import {environment} from "../../enviroments/enviroment";
 import {CardlistInputModel} from "../models/input-models/cardlist-input-model";
+import {CardlistVmList} from "../models/view-models/cardlist-vm-list";
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,10 @@ export class CardListService {
 
   public getCardLists() : Observable<CardlistVm[]>{
     return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}`);
+  }
+
+  public getCardListsList() : Observable<CardlistVmList[]>{
+    return this.http.get<CardlistVmList[]>(`${environment.apiUrl}/${this.url}/list`);
   }
 
   public createCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]> {

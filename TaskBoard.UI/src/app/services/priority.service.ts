@@ -13,7 +13,7 @@ export class PriorityService {
 
   constructor(private http: HttpClient) { }
 
-  public getPriorities() : Observable<CardlistVm[]>{
+  public getPriorities() : Observable<PriorityVm[]>{
     return this.http.get<PriorityVm[]>(`${environment.apiUrl}/${this.url}`);
   }
 }

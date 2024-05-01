@@ -23,6 +23,14 @@ public class CardListController : ControllerBase
         return Ok(models);
     }
 
+    [HttpGet("list")]
+    public async Task<IActionResult> GetList()
+    {
+        var models = await _cardListService.GetListAsync();
+
+        return Ok(models);
+    }
+
     [HttpPost]
     public async Task<IActionResult> Add([FromBody] CardListInputModel input)
     {

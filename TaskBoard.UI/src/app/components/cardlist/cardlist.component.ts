@@ -1,9 +1,13 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CardlistVm} from "../../models/view-models/cardlist-vm";
 import {CardListService} from "../../services/cardList.service";
-import {DatePipe, NgForOf, NgIf} from "@angular/common";
-import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist/edit-cardlist.component";
+import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist.component";
 import {CardlistInputModel} from "../../models/input-models/cardlist-input-model";
+import {CardInputModel} from "../../models/input-models/card-input-model";
+import {CardService} from "../../services/card.service";
+import {EditCardComponent} from "../card/edit-card/edit-card.component";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-cardlist',
@@ -12,7 +16,10 @@ import {CardlistInputModel} from "../../models/input-models/cardlist-input-model
     NgForOf,
     DatePipe,
     NgIf,
-    EditCardlistComponent
+    EditCardlistComponent,
+    NgOptimizedImage,
+    EditCardComponent,
+    FormsModule
   ],
   templateUrl: './cardlist.component.html',
   styleUrl: './cardlist.component.css'
@@ -20,7 +27,8 @@ import {CardlistInputModel} from "../../models/input-models/cardlist-input-model
 export class CardlistComponent implements OnInit{
   @Input() cardLists: CardlistVm[] = [];
   cardlistToEdit?: CardlistInputModel;
-  constructor(private cardListService: CardListService) { }
+  cardToEdit?: CardInputModel;
+  constructor(private cardListService: CardListService, private cardService: CardService) { }
 
   ngOnInit(): void {
     this.cardListService
@@ -30,7 +38,13 @@ export class CardlistComponent implements OnInit{
 
   updateCardLists(cardlists: CardlistVm[]){
     this.cardLists = cardlists;
+  }
 
+  closeCardForm(){
+    this.cardToEdit = undefined;
+  }
+
+  closeCardListForm(){
     this.cardlistToEdit = undefined;
   }
 
@@ -42,6 +56,15 @@ export class CardlistComponent implements OnInit{
     this.cardlistToEdit = cardlist;
   }
 
+  initNewCard(listId: string){
+    this.cardToEdit = new CardInputModel();
+    this.cardToEdit.cardListId = listId;
+  }
+
+  editCard(card: CardInputModel){
+    this.cardToEdit = card;
+  }
+
   deleteCardList(id: string){
     this.cardListService.deleteCardList(id).subscribe(
       (response) => {
@@ -50,7 +73,22 @@ export class CardlistComponent implements OnInit{
     );
   }
 
-  addCardButton(){
+  deleteCard(id: string){
+    this.cardService.deleteCard(id).subscribe(
+      (response) => {
+        this.cardLists = response;
+      },
+    );
+  }
 
+  selectedListId= '';
+
+  moveCardTo(cardId: string){
+    this.cardService.updateCardList(cardId, this.selectedListId).subscribe(
+      (response) => {
+        this.cardLists = response;
+      },
+    );
+    this.selectedListId = ''
   }
 }
