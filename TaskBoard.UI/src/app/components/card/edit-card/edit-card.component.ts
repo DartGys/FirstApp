@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {CardService} from "../../../services/card.service";
 import {CardInputModel} from "../../../models/input-models/card-input-model";
 import {CardlistVm} from "../../../models/view-models/cardlist-vm";
@@ -8,6 +8,7 @@ import {PriorityVm} from "../../../models/view-models/priority-vm";
 import {CardlistVmList} from "../../../models/view-models/cardlist-vm-list";
 import {CardListService} from "../../../services/cardList.service";
 import {PriorityService} from "../../../services/priority.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-edit-card',
@@ -21,7 +22,7 @@ import {PriorityService} from "../../../services/priority.service";
   templateUrl: './edit-card.component.html',
   styleUrl: './edit-card.component.css'
 })
-export class EditCardComponent implements OnInit{
+export class EditCardComponent  implements OnChanges{
   @Input() card?: CardInputModel;
   @Output() cardlistsUpdated = new EventEmitter<CardlistVm[]>();
   @Output() cardFormClose = new EventEmitter();
@@ -30,10 +31,15 @@ export class EditCardComponent implements OnInit{
 
   constructor(private cardService: CardService, private cardListService: CardListService,
               private priorityService: PriorityService) { }
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['card'] && !changes['card'].firstChange) {
+      this.loadData();
+    }
+  }
 
-  ngOnInit(): void {
-    this.loadCardlists();
+  loadData(){
     this.loadPriorities();
+    this.loadCardlists();
   }
 
   loadCardlists() {

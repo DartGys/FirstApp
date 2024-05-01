@@ -15,7 +15,11 @@ import {CardlistComponent} from "./components/cardlist/cardlist.component";
 export class AppComponent {
   title = 'TaskBoard.UI';
   cardLists: CardlistVm[] = [];
+  isSidebarOpen: boolean = false;
 
   constructor() { }
 
+  openSidebar() {
+    this.isSidebarOpen = true;
+  }
 }

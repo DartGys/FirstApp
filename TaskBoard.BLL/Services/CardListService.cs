@@ -26,7 +26,7 @@ public class CardListService : ICardListService
         {
             var cards = await _unitOfWork.Card.FindAsyncNoTracking(x => x.CardListId == cardList.Id, 
                 new CancellationToken(), x => x.Priority);
-            cardList.Cards = cards.ToList();
+            cardList.Cards = cards.OrderByDescending(x => x.DueDate).ToList();
         }
         
         var cardLists = _mapper.Map<IEnumerable<CardListVm>>(entities);
