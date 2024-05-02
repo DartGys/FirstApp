@@ -11,11 +11,13 @@ public class CardListService : ICardListService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
+    private readonly IHistoryLogService _historyLog;
 
-    public CardListService(IUnitOfWork unitOfWork, IMapper mapper)
+    public CardListService(IUnitOfWork unitOfWork, IMapper mapper, IHistoryLogService historyLog)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
+        _historyLog = historyLog;
     }
     
     public async Task<IEnumerable<CardListVm>> GetAsync()
@@ -61,9 +63,15 @@ public class CardListService : ICardListService
 
     public async Task DeleteAsync(Guid id)
     {
-        var entity = new CardList() { Id = id };
+        var cardList = await _unitOfWork.CardList.FindAsync(x => x.Id == id, new CancellationToken(), x => x.Cards);
+        var entity = cardList.First();
+        var listName = entity.Name;
+        var cards = entity.Cards;
         
         _unitOfWork.CardList.Remove(entity);
-        await _unitOfWork.SaveChangeAsync();
+        int saveChange = await _unitOfWork.SaveChangeAsync();
+
+        if (saveChange > 0)
+            await _historyLog.LogDeleteCardWithList(cards.Select(x => x.Name), listName);
     }
 }

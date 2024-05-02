@@ -11,10 +11,10 @@ public static class DependencyInjection
     {
         services.AddAutoMapper(typeof(AssemblyMappingProfile).Assembly); 
 
-        services.AddScoped<ICardService, CardService>();
         services.AddScoped<ICardListService, CardListService>();
-        services.AddScoped<IHistoryLogService, HistoryLogService>();
+        services.AddScoped<ICardService, CardService>();
         services.AddScoped<IPriorityService, PriorityService>();
+        services.AddScoped<IHistoryLogService, HistoryLogService>();
 
         return services;
     }

@@ -1,5 +1,6 @@
 using AutoMapper;
 using TaskBoard.BLL.Interfaces.Services;
+using TaskBoard.BLL.Models.HistoryLogInputModels;
 using TaskBoard.BLL.Models.InputModels;
 using TaskBoard.BLL.Models.ViewModels.Details;
 using TaskBoard.DAL.Data.Entities;
@@ -10,13 +11,14 @@ namespace TaskBoard.BLL.Services;
 public class CardService : ICardService
 {
     private readonly IUnitOfWork _unitOfWork;
-    
     private readonly IMapper _mapper;
+    private readonly IHistoryLogService _historyLog;
 
-    public CardService(IUnitOfWork unitOfWork, IMapper mapper)
+    public CardService(IUnitOfWork unitOfWork, IMapper mapper, IHistoryLogService historyLog)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
+        _historyLog = historyLog;
     }
 
     public async Task<CardVmDetails> GetByIdAsync(Guid id)
@@ -33,28 +35,43 @@ public class CardService : ICardService
         var entity = _mapper.Map<Card>(input);
 
         await _unitOfWork.Card.AddAsync(entity);
-        await _unitOfWork.SaveChangeAsync();
+        var saveChange = await _unitOfWork.SaveChangeAsync();
+        
+        if(saveChange == 1)
+            await _historyLog.LogAddCardAsync(entity.Id, entity.Name, entity.CardListId);
     }
 
     public async Task UpdateEntityAsync(CardInputModel input)
     {
         var entity = _mapper.Map<Card>(input);
+        var entityBeforeUpd = await _unitOfWork.Card.GetById(entity.Id);
         
         await _unitOfWork.Card.UpdateEntity(entity);
-        await _unitOfWork.SaveChangeAsync();
+        var saveChange = await _unitOfWork.SaveChangeAsync();
+
+        if (saveChange == 0)
+            await _historyLog.CardEqual(entityBeforeUpd, entity);
     }
 
     public async Task UpdateListAsync(Guid cardId, Guid listId)
     {
+        var entityBeforeUpd = await _unitOfWork.Card.GetById(cardId);
+        
         await _unitOfWork.Card.UpdateCardList(cardId, listId);
-        await _unitOfWork.SaveChangeAsync();
+        var saveChange = await _unitOfWork.SaveChangeAsync();
+
+        if (saveChange == 0)
+            await _historyLog.LogMoveCardAsync(cardId, entityBeforeUpd.Name, entityBeforeUpd.CardListId, listId);
     }
 
     public async Task DeleteAsync(Guid id)
     {
-        var entity = new Card() { Id = id };
+        var entity = await _unitOfWork.Card.GetById(id);
         
         _unitOfWork.Card.Remove(entity);
-        await _unitOfWork.SaveChangeAsync();
+        int saveChange = await _unitOfWork.SaveChangeAsync();
+
+        if (saveChange == 1)
+            await _historyLog.LogDeleteCard(entity.Name, entity.CardListId);
     }
 }

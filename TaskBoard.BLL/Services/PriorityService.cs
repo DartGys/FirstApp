@@ -24,4 +24,13 @@ public class PriorityService : IPriorityService
 
         return priorities;
     }
+
+    public async Task<PriorityVm> GetById(Guid id)
+    {
+        var entity = await _unitOfWork.Priority.GetById(id);
+
+        var priority = _mapper.Map<PriorityVm>(entity);
+
+        return priority;
+    }
 }

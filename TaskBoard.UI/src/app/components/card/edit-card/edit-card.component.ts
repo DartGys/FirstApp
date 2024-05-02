@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, Output, SimpleChanges} from '@angular/core';
 import {CardService} from "../../../services/card.service";
 import {CardInputModel} from "../../../models/input-models/card-input-model";
 import {CardlistVm} from "../../../models/view-models/cardlist-vm";
@@ -8,7 +8,6 @@ import {PriorityVm} from "../../../models/view-models/priority-vm";
 import {CardlistVmList} from "../../../models/view-models/cardlist-vm-list";
 import {CardListService} from "../../../services/cardList.service";
 import {PriorityService} from "../../../services/priority.service";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-edit-card',
@@ -61,7 +60,6 @@ export class EditCardComponent  implements OnChanges{
   }
 
   createCard(card: CardInputModel){
-    console.log(card);
     this.cardService
       .createCard(card)
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));

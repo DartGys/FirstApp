@@ -9,7 +9,7 @@
         <div class="circle"></div>
         <p class="change-description" [innerHTML]="log.changeDescription"></p>
       </div>
-      <p class="change-date">{{ log.changeDate | date: 'EEE, d MMM' }}</p>
+      <p class="change-date">{{ log.changeDate | date: 'EEE, d MMM HH:mm' }}</p>
     </div>
   </div>
   <button class="show-more-button" (click)="loadHistory()">Show more</button>

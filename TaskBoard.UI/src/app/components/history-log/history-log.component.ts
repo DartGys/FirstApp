@@ -26,6 +26,7 @@ export class HistoryLogComponent implements OnChanges{
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    this.historyLogs = undefined;
     if (changes['isOpen'] && !changes['isOpen'].firstChange) {
       this.loadHistory();
     }

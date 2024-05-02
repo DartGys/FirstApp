@@ -45,48 +45,125 @@ public class HistoryLogService : IHistoryLogService
         return models;
     }
 
-    public async Task LogAddCardAsync(HistoryLogInputModel input)
+    public async Task LogAddCardAsync(Guid cardId, string cardName, Guid listId)
     {
-        var model = (HistoryLogAddCard)input;
+        var cardList = await _unitOfWork.CardList.GetById(listId);
+
+        var model = new HistoryLogAddCard()
+        {
+            CardId = cardId,
+            CardName = cardName,
+            ListName = cardList.Name
+        };
+        
         var entity = _mapper.Map<HistoryLog>(model);
 
         await _unitOfWork.HistoryLog.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
     }
 
-    public async Task LogMoveCardAsync(HistoryLogInputModel input)
+    public async Task LogMoveCardAsync(Guid cardId, string cardName, Guid previousCardListId, Guid newCardListId)
     {
-        var model = (HistoryLogUpdateCardList)input;
+        var previousCardList = await _unitOfWork.CardList.GetById(previousCardListId);
+        var newCardList = await _unitOfWork.CardList.GetById(newCardListId);
+
+        var model = new HistoryLogUpdateCardList()
+        {
+            CardId = cardId,
+            CardName = cardName,
+            NewCardList = newCardList.Name,
+            PreviousCardList = previousCardList.Name
+        };
+        
         var entity = _mapper.Map<HistoryLog>(model);
 
         await _unitOfWork.HistoryLog.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
     }
 
-    public async Task LogUpdateCardNameAsync(HistoryLogInputModel input)
+    public async Task LogUpdateCardNameAsync(Guid cardId, string cardName, string previousCardName)
     {
-        var model = (HistoryLogUpdateCardName)input;
+        var model = new HistoryLogUpdateCardName()
+        {
+            CardId = cardId,
+            CardName = cardName,
+            PreviousCardName = previousCardName
+        };
+            
         var entity = _mapper.Map<HistoryLog>(model);
 
         await _unitOfWork.HistoryLog.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
     }
 
-    public async Task LogUpdateCardPriority(HistoryLogInputModel input)
+    public async Task LogUpdateCardPriority(Guid cardId, string cardName, Guid previousCardPriorityId, Guid newCardPriorityId)
     {
-        var model = (HistoryLogUpdateCardPriority)input;
+        var previousCardPriority = await _unitOfWork.CardList.GetById(previousCardPriorityId);
+        var newCardPriority = await _unitOfWork.CardList.GetById(newCardPriorityId);
+        
+        var model = new HistoryLogUpdateCardPriority()
+        {
+            CardId = cardId,
+            CardName = cardName,
+            PreviousCardPriority = previousCardPriority.Name,
+            NewCardPriority = newCardPriority.Name
+        };
+        
         var entity = _mapper.Map<HistoryLog>(model);
 
         await _unitOfWork.HistoryLog.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
     }
 
-    public async Task LogDeleteCard(HistoryLogInputModel input)
+    public async Task LogDeleteCard(string cardName, Guid listId)
     {
-        var model = (HistoryLogDeleteCard)input;
+        var cardList = await _unitOfWork.CardList.GetById(listId);
+
+        var model = new HistoryLogDeleteCard()
+        {
+            CardId = null,
+            CardName = cardName,
+            ListName = cardList.Name
+        };
+        
         var entity = _mapper.Map<HistoryLog>(model);
 
         await _unitOfWork.HistoryLog.AddAsync(entity);
         await _unitOfWork.SaveChangeAsync();
+    }
+
+    public async Task LogDeleteCardWithList(IEnumerable<string> cardNames, string listName)
+    {
+        var model = new HistoryLogDeleteList()
+        {
+            CardNames = cardNames,
+            ListName = listName,
+        };
+
+        var entity = _mapper.Map<HistoryLog>(model);
+
+        await _unitOfWork.HistoryLog.AddAsync(entity);
+        await _unitOfWork.SaveChangeAsync();
+    }
+
+    public async Task CardEqual(Card previousCard, Card newCard)
+    {
+        // log update name
+        if (previousCard.Name != newCard.Name)
+        {
+            await this.LogUpdateCardNameAsync(newCard.Id, newCard.Name, previousCard.Name);
+        }
+        
+        //log update list
+        if (previousCard.CardListId != newCard.CardListId)
+        {
+            await this.LogMoveCardAsync(newCard.Id, newCard.Name, previousCard.CardListId, newCard.CardListId);
+        }
+        
+        //log update priority
+        if (previousCard.PriorityId != newCard.PriorityId)
+        {
+            await this.LogUpdateCardPriority(newCard.Id, newCard.Name, previousCard.PriorityId, newCard.PriorityId);
+        }
     }
 }
