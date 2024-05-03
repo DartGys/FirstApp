@@ -1,4 +1,4 @@
-export class HistorylogVm{
-  changeDescription= '';
-  changeDate: Date = new Date();
-}
+  export class HistorylogVm{
+    changeDescription= '';
+    changeDate: Date = new Date();
+  }

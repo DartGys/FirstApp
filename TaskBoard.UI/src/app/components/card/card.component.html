@@ -1,0 +1,44 @@
+<div *ngIf="card" class="modal-container">
+  <div class="modal-dialog" role="document">
+    <div class="modal-body">
+      <button class="close-button" (click)="cancel()">×</button>
+      <div class="left-pane">
+        <div class="card-details">
+          <div class="card-info">
+            <div class="card-name">{{ card.name }}</div>
+          </div>
+          <div class="card-info">
+            <div class="card-info-label">List:</div>
+            <div class="card-info-value">{{ card.cardListName }}</div>
+          </div>
+          <div class="card-info">
+            <div class="card-info-label">Due Date:</div>
+            <div class="card-info-value">{{ card.dueDate | date:'EEE, dd MMMM' }}</div>
+          </div>
+          <div class="card-info">
+            <div class="card-info-label">Priority:</div>
+            <div class="card-info-value">{{ card.priorityName }}</div>
+          </div>
+          <div class="card-description">
+            <div class="card-info-label-description">Description:</div>
+            <div class="card-info-value-description">{{ card.description }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-pane">
+        <div class="history-logs">
+          <h3>Activity</h3>
+          <div class="logs">
+            <div *ngFor="let log of card.historyLogs">
+              <div class="log">
+                <div class="circle"></div>
+                <p [innerHTML]="log.changeDescription"></p>
+                <p class="date">{{ log.changeDate | date: 'EEE, d MMM HH:mm' }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

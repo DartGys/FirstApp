@@ -53,6 +53,7 @@
 .card-header h4 {
   font-size: 18px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .card-content {

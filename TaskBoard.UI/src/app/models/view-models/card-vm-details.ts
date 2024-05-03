@@ -9,5 +9,6 @@ export class CardVmDetails{
   priorityId= '';
   priorityName= '';
   cardListId= '';
-  historyLog: HistorylogVm[] = [];
+  cardListName= '';
+  historyLogs: HistorylogVm[] = [];
 }

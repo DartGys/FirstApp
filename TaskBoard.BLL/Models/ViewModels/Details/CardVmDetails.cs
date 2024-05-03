@@ -15,11 +15,13 @@ public class CardVmDetails : IMapWith<Card>
     public Guid PriorityId { get; set; }
     public string PriorityName { get; set; }
     public Guid CardListId { get; set; }
+    public string CardListName { get; set; }
     public IReadOnlyList<HistoryLogVm> HistoryLogs { get; set; }
 
     public void Mapping(Profile profile)
     {
         profile.CreateMap<Card, CardVmDetails>()
-            .ForMember(dest => dest.PriorityName, opt => opt.MapFrom(src => src.Priority.Name));
+            .ForMember(dest => dest.PriorityName, opt => opt.MapFrom(src => src.Priority.Name))
+            .ForMember(dest => dest.CardListName, opt => opt.MapFrom(src => src.CardList.Name));
     }
 }

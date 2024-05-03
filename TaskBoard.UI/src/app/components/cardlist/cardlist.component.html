@@ -17,7 +17,7 @@
     <div class="cards-container">
       <div class="card-item" *ngFor="let card of cardList.cards">
         <div class="card-name-menu">
-          <div class="card-header">
+          <div class="card-header" (click)="showCard(card.id)">
             <h4>{{ card.name }}</h4>
           </div>
           <div class="menu-button">
@@ -67,5 +67,10 @@
   (cardlistsUpdated)="updateCardLists($event)"
   (cardFormClose)="closeCardForm()"
 ></app-edit-card>
+
+<app-card
+  [cardId]="cardIdToShow"
+  (cardClose) ="closeCard()"
+></app-card>
 
 

@@ -14,8 +14,8 @@ export class CardService {
 
   constructor(private http: HttpClient) { }
 
-  public getCard() : Observable<CardVmDetails>{
-    return this.http.get<CardVmDetails>(`${environment.apiUrl}/${this.url}`);
+  public getCard(cardId: string) : Observable<CardVmDetails>{
+    return this.http.get<CardVmDetails>(`${environment.apiUrl}/${this.url}/${cardId}`);
   }
 
   public createCard(card: CardInputModel) : Observable<CardlistVm[]>{

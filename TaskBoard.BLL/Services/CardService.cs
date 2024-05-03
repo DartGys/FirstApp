@@ -23,7 +23,7 @@ public class CardService : ICardService
 
     public async Task<CardVmDetails> GetByIdAsync(Guid id)
     {
-        var entity = await _unitOfWork.Card.GetById(id, CancellationToken.None, c => c.Priority);
+        var entity = await _unitOfWork.Card.GetById(id, CancellationToken.None, c => c.Priority, c => c.CardList, c => c.HistoryLogs);
 
         var card = _mapper.Map<CardVmDetails>(entity);
 

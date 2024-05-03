@@ -8,6 +8,7 @@ import {CardInputModel} from "../../models/input-models/card-input-model";
 import {CardService} from "../../services/card.service";
 import {EditCardComponent} from "../card/edit-card/edit-card.component";
 import {FormsModule} from "@angular/forms";
+import {CardComponent} from "../card/card.component";
 
 @Component({
   selector: 'app-cardlist',
@@ -19,7 +20,8 @@ import {FormsModule} from "@angular/forms";
     EditCardlistComponent,
     NgOptimizedImage,
     EditCardComponent,
-    FormsModule
+    FormsModule,
+    CardComponent
   ],
   templateUrl: './cardlist.component.html',
   styleUrl: './cardlist.component.css'
@@ -28,6 +30,8 @@ export class CardlistComponent implements OnInit{
   @Input() cardLists: CardlistVm[] = [];
   cardlistToEdit?: CardlistInputModel;
   cardToEdit?: CardInputModel;
+  cardIdToShow?: string;
+
   constructor(private cardListService: CardListService, private cardService: CardService) { }
 
   ngOnInit(): void {
@@ -63,6 +67,14 @@ export class CardlistComponent implements OnInit{
 
   editCard(card: CardInputModel){
     this.cardToEdit = card;
+  }
+
+  showCard(cardId:string){
+    this.cardIdToShow = cardId;
+  }
+
+  closeCard(){
+    this.cardIdToShow = undefined;
   }
 
   deleteCardList(id: string){
