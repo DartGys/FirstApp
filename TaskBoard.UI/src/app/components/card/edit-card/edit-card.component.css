@@ -50,7 +50,7 @@
 .description-input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -83,6 +83,10 @@
   width: 48%;
 }
 
+.form-group{
+  margin: 10px;
+}
+
 .button-add {
   background-color: #007bff;
   color: #fff;
@@ -97,4 +101,9 @@
   background-color: #fff;
   color: #000;
   border: 1px solid #ccc;
+}
+
+.text-danger{
+  color: red;
+  margin: 0;
 }

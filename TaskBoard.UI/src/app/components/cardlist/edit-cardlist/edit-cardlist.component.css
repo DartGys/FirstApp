@@ -37,3 +37,12 @@
 .edit-form-container{
   margin-top: 20px;
 }
+
+.form-group{
+  margin: 10px;
+}
+
+.text-danger{
+  color: red;
+  margin: 0;
+}

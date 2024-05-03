@@ -19,11 +19,19 @@ export class EditCardlistComponent {
   @Input() cardlist?: CardlistInputModel;
   @Output() cardlistsUpdated = new EventEmitter<CardlistVm[]>();
   @Output() cardListFormClose = new EventEmitter();
+  errors: { [key: string]: string[] } = {};
 
 
   constructor(private cardListService: CardListService) { }
 
   createCardList(cardlist: CardlistInputModel){
+
+    this.errors = cardlist.validate();
+
+    if (Object.keys(this.errors).length > 0) {
+      return;
+    }
+
     this.cardListService
       .createCardList(cardlist)
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
@@ -32,6 +40,13 @@ export class EditCardlistComponent {
   }
 
   updateCardList(cardlist: CardlistInputModel){
+
+    this.errors = cardlist.validate();
+
+    if (Object.keys(this.errors).length > 0) {
+      return;
+    }
+
     this.cardListService
       .updateCardList(cardlist)
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
@@ -41,5 +56,6 @@ export class EditCardlistComponent {
 
   cancel(){
     this.cardListFormClose.emit();
+    this.errors = {};
   }
 }

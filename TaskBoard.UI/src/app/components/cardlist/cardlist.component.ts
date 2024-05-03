@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {CardlistVm} from "../../models/view-models/cardlist-vm";
+import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
 import {CardListService} from "../../services/cardList.service";
 import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist.component";
@@ -56,8 +56,11 @@ export class CardlistComponent implements OnInit{
     this.cardlistToEdit = new CardlistInputModel();
   }
 
-  editCardList(cardlist: CardlistInputModel){
-    this.cardlistToEdit = cardlist;
+  editCardList(cardlist: CardlistVm){
+    this.cardlistToEdit = Object.assign(new CardlistInputModel(), {
+      id: cardlist.id,
+      name: cardlist.name
+    })
   }
 
   initNewCard(listId: string){
@@ -65,8 +68,15 @@ export class CardlistComponent implements OnInit{
     this.cardToEdit.cardListId = listId;
   }
 
-  editCard(card: CardInputModel){
-    this.cardToEdit = card;
+  editCard(card: CardVmList){
+    this.cardToEdit =  Object.assign(new CardInputModel(), {
+      id: card.id,
+      name: card.name,
+      description: card.description,
+      dueDate: card.dueDate,
+      priorityId: card.priorityId,
+      cardListId: card.cardListId
+    });
   }
 
   showCard(cardId:string){

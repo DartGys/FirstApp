@@ -27,6 +27,7 @@ export class EditCardComponent  implements OnChanges{
   @Output() cardFormClose = new EventEmitter();
    cardlists: CardlistVmList[] = [];
    priorities: PriorityVm[] = [];
+   errors: { [key: string]: string[] } = {};
 
   constructor(private cardService: CardService, private cardListService: CardListService,
               private priorityService: PriorityService) { }
@@ -57,9 +58,17 @@ export class EditCardComponent  implements OnChanges{
 
   cancel() {
     this.cardFormClose.emit();
+    this.errors = {};
   }
 
   createCard(card: CardInputModel){
+
+    this.errors = card.validate();
+
+    if (Object.keys(this.errors).length > 0) {
+      return;
+    }
+
     this.cardService
       .createCard(card)
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
@@ -68,6 +77,13 @@ export class EditCardComponent  implements OnChanges{
   }
 
   updateCard(card: CardInputModel){
+
+    this.errors = card.validate();
+
+    if (Object.keys(this.errors).length > 0) {
+      return;
+    }
+
     this.cardService
       .updateCard(card)
       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
