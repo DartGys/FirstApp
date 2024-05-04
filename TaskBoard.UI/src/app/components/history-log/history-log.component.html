@@ -1,0 +1,16 @@
+<div *ngIf="historyLogs && isOpen" class="sidebar">
+  <div class="sidebar-header">
+    <h2>History</h2>
+    <button class="close-button" (click)="close()">×</button>
+  </div>
+  <div class="history-list">
+    <div class="history-item" *ngFor="let log of historyLogs">
+      <div class="text-with-circle">
+        <div class="circle"></div>
+        <p class="change-description" [innerHTML]="log.changeDescription"></p>
+      </div>
+      <p class="change-date">{{ log.changeDate | date: 'EEE, d MMM HH:mm' }}</p>
+    </div>
+  </div>
+  <button class="show-more-button" (click)="loadHistory()">Show more</button>
+</div>

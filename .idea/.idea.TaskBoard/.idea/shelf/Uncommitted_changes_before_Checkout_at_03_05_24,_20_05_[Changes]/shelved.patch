@@ -1,0 +1,113 @@
+Index: TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {Component, Input, OnInit} from '@angular/core';\nimport {CardlistVm} from \"../../models/view-models/cardlist-vm\";\nimport {CardListService} from \"../../services/cardList.service\";\nimport {DatePipe, NgForOf, NgIf, NgOptimizedImage} from \"@angular/common\";\nimport {EditCardlistComponent} from \"./edit-cardlist/edit-cardlist.component\";\nimport {CardlistInputModel} from \"../../models/input-models/cardlist-input-model\";\nimport {CardInputModel} from \"../../models/input-models/card-input-model\";\nimport {CardService} from \"../../services/card.service\";\nimport {EditCardComponent} from \"../card/edit-card/edit-card.component\";\nimport {FormsModule} from \"@angular/forms\";\nimport {CardComponent} from \"../card/card.component\";\n\n@Component({\n  selector: 'app-cardlist',\n  standalone: true,\n  imports: [\n    NgForOf,\n    DatePipe,\n    NgIf,\n    EditCardlistComponent,\n    NgOptimizedImage,\n    EditCardComponent,\n    FormsModule,\n    CardComponent\n  ],\n  templateUrl: './cardlist.component.html',\n  styleUrl: './cardlist.component.css'\n})\nexport class CardlistComponent implements OnInit{\n  @Input() cardLists: CardlistVm[] = [];\n  cardlistToEdit?: CardlistInputModel;\n  cardToEdit?: CardInputModel;\n  cardIdToShow?: string;\n\n  constructor(private cardListService: CardListService, private cardService: CardService) { }\n\n  ngOnInit(): void {\n    this.cardListService\n      .getCardLists()\n      .subscribe((result: CardlistVm[]) => (this.cardLists = result));\n  }\n\n  updateCardLists(cardlists: CardlistVm[]){\n    this.cardLists = cardlists;\n  }\n\n  closeCardForm(){\n    this.cardToEdit = undefined;\n  }\n\n  closeCardListForm(){\n    this.cardlistToEdit = undefined;\n  }\n\n  initNewCardList(){\n    this.cardlistToEdit = new CardlistInputModel();\n  }\n\n  editCardList(cardlist: CardlistInputModel){\n    this.cardlistToEdit = cardlist;\n  }\n\n  initNewCard(listId: string){\n    this.cardToEdit = new CardInputModel();\n    this.cardToEdit.cardListId = listId;\n  }\n\n  editCard(card: CardInputModel){\n    this.cardToEdit = card;\n  }\n\n  showCard(cardId:string){\n    this.cardIdToShow = cardId;\n  }\n\n  closeCard(){\n    this.cardIdToShow = undefined;\n  }\n\n  deleteCardList(id: string){\n    this.cardListService.deleteCardList(id).subscribe(\n      (response) => {\n        this.cardLists = response;\n      },\n    );\n  }\n\n  deleteCard(id: string){\n    this.cardService.deleteCard(id).subscribe(\n      (response) => {\n        this.cardLists = response;\n      },\n    );\n  }\n\n  selectedListId= '';\n\n  moveCardTo(cardId: string){\n    this.cardService.updateCardList(cardId, this.selectedListId).subscribe(\n      (response) => {\n        this.cardLists = response;\n      },\n    );\n    this.selectedListId = ''\n  }\n}\n
+===================================================================
+diff --git a/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts b/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts
+--- a/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts	
++++ b/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts	
+@@ -1,5 +1,5 @@
+ import {Component, Input, OnInit} from '@angular/core';
+-import {CardlistVm} from "../../models/view-models/cardlist-vm";
++import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
+ import {CardListService} from "../../services/cardList.service";
+ import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+ import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist.component";
+@@ -65,8 +65,15 @@
+     this.cardToEdit.cardListId = listId;
+   }
+ 
+-  editCard(card: CardInputModel){
+-    this.cardToEdit = card;
++  editCard(card: CardVmList){
++    this.cardToEdit = Object.assign(new CardInputModel(), {
++      id: card.id,
++      name: card.name,
++      description: card.description,
++      dueDate: card.dueDate,
++      priorityId: card.priorityId,
++      cardListId: card.cardListId
++    });
+   }
+ 
+   showCard(cardId:string){
+Index: TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div *ngIf=\"card\" class=\"modal-container\">\n  <div class=\"modal\">\n    <div class=\"modal-header\">\n      <button class=\"close-button\" (click)=\"cancel()\">×</button>\n    </div>\n    <div class=\"modal-content\">\n      <input class=\"card-name-input\" [(ngModel)]=\"card.name\" placeholder=\"Enter card name\" />\n      <div class=\"label-input\">\n        <label>List: </label>\n        <select class=\"cardlist-dropdown\" [(ngModel)]=\"card.cardListId\">\n          <option value=\"\" disabled selected>Select List</option>\n          <option *ngFor=\"let cardlist of cardlists\" [value]=\"cardlist.id\">{{ cardlist.name }}</option>\n        </select>\n      </div>\n      <div class=\"label-input\">\n        <label>Due Date: </label>\n        <input type=\"date\" class=\"duedate-input\" [(ngModel)]=\"card.dueDate\"/>\n      </div>\n      <div class=\"label-input\">\n        <label>Priority: </label>\n        <select class=\"priority-dropdown\" [(ngModel)]=\"card.priorityId\">\n          <option value=\"\" disabled selected>Select priority</option>\n          <option  *ngFor=\"let priority of priorities\" [value]=\"priority.id\">{{ priority.name }}</option>\n        </select>\n      </div>\n      <label>Description: </label>\n      <textarea class=\"description-input\" [(ngModel)]=\"card.description\" placeholder=\"Enter description\"></textarea>\n    </div>\n    <div class=\"button-container\">\n      <button class=\"button-add\" (click)=\"createCard(card)\" *ngIf=\"!card.id\">Add list</button>\n      <button class=\"button-save\" (click)=\"updateCard(card)\" *ngIf=\"card.id\">Save</button>\n      <button class=\"button-cancel\" (click)=\"cancel()\">Cancel</button>\n    </div>\n  </div>\n</div>\n
+===================================================================
+diff --git a/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html b/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html
+--- a/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html	
++++ b/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html	
+@@ -4,7 +4,12 @@
+       <button class="close-button" (click)="cancel()">×</button>
+     </div>
+     <div class="modal-content">
+-      <input class="card-name-input" [(ngModel)]="card.name" placeholder="Enter card name" />
++      <div class="form-group">
++        <input class="card-name-input" [(ngModel)]="card.name" placeholder="Enter card name" />
++        <div *ngIf="errors['name']" class="text-danger">
++          <p *ngFor="let error of errors['name']"> {{ error }}</p>
++        </div>
++      </div>
+       <div class="label-input">
+         <label>List: </label>
+         <select class="cardlist-dropdown" [(ngModel)]="card.cardListId">
+Index: TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {Component, EventEmitter, Input, OnChanges, Output, SimpleChanges} from '@angular/core';\nimport {CardService} from \"../../../services/card.service\";\nimport {CardInputModel} from \"../../../models/input-models/card-input-model\";\nimport {CardlistVm} from \"../../../models/view-models/cardlist-vm\";\nimport {NgForOf, NgIf} from \"@angular/common\";\nimport {FormsModule} from \"@angular/forms\";\nimport {PriorityVm} from \"../../../models/view-models/priority-vm\";\nimport {CardlistVmList} from \"../../../models/view-models/cardlist-vm-list\";\nimport {CardListService} from \"../../../services/cardList.service\";\nimport {PriorityService} from \"../../../services/priority.service\";\n\n@Component({\n  selector: 'app-edit-card',\n  standalone: true,\n  imports: [\n    FormsModule,\n    NgIf,\n    NgForOf\n\n  ],\n  templateUrl: './edit-card.component.html',\n  styleUrl: './edit-card.component.css'\n})\nexport class EditCardComponent  implements OnChanges{\n  @Input() card?: CardInputModel;\n  @Output() cardlistsUpdated = new EventEmitter<CardlistVm[]>();\n  @Output() cardFormClose = new EventEmitter();\n   cardlists: CardlistVmList[] = [];\n   priorities: PriorityVm[] = [];\n\n  constructor(private cardService: CardService, private cardListService: CardListService,\n              private priorityService: PriorityService) { }\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes['card'] && !changes['card'].firstChange) {\n      this.loadData();\n    }\n  }\n\n  loadData(){\n    this.loadPriorities();\n    this.loadCardlists();\n  }\n\n  loadCardlists() {\n    this.cardListService.getCardListsList()\n      .subscribe((data: CardlistVmList[]) => {\n        this.cardlists = data;\n      });\n  }\n\n  loadPriorities() {\n    this.priorityService.getPriorities()\n      .subscribe((data: PriorityVm[]) => {\n        this.priorities = data;\n      });\n  }\n\n  cancel() {\n    this.cardFormClose.emit();\n  }\n\n  createCard(card: CardInputModel){\n    this.cardService\n      .createCard(card)\n      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));\n\n    this.cancel();\n  }\n\n  updateCard(card: CardInputModel){\n    this.cardService\n      .updateCard(card)\n      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));\n\n    this.cancel();\n  }\n}\n
+===================================================================
+diff --git a/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts b/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts
+--- a/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts	
++++ b/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts	
+@@ -27,6 +27,7 @@
+   @Output() cardFormClose = new EventEmitter();
+    cardlists: CardlistVmList[] = [];
+    priorities: PriorityVm[] = [];
++   errors: { [key: string]: string[] } = {};
+ 
+   constructor(private cardService: CardService, private cardListService: CardListService,
+               private priorityService: PriorityService) { }
+@@ -60,6 +61,15 @@
+   }
+ 
+   createCard(card: CardInputModel){
++    const errors = card.validate();
++
++    console.log(errors['name']);
++
++    if(Object.keys(errors).length > 0){
++
++      return;
++    }
++
+     this.cardService
+       .createCard(card)
+       .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
+Index: TaskBoard.UI/src/app/models/input-models/card-input-model.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export class CardInputModel{\n  id= '';\n  name= '';\n  description= '';\n  dueDate: Date = new Date();\n  priorityId= '';\n  cardListId= '';\n}\n
+===================================================================
+diff --git a/TaskBoard.UI/src/app/models/input-models/card-input-model.ts b/TaskBoard.UI/src/app/models/input-models/card-input-model.ts
+--- a/TaskBoard.UI/src/app/models/input-models/card-input-model.ts	
++++ b/TaskBoard.UI/src/app/models/input-models/card-input-model.ts	
+@@ -5,4 +5,17 @@
+   dueDate: Date = new Date();
+   priorityId= '';
+   cardListId= '';
++
++  validate(): { [key: string]: string[] } {
++    const errors: { [key: string]: string[] } = {};
++
++    // Перевірка на наявність ім'я
++    if (!this.name.trim()) {
++      errors['name'] = ['Card name is required'];
++    } else if (this.name.length > 100) {
++      errors['name'] = ['Card name must be less than 100 characters'];
++    }
++
++    return errors;
++  }
+ }

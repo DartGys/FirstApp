@@ -1,0 +1,13 @@
+<div class="edit-form-container" *ngIf="cardlist">
+  <div class="form-group">
+    <input class="input-title" [(ngModel)]="cardlist.name" placeholder="Enter list title..." />
+    <div *ngIf="errors['name']" class="text-danger">
+      <p class="text-danger">{{ errors['name'] }}</p>
+    </div>
+  </div>
+    <div class="button-container">
+      <button class="button-add" (click)="createCardList(cardlist)" *ngIf="!cardlist.id">Add list</button>
+      <button class="button-save" (click)="updateCardList(cardlist)" *ngIf="cardlist.id">Save</button>
+      <button class="button-cancel" (click)="cancel()">Cancel</button>
+    </div>
+</div>

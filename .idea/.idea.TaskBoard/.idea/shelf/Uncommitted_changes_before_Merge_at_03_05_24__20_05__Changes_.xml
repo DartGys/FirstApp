@@ -1,0 +1,149 @@
+<changelist name="Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]" date="1714755963772" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 03.05.24, 20:05 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL2.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL2.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL3.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL4.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL5.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL4.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" />
+    <option name="AFTER_PATH" value="TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI3.dll" />
+  </binary>
+</changelist>

@@ -1,0 +1,13 @@
+<h1>My Task Board</h1>
+
+<button class="history-button" (click)="openSidebar()">History</button>
+
+<div class="app-container">
+  <app-cardlist [cardLists]="cardLists"></app-cardlist>
+</div>
+
+<app-history-log
+  [isOpen]="isSidebarOpen"
+  (historyLogClose)="closeSidebar()"
+></app-history-log>
+

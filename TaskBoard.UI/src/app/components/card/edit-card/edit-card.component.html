@@ -1,0 +1,55 @@
+<div *ngIf="card" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="close-button" (click)="cancel()">×</button>
+    </div>
+    <div class="modal-content">
+      <div class="form-group">
+        <input class="card-name-input" [(ngModel)]="card.name" placeholder="Enter card name" />
+        <div *ngIf="errors['name']" class="text-danger">
+          <p class="text-danger">{{ errors['name'] }}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label-input">
+          <label>List: </label>
+          <select class="cardlist-dropdown" [(ngModel)]="card.cardListId">
+            <option value="" disabled selected>Select List</option>
+            <option *ngFor="let cardlist of cardlists" [value]="cardlist.id">{{ cardlist.name }}</option>
+          </select>
+        </div>
+        <div *ngIf="errors['cardList']" class="text-danger">
+          <p class="text-danger">{{ errors['cardList'] }}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label-input">
+          <label>Due Date: </label>
+          <input type="date" class="duedate-input" [(ngModel)]="card.dueDate"/>
+        </div>
+        <div *ngIf="errors['dueDate']" class="text-danger">
+          <p class="text-danger">{{ errors['dueDate'] }}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label-input">
+          <label>Priority: </label>
+          <select class="priority-dropdown" [(ngModel)]="card.priorityId">
+            <option value="" disabled selected>Select priority</option>
+            <option  *ngFor="let priority of priorities" [value]="priority.id">{{ priority.name }}</option>
+          </select>
+        </div>
+        <div *ngIf="errors['priority']" class="text-danger">
+          <p class="text-danger">{{ errors['priority'] }}</p>
+        </div>
+      </div>
+      <label>Description: </label>
+      <textarea class="description-input" [(ngModel)]="card.description" placeholder="Enter description"></textarea>
+    </div>
+    <div class="button-container">
+      <button class="button-add" (click)="createCard(card)" *ngIf="!card.id">Add list</button>
+      <button class="button-save" (click)="updateCard(card)" *ngIf="card.id">Save</button>
+      <button class="button-cancel" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

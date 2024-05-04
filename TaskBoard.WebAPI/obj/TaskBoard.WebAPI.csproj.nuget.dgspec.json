@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj": {}
+  },
+  "projects": {
+    "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj",
+        "projectName": "TaskBoard.BLL",
+        "projectPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj",
+        "packagesPath": "/home/bohdan/.nuget/packages/",
+        "outputPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bohdan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/TaskBoard.DAL.csproj": {
+                "projectPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/TaskBoard.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/bohdan/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/TaskBoard.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/TaskBoard.DAL.csproj",
+        "projectName": "TaskBoard.DAL",
+        "projectPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/TaskBoard.DAL.csproj",
+        "packagesPath": "/home/bohdan/.nuget/packages/",
+        "outputPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bohdan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/bohdan/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj",
+        "projectName": "TaskBoard.WebAPI",
+        "projectPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj",
+        "packagesPath": "/home/bohdan/.nuget/packages/",
+        "outputPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bohdan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj": {
+                "projectPath": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/TaskBoard.BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/bohdan/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+Index: TaskBoard.DAL/obj/rider.project.model.nuget.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17140685414974550
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TaskBoard.DAL/obj/rider.project.model.nuget.info b/TaskBoard.DAL/obj/rider.project.model.nuget.info
+--- a/TaskBoard.DAL/obj/rider.project.model.nuget.info	
++++ b/TaskBoard.DAL/obj/rider.project.model.nuget.info	
+@@ -1,1 +1,1 @@
+-17140685414974550
+\ No newline at end of file
++17140686836385300
+\ No newline at end of file

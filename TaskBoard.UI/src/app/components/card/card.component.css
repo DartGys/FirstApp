@@ -1,0 +1,131 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  height: 80%;
+  background-color: #3a5187;
+  padding: 50px 0px 0px;
+  overflow: hidden;
+}
+
+.left-pane {
+  width: 60%;
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.right-pane {
+  width: 40%;
+  background-color: #dfdfdf;
+  padding: 20px;
+}
+
+.modal-dialog {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+}
+
+.card-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.history-logs {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.circle {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #555;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+.close-button {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+.card-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-info-label {
+  margin-right: 10px;
+  width: 120px;
+  padding: 10px;
+}
+
+.card-info-value {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.card-info-value-description{
+
+}
+
+.card-info-label-description {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.card-description{
+  padding: 10px;
+}
+
+.card-name{
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  margin-left: auto;
+  font-style: italic;
+}

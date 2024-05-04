@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "byIsqqJt+qQpzEu6qzx7RY7a7SOjepN5HYQY5ghfvzs=",
+  "Source": "TaskBoard.WebAPI",
+  "BasePath": "_content/TaskBoard.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

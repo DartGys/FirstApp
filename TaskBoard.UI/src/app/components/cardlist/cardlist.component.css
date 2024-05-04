@@ -1,0 +1,223 @@
+.card-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-list-group {
+  width: calc(18%);
+  padding: 20px;
+}
+
+.card-list-item{
+  display: flex;
+  background-color: white;
+  border-top: 2px solid #cccc;
+  border-bottom: 2px solid #cccc;
+  height: 40px;
+}
+
+.cards-container {
+  margin-top: 10px;
+}
+
+.card-item {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #cccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.card-item h4 {
+  margin-bottom: 5px;
+}
+
+.card-count {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-list-name{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-item {
+  border: 1px solid #cccc;
+  margin-bottom: 10px;
+}
+
+.card-header h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card-content {
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.due-date {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.calendar-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.priority-container {
+  background-color: #efefef;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  max-width: fit-content;
+  height: 20px;
+}
+
+.priority-icon {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.priority {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+}
+
+.card-footer {
+  padding: 10px;
+}
+
+.move-to-dropdown {
+  width: 100%;
+  padding: 5px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  border: none;
+}
+
+.calendar-icon{
+  width: 7%;
+  height: auto;
+}
+
+.description{
+  color: gray;
+  font-size: 15px;
+}
+
+.menu-button {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button-dots {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+}
+
+.menu-button:hover .menu {
+  display: block;
+}
+
+.edit-button, .delete-button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin: 5px;
+  width: 90%;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.delete-button {
+  color: red;
+}
+
+.menu-button-dots:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.edit-button:hover, .delete-button:hover{
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.card-name-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-card-button {
+  border: 2px dashed #cccc;
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.add-card-button:hover {
+  background-color: #f0f0f0;
+}
+
+.card-list-add{
+  margin-top: 20px;
+  width: calc(18%);
+}
+
+.card-list-add-button {
+  border: none;
+  border-top: 2px solid #cccc;
+  border-bottom: 2px solid #cccc;
+  background-color: #fff;
+  padding-bottom: 12px;
+  padding-top: 11px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-list-add-button::after {
+  content: "+";
+  position: absolute;
+}
+
+

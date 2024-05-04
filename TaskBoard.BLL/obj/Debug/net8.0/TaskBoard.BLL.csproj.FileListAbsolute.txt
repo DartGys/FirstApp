@@ -1,0 +1,15 @@
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.deps.json
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.CoreCompileInputs.cache
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoar.E79FAE95.Up2Date
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll
