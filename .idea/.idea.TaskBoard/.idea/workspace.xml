@@ -9,7 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
@@ -17,30 +27,27 @@
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card-input-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card-input-model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/cardlist-input-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/cardlist-input-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/enviroments/enviroment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/enviroments/enviroment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
@@ -50,13 +57,14 @@
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,36 +136,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.TaskBoard.WebAPI: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50406504&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Run",
+    "Docker.TaskBoard.BLL/Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.50406504",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
-      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
-      &quot;/home/bohdan/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/home/bohdan/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="15" />
     </hideBySeverity>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.TaskBoard.WebAPI: http">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="TaskBoard.WebAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -188,6 +198,99 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Multi-Launch: TaskBoard" type="com.intellij.execution.configurations.multilaunch" factoryName="MultiLaunchConfiguration">
+      <rows>
+        <ExecutableRowSnapshot>
+          <option name="condition">
+            <ConditionSnapshot>
+              <option name="type" value="immediately" />
+            </ConditionSnapshot>
+          </option>
+          <option name="executable">
+            <ExecutableSnapshot>
+              <option name="id" value="runConfig:.NET Launch Settings Profile.TaskBoard.WebAPI: http" />
+            </ExecutableSnapshot>
+          </option>
+        </ExecutableRowSnapshot>
+      </rows>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="taskboard.webapi" />
+          <option name="containerName" value="taskboard.webapi" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskBoard.BLL/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="TaskBoard.BLL/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskBoard.WebAPI/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="taskboard.webapi" />
+          <option name="containerName" value="taskboard.webapi" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="TaskBoard.WebAPI/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.TaskBoard.BLL/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -208,6 +311,7 @@
       <workItem from="1714727941388" duration="2514000" />
       <workItem from="1714731023222" duration="6318000" />
       <workItem from="1714757884944" duration="2617000" />
+      <workItem from="1714931045144" duration="6053000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
