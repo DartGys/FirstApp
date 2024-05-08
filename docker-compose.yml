@@ -1,23 +1,40 @@
-﻿version: '3.4'
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+
 services:
-  board.api:
-    image: ${DOCKER_REGISTRY-}boardapi
-    container_name: board.api
+  board_api:
+    image: ${DOCKER_REGISTRY-}board_api
+    depends_on:
+      - board_db
+    container_name: board_api
+    ports:  
+      - "8088:80"
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8080:5000"
-      - "8081:5001"
-    
-  board.database:
-    image: postgres:latest
-    container_name: board.database
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass
+      ConnectionStrings__DefaultConnection: "Host=board_db;UserId=postgres;Password=postgres;Database=TaskBoardDb;Pooling=true;"
+      ASPNETCORE_URLS: "http://+:80"
+    networks:
+      - dev
+    
+  board_db:
+    image: postgres:latest
+    container_name: board_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: TaskBoardDb
-    volumes:
-      - ./.containers/board-db:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"
+    restart: always
+    volumes:
+      - app_data:/var/lib/postgresql/data
+    networks:
+      - dev
+
+volumes:
+  app_data:    
