@@ -8,94 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.BLL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.BLL.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.DAL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.DAL.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.WebAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/TaskBoard.WebAPI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24,_20_05_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_05_24__20_05__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL2.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.BLL4.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL2.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL4.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.DAL5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/TaskBoard.WebAPI3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24,_20_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_03_05_24__20_05__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_30_04_24,_16_29_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_30_04_24__16_29__Changes_.xml" beforeDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="card input date fix">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Board.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card-input-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/models/input-models/card-input-model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +44,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,7 +98,7 @@
     "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/board",
     "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -700,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714756877807</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="card input date fix">
+      <option name="closed" value="true" />
+      <created>1715618636068</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1715618636068</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -719,7 +642,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="feature/board" />
                       </list>
                     </value>
                   </entry>
@@ -733,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Implement IEntity" />
     <MESSAGE value="update method created in GenericRepository" />
     <MESSAGE value="Card service implementation + card repository UpdateList method created" />
     <MESSAGE value="CardListService implemented" />
@@ -758,6 +680,7 @@
     <MESSAGE value="History side bar added" />
     <MESSAGE value="card update hot fix" />
     <MESSAGE value="backend validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend validation" />
+    <MESSAGE value="card input date fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="card input date fix" />
   </component>
 </project>
