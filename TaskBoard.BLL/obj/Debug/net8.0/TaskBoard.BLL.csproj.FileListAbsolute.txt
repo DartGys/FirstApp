@@ -13,3 +13,4 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.sourcelink.json

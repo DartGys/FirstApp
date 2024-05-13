@@ -15,8 +15,7 @@ export class CardInputModel{
       errors['name'] = ['Card name must be less than 100 characters'];
     }
 
-    if (this.dueDate.getDate() < Date.now())
-    {
+    if (new Date(this.dueDate) < new Date(Date.now())) {
       errors['dueDate'] = ['Choose correct date'];
     }
 

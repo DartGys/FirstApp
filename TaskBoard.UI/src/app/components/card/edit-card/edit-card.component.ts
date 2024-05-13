@@ -62,7 +62,6 @@ export class EditCardComponent  implements OnChanges{
   }
 
   createCard(card: CardInputModel){
-
     this.errors = card.validate();
 
     if (Object.keys(this.errors).length > 0) {

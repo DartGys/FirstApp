@@ -44,3 +44,4 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.sourcelink.json
