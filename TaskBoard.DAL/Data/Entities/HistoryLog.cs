@@ -9,4 +9,6 @@ public class HistoryLog : IEntity
     public DateTime ChangeDate { get; set; }
     public Guid? CardId { get; set; }
     public Card Card { get; set; }
+    public Guid BoardId { get; set; }
+    public Board Board { get; set; }
 }

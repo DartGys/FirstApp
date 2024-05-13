@@ -36,5 +36,10 @@ public class CardConfiguration : IEntityTypeConfiguration<Card>
         builder.HasMany(c => c.HistoryLogs)
             .WithOne(h => h.Card)
             .HasForeignKey(h => h.CardId);
+        
+        builder.HasOne(c => c.Board)
+            .WithMany(b => b.Cards)
+            .HasForeignKey(b => b.BoardId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

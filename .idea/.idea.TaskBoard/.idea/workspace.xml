@@ -8,9 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="card input date fix">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Board.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="board entity created">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/BoardConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardListConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardListConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/HistoryLogConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/HistoryLogConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/CardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/CardList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -623,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715618636068</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="board entity created">
+      <option name="closed" value="true" />
+      <created>1715620573283</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1715620573283</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +670,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update method created in GenericRepository" />
     <MESSAGE value="Card service implementation + card repository UpdateList method created" />
     <MESSAGE value="CardListService implemented" />
     <MESSAGE value="PriorityService implemented" />
@@ -681,6 +694,7 @@
     <MESSAGE value="card update hot fix" />
     <MESSAGE value="backend validation" />
     <MESSAGE value="card input date fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="card input date fix" />
+    <MESSAGE value="board entity created" />
+    <option name="LAST_COMMIT_MESSAGE" value="board entity created" />
   </component>
 </project>
