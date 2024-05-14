@@ -16,6 +16,7 @@ public sealed class ApplicationDbContext : DbContext
     public DbSet<HistoryLog> HistoryLogs => Set<HistoryLog>();
     public DbSet<CardList> CardLists => Set<CardList>();
     public DbSet<Priority> Priorities => Set<Priority>();
+    public DbSet<Board> Boards => Set<Board>();
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

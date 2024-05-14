@@ -8,15 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="board entity created">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/BoardConfiguration.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="configuration added">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IBoardService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/BoardInputModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/BoardVm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/BoardService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/BoardRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/IBoardRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardListConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardListConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/HistoryLogConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/HistoryLogConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/CardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/CardList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/IUnitOfWork.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -637,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715620573283</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="configuration added">
+      <option name="closed" value="true" />
+      <created>1715622570035</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1715622570035</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +680,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Card service implementation + card repository UpdateList method created" />
     <MESSAGE value="CardListService implemented" />
     <MESSAGE value="PriorityService implemented" />
     <MESSAGE value="DependencyInjection added" />
@@ -695,6 +704,7 @@
     <MESSAGE value="backend validation" />
     <MESSAGE value="card input date fix" />
     <MESSAGE value="board entity created" />
-    <option name="LAST_COMMIT_MESSAGE" value="board entity created" />
+    <MESSAGE value="configuration added" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration added" />
   </component>
 </project>
