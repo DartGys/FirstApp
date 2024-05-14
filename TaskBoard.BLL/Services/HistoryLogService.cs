@@ -53,6 +53,15 @@ public class HistoryLogService : IHistoryLogService
 
         return models;
     }
+    
+    public async Task<IEnumerable<HistoryLogVm>> GetTwentyRecordByBoard(Guid boardId, int lastRecord)
+    {
+        var entities = await _unitOfWork.HistoryLog.GetTwentyLogsByBoard(boardId, lastRecord);
+
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+
+        return models;
+    }
 
     public async Task LogAddCardAsync(Guid cardId, string cardName, Guid listId)
     {

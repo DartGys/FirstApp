@@ -46,4 +46,12 @@ public class HistoryLogController : ControllerBase
 
         return Ok(models);
     }
+    
+    [HttpGet("record/board/{lastRecord}")]
+    public async Task<IActionResult> GetRecordsByBoard(Guid boardId, int lastRecord)
+    {
+        var models = await _historyLogService.GetTwentyRecordByBoard(boardId, lastRecord);
+
+        return Ok(models);
+    }
 }

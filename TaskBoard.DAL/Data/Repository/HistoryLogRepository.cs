@@ -17,4 +17,15 @@ public class HistoryLogRepository : GenericRepository<HistoryLog>, IHistoryLogRe
             .Take(20) 
             .ToListAsync(cancellationToken); 
     }
+    
+    public async Task<IEnumerable<HistoryLog>> GetTwentyLogsByBoard(Guid boardId, int lastRecord, CancellationToken cancellationToken = default(CancellationToken))
+    {
+        return await _context.HistoryLogs
+            .AsNoTracking()
+            .Where(x => x.BoardId == boardId)
+            .OrderByDescending(log => log.ChangeDate) 
+            .Skip(lastRecord) 
+            .Take(20) 
+            .ToListAsync(cancellationToken); 
+    }
 }
