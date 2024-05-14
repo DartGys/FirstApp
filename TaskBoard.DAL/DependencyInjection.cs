@@ -16,6 +16,7 @@ public static class DependencyInjection
         services.AddScoped<ICardListRepository, CardListRepository>();
         services.AddScoped<IHistoryLogRepository, HistoryLogRepository>();
         services.AddScoped<IPriorityRepository, PriorityRepository>();
+        services.AddScoped<IBoardRepository, BoardRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         
         string connectionString = configuration.GetConnectionString("DefaultConnection");
