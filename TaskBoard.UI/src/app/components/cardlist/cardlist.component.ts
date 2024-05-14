@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
 import {CardListService} from "../../services/cardList.service";
 import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
@@ -28,6 +28,7 @@ import {CardComponent} from "../card/card.component";
 })
 export class CardlistComponent implements OnInit{
   @Input() cardLists: CardlistVm[] = [];
+  @Output() goToBoards = new EventEmitter();
   cardlistToEdit?: CardlistInputModel;
   cardToEdit?: CardInputModel;
   cardIdToShow?: string;
@@ -35,9 +36,9 @@ export class CardlistComponent implements OnInit{
   constructor(private cardListService: CardListService, private cardService: CardService) { }
 
   ngOnInit(): void {
-    this.cardListService
-      .getCardLists()
-      .subscribe((result: CardlistVm[]) => (this.cardLists = result));
+    // this.cardListService
+    //   .getCardLists()
+    //   .subscribe((result: CardlistVm[]) => (this.cardLists = result));
   }
 
   updateCardLists(cardlists: CardlistVm[]){
@@ -112,5 +113,9 @@ export class CardlistComponent implements OnInit{
       },
     );
     this.selectedListId = ''
+  }
+
+  backToBoards(){
+    this.goToBoards.emit();
   }
 }

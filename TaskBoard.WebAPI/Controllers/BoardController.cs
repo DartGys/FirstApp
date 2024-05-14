@@ -27,23 +27,29 @@ public class BoardController : ControllerBase
     public async Task<IActionResult> Add([FromBody] BoardInputModel input)
     {
         await _boardService.AddAsync(input);
+        
+        var models = await _boardService.GetAsync();
 
-        return Ok();
+        return Ok(models);
     }
 
     [HttpPatch]
     public async Task<IActionResult> Update([FromBody] BoardInputModel input)
     {
         await _boardService.UpdateAsync(input);
+        
+        var models = await _boardService.GetAsync();
 
-        return Ok();
+        return Ok(models);
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
         await _boardService.DeleteAsync(id);
+        
+        var models = await _boardService.GetAsync();
 
-        return Ok();
+        return Ok(models);
     }
 }

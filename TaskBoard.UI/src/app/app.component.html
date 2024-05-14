@@ -1,13 +1,22 @@
-<h1>My Task Board</h1>
-
+<div *ngIf="boardId">
 <button class="history-button" (click)="openSidebar()">History</button>
-
-<div class="app-container">
-  <app-cardlist [cardLists]="cardLists"></app-cardlist>
 </div>
 
-<app-history-log
-  [isOpen]="isSidebarOpen"
-  (historyLogClose)="closeSidebar()"
-></app-history-log>
+<div *ngIf="boardId">
+  <app-cardlist
+    (goToBoards)="closeBoard()"
+  ></app-cardlist>
+</div>
 
+<div *ngIf="!boardId">
+  <app-board
+    (boardOpen)="openBoard($event)"
+  ></app-board>
+</div>
+
+<div *ngIf="boardId">
+  <app-history-log
+    [isOpen]="isSidebarOpen"
+    (historyLogClose)="closeSidebar()"
+  ></app-history-log>
+</div>
