@@ -22,6 +22,14 @@ public class HistoryLogController : ControllerBase
 
         return Ok(models);
     }
+    
+    [HttpGet("board")]
+    public async Task<IActionResult> GetAllHistoryByBoard(Guid id)
+    {
+        var models = await _historyLogService.GetByBoardAsync(id);
+
+        return Ok(models);
+    }
 
     [HttpGet("{cardId}")]
     public async Task<IActionResult> GetAllHistoryByCard(Guid cardId)
