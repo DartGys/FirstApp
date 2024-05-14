@@ -27,6 +27,6 @@ public class BoardConfiguration : IEntityTypeConfiguration<Board>
         builder.HasMany(x => x.HistoryLogs)
             .WithOne(h => h.Board)
             .HasForeignKey(h => h.BoardId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }

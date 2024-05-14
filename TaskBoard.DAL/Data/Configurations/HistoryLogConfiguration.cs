@@ -25,6 +25,6 @@ public class HistoryLogConfiguration : IEntityTypeConfiguration<HistoryLog>
         builder.HasOne(c => c.Board)
             .WithMany(b => b.HistoryLogs)
             .HasForeignKey(b => b.BoardId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }
