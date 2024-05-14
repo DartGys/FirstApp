@@ -24,6 +24,13 @@ public class BoardService : IBoardService
 
         var boards = _mapper.Map<IEnumerable<BoardVm>>(entities);
 
+        boards = boards.Select(board =>
+        {
+            board.CardListCount = _unitOfWork.Board.GetCardListCount(board.Id);
+            board.CardCount = _unitOfWork.Board.GetCardCount(board.Id);
+            return board;
+        });
+
         return boards;
     }
 

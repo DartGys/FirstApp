@@ -8,55 +8,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="dependency">
-      <change afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/BoardController.cs" afterDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="api modif">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IBoardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IBoardService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/IHistoryLogService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/BoardInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/BoardInputModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/BoardVm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Models/ViewModels/BoardVm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Services/BoardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/BoardService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/HistoryLogRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/HistoryLogRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/IHistoryLogRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/IHistoryLogRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/BoardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Data/Repository/BoardRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/IBoardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/Interfaces/Repository/IBoardRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/HistoryLogController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/Controllers/HistoryLogController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,32 +111,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Run",
-    "Docker.TaskBoard.BLL/Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "feature/board",
-    "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.TaskBoard.WebAPI: http.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.TaskBoard.BLL/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50406504&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/board&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/home/bohdan/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/bohdan/.config/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/bohdan/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="15" />
@@ -317,14 +290,7 @@
       <workItem from="1714731023222" duration="6318000" />
       <workItem from="1714757884944" duration="2617000" />
       <workItem from="1714931045144" duration="6053000" />
-    </task>
-    <task id="LOCAL-00004" summary="history log entity">
-      <option name="closed" value="true" />
-      <created>1713894387519</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713894387519</updated>
+      <workItem from="1715684087348" duration="2163000" />
     </task>
     <task id="LOCAL-00005" summary="entities-configurations">
       <option name="closed" value="true" />
@@ -710,7 +676,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715679151400</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="api modif">
+      <option name="closed" value="true" />
+      <created>1715683016757</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1715683016757</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +717,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value=" connection string added" />
     <MESSAGE value="fixes" />
     <MESSAGE value="merge fixes" />
     <MESSAGE value="UI project created" />
@@ -768,7 +741,8 @@
     <MESSAGE value="CardListService, HistoryLogService" />
     <MESSAGE value="web api board" />
     <MESSAGE value="dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependency" />
+    <MESSAGE value="api modif" />
+    <option name="LAST_COMMIT_MESSAGE" value="api modif" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
