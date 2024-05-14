@@ -1,0 +1,16 @@
+<div class="board-list-container">
+  <div class="board-list-group" *ngFor="let cardList of cardLists">
+    <div class="board-list-item">
+      <h4 class="board-list-name">{{ cardList.name }}</h4>
+      <h4 class="list-count">{{ cardList.cards.length }}</h4>
+      <h4 class="card-count">{{ cardList.cards.length }}</h4>
+      <div class="menu-button">
+        <button class="menu-button-dots">&#8942;</button>
+        <div class="menu">
+          <button class="edit-button" (click)="editCardList(cardList)">Edit</button>
+          <button class="delete-button" (click)="deleteCardList(cardList.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
