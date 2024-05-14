@@ -5,8 +5,10 @@
 }
 
 .board-group {
+  border-radius: 20px;
+  border: 1px solid;
   width: calc(18%);
-  padding: 20px;
+  padding: 10px;
 }
 
 .board-item{
@@ -42,6 +44,7 @@
 }
 
 .menu-button {
+  margin-left: auto;
   position: relative;
   display: inline-block;
 }
@@ -117,5 +120,3 @@
   content: "+";
   position: absolute;
 }
-
-

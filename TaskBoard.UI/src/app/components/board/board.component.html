@@ -1,7 +1,7 @@
 <div class="board-container">
   <div class="board-group" *ngFor="let board of boards">
     <div class="board-item">
-      <button (click)="openBoard(board.id)">
+      <button (click)="openBoard(board)">
       <h4 class="board-name">{{ board.name }}</h4>
       </button>
       <div class="menu-button">

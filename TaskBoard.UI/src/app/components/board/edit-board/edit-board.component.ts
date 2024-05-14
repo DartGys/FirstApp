@@ -17,7 +17,7 @@ import {NgIf} from "@angular/common";
   styleUrl: './edit-board.component.css'
 })
 export class EditBoardComponent {
-  @Input() board?: CardlistInputModel;
+  @Input() board?: BoardInputModel;
   @Output() boardsUpdated = new EventEmitter<BoardVm[]>();
   @Output() boardFormClose = new EventEmitter();
   errors: { [key: string]: string[] } = {};

@@ -33,8 +33,8 @@ export class BoardComponent implements OnInit{
       .subscribe((result: BoardVm[]) => (this.boards = result));
   }
 
-  openBoard(id: string){
-    this.boardOpen.emit(id);
+  openBoard(board: BoardVm){
+    this.boardOpen.emit(board);
   }
 
   updateBoards(boards: BoardVm[]){

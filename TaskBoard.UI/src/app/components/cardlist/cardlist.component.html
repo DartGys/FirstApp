@@ -1,5 +1,6 @@
 <div *ngIf="boardId">
-  <button (click)="backToBoards()">Back to Boards</button>
+  <button class="back-button" (click)="backToBoards()">Back to Boards</button>
+  <h1>{{this.boardName}}</h1>
 <div class="card-list-container">
   <div class="card-list-group" *ngFor="let cardList of cardLists">
     <div class="card-list-item">
@@ -59,14 +60,14 @@
   </div>
   <app-edit-cardlist
     [cardlist]="cardlistToEdit"
-    (cardlistsUpdated)="updateCardLists($event)"
+    (cardlistsUpdated)="updateCardLists()"
     (cardListFormClose)="closeCardListForm()"
   ></app-edit-cardlist>
 </div>
 
 <app-edit-card
   [card]="cardToEdit"
-  (cardlistsUpdated)="updateCardLists($event)"
+  (cardlistsUpdated)="updateCardLists()"
   (cardFormClose)="closeCardForm()"
 ></app-edit-card>
 

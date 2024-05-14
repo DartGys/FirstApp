@@ -29,6 +29,7 @@ import {CardComponent} from "../card/card.component";
 export class CardlistComponent implements OnChanges{
   cardLists?: CardlistVm[] = [];
   @Input() boardId?: string;
+  @Input() boardName?: string;
   @Output() goToBoards = new EventEmitter();
   cardlistToEdit?: CardlistInputModel;
   cardToEdit?: CardInputModel;
@@ -53,8 +54,8 @@ export class CardlistComponent implements OnChanges{
       .subscribe((result: CardlistVm[]) => (this.cardLists = result));
   }
 
-  updateCardLists(cardlists: CardlistVm[]){
-    this.cardLists = cardlists;
+  updateCardLists(){
+    this.loadCardLists();
   }
 
   closeCardForm(){
@@ -66,19 +67,24 @@ export class CardlistComponent implements OnChanges{
   }
 
   initNewCardList(){
-    this.cardlistToEdit = new CardlistInputModel();
+    this.cardlistToEdit = Object.assign(new CardlistInputModel(), {
+      boardId: this.boardId
+    })
   }
 
   editCardList(cardlist: CardlistVm){
     this.cardlistToEdit = Object.assign(new CardlistInputModel(), {
       id: cardlist.id,
-      name: cardlist.name
+      name: cardlist.name,
+      boardId: this.boardId
     })
   }
 
   initNewCard(listId: string){
-    this.cardToEdit = new CardInputModel();
-    this.cardToEdit.cardListId = listId;
+    this.cardToEdit =  Object.assign(new CardInputModel(), {
+      cardListId: listId,
+      boardId: this.boardId
+    });
   }
 
   editCard(card: CardVmList){
@@ -88,7 +94,8 @@ export class CardlistComponent implements OnChanges{
       description: card.description,
       dueDate: card.dueDate,
       priorityId: card.priorityId,
-      cardListId: card.cardListId
+      cardListId: card.cardListId,
+      boardId: this.boardId
     });
   }
 
@@ -101,7 +108,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   deleteCardList(id: string){
-    this.cardListService.deleteCardList(id).subscribe(
+    this.cardListService.deleteCardList(id, this.boardId).subscribe(
       (response) => {
         this.cardLists = response;
       },
@@ -109,7 +116,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   deleteCard(id: string){
-    this.cardService.deleteCard(id).subscribe(
+    this.cardService.deleteCard(id, this.boardId).subscribe(
       (response) => {
         this.cardLists = response;
       },
@@ -119,7 +126,7 @@ export class CardlistComponent implements OnChanges{
   selectedListId= '';
 
   moveCardTo(cardId: string){
-    this.cardService.updateCardList(cardId, this.selectedListId).subscribe(
+    this.cardService.updateCardList(cardId, this.selectedListId, this.boardId).subscribe(
       (response) => {
         this.cardLists = response;
       },

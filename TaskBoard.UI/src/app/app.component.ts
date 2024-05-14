@@ -5,6 +5,7 @@ import {DatePipe, NgForOf, NgIf} from "@angular/common";
 import {CardlistComponent} from "./components/cardlist/cardlist.component";
 import {HistoryLogComponent} from "./components/history-log/history-log.component";
 import {BoardComponent} from "./components/board/board.component";
+import {BoardVm} from "./models/view-models/board-vm";
 
 
 @Component({
@@ -18,13 +19,14 @@ export class AppComponent {
   title = 'TaskBoard.UI';
   isSidebarOpen: boolean = false;
   boardId?: string;
+  boardName?: string;
 
 
   constructor() { }
 
-  openBoard(boardId: string){
-    this.boardId = boardId;
-    console.log(this.boardId)
+  openBoard(board: BoardVm){
+    this.boardId = board.id;
+    this.boardName = board.name;
   }
 
   closeBoard(){

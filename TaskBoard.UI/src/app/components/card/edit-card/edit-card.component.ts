@@ -43,7 +43,7 @@ export class EditCardComponent  implements OnChanges{
   }
 
   loadCardlists() {
-    this.cardListService.getCardListsList()
+    this.cardListService.getCardListsListByBoard(this.card?.boardId)
       .subscribe((data: CardlistVmList[]) => {
         this.cardlists = data;
       });

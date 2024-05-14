@@ -60,6 +60,15 @@ public class CardListService : ICardListService
 
         return models;
     }
+    
+    public async Task<IEnumerable<CardListVmList>> GetListByBoardAsync(Guid boardId)
+    {
+        var entities = await _unitOfWork.CardList.FindAsyncNoTracking(x => x.BoardId == boardId);
+
+        var models = _mapper.Map<IEnumerable<CardListVmList>>(entities);
+
+        return models;
+    }
 
     public async Task AddAsync(CardListInputModel input)
     {

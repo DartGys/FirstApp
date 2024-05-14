@@ -5,6 +5,7 @@ export class CardInputModel{
   dueDate: Date = new Date();
   priorityId= '';
   cardListId= '';
+  boardId = '';
 
   validate(): {[key: string]: string[] } {
     const errors: { [key: string]: string[] } = {};
