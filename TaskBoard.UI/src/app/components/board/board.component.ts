@@ -5,13 +5,17 @@ import {BoardService} from "../../services/board.service";
 import {CardlistVm} from "../../models/view-models/cardlist-vm";
 import {CardlistInputModel} from "../../models/input-models/cardlist-input-model";
 import {BoardInputModel} from "../../models/input-models/board-input-model";
+import {EditCardlistComponent} from "../cardlist/edit-cardlist/edit-cardlist.component";
+import {EditBoardComponent} from "./edit-board/edit-board.component";
 
 @Component({
   selector: 'app-board',
   standalone: true,
   imports: [
     NgForOf,
-    NgIf
+    NgIf,
+    EditCardlistComponent,
+    EditBoardComponent
   ],
   templateUrl: './board.component.html',
   styleUrl: './board.component.css'
@@ -33,15 +37,30 @@ export class BoardComponent implements OnInit{
     this.boardOpen.emit(id);
   }
 
-  editBoard(board: BoardVm){
-
+  updateBoards(boards: BoardVm[]){
+    this.boards = boards;
   }
 
-  deleteBoard(boardId: string){
+  editBoard(board: BoardVm){
+    this.boardToEdit = Object.assign(new CardlistInputModel(), {
+      id: board.id,
+      name: board.name
+    })
+  }
 
+  deleteBoard(id: string){
+    this.boardService.deleteBoard(id).subscribe(
+      (response) => {
+        this.boards = response;
+      },
+    );
   }
 
   initNewBoard(){
+    this.boardToEdit = new BoardInputModel();
+  }
 
+  closeBoardForm(){
+    this.boardToEdit = undefined;
   }
 }

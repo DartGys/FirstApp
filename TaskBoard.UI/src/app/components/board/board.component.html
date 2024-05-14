@@ -18,4 +18,11 @@
   <div class="board-add" *ngIf="!boardToEdit">
     <button class="board-add-button" (click)="initNewBoard()">Add new board</button>
   </div>
+  <app-edit-board
+    [board]="boardToEdit"
+    (boardsUpdated)="updateBoards($event)"
+    (boardFormClose)="closeBoardForm()"
+  ></app-edit-board>
 </div>
+
+
