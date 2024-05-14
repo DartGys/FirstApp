@@ -23,8 +23,8 @@ export class AppComponent {
   constructor() { }
 
   openBoard(boardId: string){
-    console.log(boardId);
     this.boardId = boardId;
+    console.log(this.boardId)
   }
 
   closeBoard(){

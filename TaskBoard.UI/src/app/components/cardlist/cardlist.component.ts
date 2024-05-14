@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
 import {CardListService} from "../../services/cardList.service";
 import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
@@ -26,8 +26,9 @@ import {CardComponent} from "../card/card.component";
   templateUrl: './cardlist.component.html',
   styleUrl: './cardlist.component.css'
 })
-export class CardlistComponent implements OnInit{
-  @Input() cardLists: CardlistVm[] = [];
+export class CardlistComponent implements OnChanges{
+  cardLists?: CardlistVm[] = [];
+  @Input() boardId?: string;
   @Output() goToBoards = new EventEmitter();
   cardlistToEdit?: CardlistInputModel;
   cardToEdit?: CardInputModel;
@@ -35,10 +36,21 @@ export class CardlistComponent implements OnInit{
 
   constructor(private cardListService: CardListService, private cardService: CardService) { }
 
-  ngOnInit(): void {
-    // this.cardListService
-    //   .getCardLists()
-    //   .subscribe((result: CardlistVm[]) => (this.cardLists = result));
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['boardId'] && !changes['boardId'].firstChange) {
+      if(!this.boardId){
+        this.cardLists = undefined;
+      }
+      else {
+        this.loadCardLists();
+      }
+    }
+  }
+
+  loadCardLists() {
+    this.cardListService
+      .getCardListByBoard(this.boardId)
+      .subscribe((result: CardlistVm[]) => (this.cardLists = result));
   }
 
   updateCardLists(cardlists: CardlistVm[]){

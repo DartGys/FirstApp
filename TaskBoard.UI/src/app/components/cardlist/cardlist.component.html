@@ -1,4 +1,5 @@
-<button>Back to Boards</button>
+<div *ngIf="boardId">
+  <button (click)="backToBoards()">Back to Boards</button>
 <div class="card-list-container">
   <div class="card-list-group" *ngFor="let cardList of cardLists">
     <div class="card-list-item">
@@ -73,5 +74,5 @@
   [cardId]="cardIdToShow"
   (cardClose) ="closeCard()"
 ></app-card>
-
+</div>
 

@@ -18,6 +18,10 @@ export class CardListService {
     return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}`);
   }
 
+  public getCardListByBoard(boardId?: string) : Observable<CardlistVm[]>{
+    return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}/board/${boardId}`);
+  }
+
   public getCardListsList() : Observable<CardlistVmList[]>{
     return this.http.get<CardlistVmList[]>(`${environment.apiUrl}/${this.url}/list`);
   }

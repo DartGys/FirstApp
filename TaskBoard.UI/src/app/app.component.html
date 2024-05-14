@@ -2,11 +2,12 @@
 <button class="history-button" (click)="openSidebar()">History</button>
 </div>
 
-<div *ngIf="boardId">
-  <app-cardlist
-    (goToBoards)="closeBoard()"
-  ></app-cardlist>
-</div>
+
+<app-cardlist
+  [boardId]="boardId"
+  (goToBoards)="closeBoard()"
+></app-cardlist>
+
 
 <div *ngIf="!boardId">
   <app-board
@@ -14,9 +15,9 @@
   ></app-board>
 </div>
 
-<div *ngIf="boardId">
   <app-history-log
+    [boardId]="boardId"
     [isOpen]="isSidebarOpen"
     (historyLogClose)="closeSidebar()"
   ></app-history-log>
-</div>
+

@@ -24,8 +24,8 @@ public class CardListController : ControllerBase
         return Ok(models);
     }
     
-    [HttpGet("board")]
-    public async Task<IActionResult> GetByBoard(Guid id)
+    [HttpGet("board/{id}")]
+    public async Task<IActionResult> GetByBoard([FromRoute] Guid id)
     {
         var models = await _cardListService.GetByBoardAsync(id);
 
