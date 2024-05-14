@@ -7,6 +7,12 @@ public class SeedData
 {
     public static void Initialize(ApplicationDbContext context)
     {
+        var boards = new List<Board>()
+        {
+            new Board() { Id = Guid.NewGuid(), Name = "Board1" },
+            new Board() { Id = Guid.NewGuid(), Name = "Board2" }
+        };
+            
         var priorities = new List<Priority>()
         {
             new Priority { Id = Guid.NewGuid(), Name = "Low" },
@@ -16,8 +22,8 @@ public class SeedData
 
         var cardLists = new List<CardList>()
         {
-            new CardList() { Id = Guid.NewGuid(), Name = "List1"},
-            new CardList() { Id = Guid.NewGuid(), Name = "List2"}
+            new CardList() { Id = Guid.NewGuid(), Name = "List1", BoardId = boards[0].Id },
+            new CardList() { Id = Guid.NewGuid(), Name = "List2", BoardId = boards[1].Id }
         };
 
         var cards = new List<Card>()
@@ -25,52 +31,52 @@ public class SeedData
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card1", Description = "Description1", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[0].Id
+                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[0].Id, BoardId = cardLists[0].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card2", Description = "Description2", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[0].Id
+                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[0].Id, BoardId = cardLists[0].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card3", Description = "Description3", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[0].Id
+                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[0].Id, BoardId = cardLists[0].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card4", Description = "Description4", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[0].Id
+                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[0].Id, BoardId = cardLists[0].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card5", Description = "Description5", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[0].Id
+                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[0].Id, BoardId = cardLists[0].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card6", Description = "Description6", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[1].Id
+                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[1].Id, BoardId = cardLists[1].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card7", Description = "Description7", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[1].Id
+                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[1].Id, BoardId = cardLists[1].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card8", Description = "Description8", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[1].Id
+                DueDate = RandomDate(), PriorityId = priorities[1].Id, CardListId = cardLists[1].Id, BoardId = cardLists[1].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card9", Description = "Description9", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[1].Id
+                DueDate = RandomDate(), PriorityId = priorities[2].Id, CardListId = cardLists[1].Id, BoardId = cardLists[1].BoardId
             },
             new Card()
             {
                 Id = Guid.NewGuid(), Name = "Card10", Description = "Description10", CreatedDate = DateTime.UtcNow,
-                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[1].Id
+                DueDate = RandomDate(), PriorityId = priorities[0].Id, CardListId = cardLists[1].Id, BoardId = cardLists[1].BoardId
             },
         };
 
@@ -82,8 +88,9 @@ public class SeedData
             saveChange = true;
         }
 
-        if (!context.CardLists.Any() && !context.Cards.Any() && !context.HistoryLogs.Any())
+        if (!context.Boards.Any() && !context.CardLists.Any() && !context.Cards.Any() && !context.HistoryLogs.Any())
         {
+            context.Boards.AddRange(boards);
             context.CardLists.AddRange(cardLists);
             context.Cards.AddRange(cards);
             context.HistoryLogs.AddRange(CreateLogList(cards, cardLists));
@@ -103,7 +110,7 @@ public class SeedData
         {
             var historyLog = new HistoryLog()
             {
-                Id = Guid.NewGuid(), CardId = card.Id, ChangeDate = DateTime.UtcNow,
+                Id = Guid.NewGuid(), CardId = card.Id, ChangeDate = DateTime.UtcNow, BoardId = card.BoardId,
                 ChangeDescription = 
                     $"You added <strong>{card.Name}</strong> to <strong>{cardLists.First(x => x.Id == card.CardListId).Name}</strong>"
             };
