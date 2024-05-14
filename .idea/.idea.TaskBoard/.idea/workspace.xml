@@ -8,9 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="entity fix">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="seed data">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/SeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/SeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/ICardListService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Interfaces/Services/ICardListService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Services/CardListService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/CardListService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/Services/HistoryLogService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -655,7 +657,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715678196270</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="seed data">
+      <option name="closed" value="true" />
+      <created>1715678572900</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678572900</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="DependencyInjection added" />
     <MESSAGE value="WebApi project created" />
     <MESSAGE value="controllers created" />
     <MESSAGE value="inject repositories" />
@@ -713,6 +722,7 @@
     <MESSAGE value="configuration added" />
     <MESSAGE value="Board service + models" />
     <MESSAGE value="entity fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="entity fix" />
+    <MESSAGE value="seed data" />
+    <option name="LAST_COMMIT_MESSAGE" value="seed data" />
   </component>
 </project>
