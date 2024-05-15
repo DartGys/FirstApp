@@ -5,6 +5,7 @@ import * as CardListsActions from './actions'
 export const initialState: CardListStateInterface = {
   isLoading: false,
   cardLists: [],
+  cardList: undefined,
   error: null,
   boardId: undefined,
   Id: undefined,
@@ -43,6 +44,17 @@ const cardListsFeature = createFeature({
       cardLists: action.cardLists,
     })),
     on(CardListsActions.deleteCardListFailure, (state, action) => ({
+      ...state,
+      isLoading: false,
+      error: action.error,
+    })),
+    on(CardListsActions.updateCardList, (state, action) => ({ ...state, isLoading: true, cardList: action.cardList})),
+    on(CardListsActions.updateCardListSuccess, (state, action) => ({
+      ...state,
+      isLoading: false,
+      cardLists: action.cardLists,
+    })),
+    on(CardListsActions.updateCardListFailure, (state, action) => ({
       ...state,
       isLoading: false,
       error: action.error,

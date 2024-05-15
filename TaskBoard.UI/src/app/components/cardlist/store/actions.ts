@@ -47,3 +47,18 @@ export const deleteCardListFailure = createAction(
   '[CardLists] Delete CardList Failure',
   props<{ error: string }>()
 );
+
+export const updateCardList = createAction(
+  '[CardLists] Update CardList',
+  props<{ cardList: CardlistInputModel }>()
+);
+
+export const updateCardListSuccess = createAction(
+  '[CardLists] Update CardList Success',
+  props<{ cardLists: CardlistVm[] }>()
+);
+
+export const updateCardListFailure = createAction(
+  '[CardLists] Update CardList Failure',
+  props<{ error: string }>()
+);

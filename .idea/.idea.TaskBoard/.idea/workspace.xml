@@ -8,14 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="ngrx cardlist add/add">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="ngrx delete cardlist">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/effects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/types/CardListStateInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/types/CardListStateInterface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/services/cardList.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/services/cardList.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,14 +275,6 @@
       <workItem from="1714931045144" duration="6053000" />
       <workItem from="1715684087348" duration="14160000" />
       <workItem from="1715712951589" duration="2265000" />
-    </task>
-    <task id="LOCAL-00012" summary="Vm created">
-      <option name="closed" value="true" />
-      <created>1713978272636</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1713978272636</updated>
     </task>
     <task id="LOCAL-00013" summary="Input models created">
       <option name="closed" value="true" />
@@ -669,7 +660,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715780257243</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="ngrx delete cardlist">
+      <option name="closed" value="true" />
+      <created>1715781671732</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1715781671732</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -702,7 +701,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="cardlists crud view implemented" />
     <MESSAGE value="edit-form styles" />
     <MESSAGE value="card update model deleted" />
     <MESSAGE value="card crud view implemented" />
@@ -727,6 +725,7 @@
     <MESSAGE value="board crud" />
     <MESSAGE value="hot fixes" />
     <MESSAGE value="ngrx cardlist add/add" />
-    <option name="LAST_COMMIT_MESSAGE" value="ngrx cardlist add/add" />
+    <MESSAGE value="ngrx delete cardlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="ngrx delete cardlist" />
   </component>
 </project>

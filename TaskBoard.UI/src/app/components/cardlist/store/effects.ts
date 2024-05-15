@@ -48,5 +48,19 @@ export class CardListsEffects {
     )
   );
 
+  updateCardList$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(CardListsActions.updateCardList),
+      withLatestFrom(this.store.select(state => {})),
+      mergeMap(([action]) => {
+        return this.cardListService.updateCardList(action.cardList).pipe(
+          map((cardLists) => CardListsActions.updateCardListSuccess({ cardLists })),
+          catchError((error) => of(CardListsActions.updateCardListFailure({ error: error.message })))
+        );
+      })
+    )
+  );
+
+
   constructor(private actions$: Actions, private cardListService: CardListService, private store: Store<AppStateInterface>) {}
 }

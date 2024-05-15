@@ -3,7 +3,6 @@ import {NgIf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {CardlistVm} from "../../../models/view-models/cardlist-vm";
 import {CardlistInputModel} from "../../../models/input-models/cardlist-input-model";
-import {CardListService} from "../../../services/cardList.service";
 import {Observable} from "rxjs";
 import {select, Store} from "@ngrx/store";
 import {selectCardLists, selectError, selectIsLoading} from "../store/reducers";
@@ -30,7 +29,7 @@ export class EditCardlistComponent {
   cardLists$: Observable<CardlistVm[]>;
 
 
-  constructor(private cardListService: CardListService, private store: Store<AppStateInterface>) {
+  constructor(private store: Store<AppStateInterface>) {
     this.isLoading$ = this.store.pipe(select(selectIsLoading));
     this.error$ = this.store.pipe(select(selectError));
     this.cardLists$ = this.store.pipe(select(selectCardLists));
@@ -57,9 +56,7 @@ export class EditCardlistComponent {
       return;
     }
 
-    this.cardListService
-      .updateCardList(cardlist)
-      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
+    this.store.dispatch(CardListsActions.updateCardList({ cardList: cardlist }));
 
     this.cancel();
   }
