@@ -1,10 +1,31 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 using TaskBoard.DAL.Data;
 using TaskBoard.DAL.Data.Entities;
 
 namespace TaskBoard.DAL;
 
-public class SeedData
+public static class SeedData
 {
+    public static IApplicationBuilder SeedDbData(this IApplicationBuilder app)
+    {
+        ArgumentNullException.ThrowIfNull(app, nameof(app));
+
+        using var scope = app.ApplicationServices.CreateScope();
+        var services = scope.ServiceProvider;
+        try
+        {
+            var context = services.GetRequiredService<ApplicationDbContext>();
+            Initialize(context);
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+        return app;
+    }
+    
     public static void Initialize(ApplicationDbContext context)
     {
         var boards = new List<Board>()

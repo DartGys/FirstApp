@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.BLL", "TaskBoard.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.WebAPI", "TaskBoard.WebAPI\TaskBoard.WebAPI.csproj", "{C5A92A18-1D3A-4776-B196-ED17CDEFE5AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.Tests", "TaskBoard.Tests\TaskBoard.Tests.csproj", "{0AAFF571-9DEC-48CD-97A0-2BA223F8DE50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C5A92A18-1D3A-4776-B196-ED17CDEFE5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A92A18-1D3A-4776-B196-ED17CDEFE5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A92A18-1D3A-4776-B196-ED17CDEFE5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAFF571-9DEC-48CD-97A0-2BA223F8DE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAFF571-9DEC-48CD-97A0-2BA223F8DE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAFF571-9DEC-48CD-97A0-2BA223F8DE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAFF571-9DEC-48CD-97A0-2BA223F8DE50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
