@@ -44,7 +44,7 @@ public class CardController : ControllerBase
     }
 
     [HttpPatch]
-    public async Task<IActionResult> UpdateCard([FromBody] CardInputModel input)
+    public async Task<IActionResult> UpdateCard( CardInputModel input)
     {
         var error = Validator.Card(input);
 

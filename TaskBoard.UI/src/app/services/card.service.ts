@@ -18,11 +18,12 @@ export class CardService {
     return this.http.get<CardVmDetails>(`${environment.apiUrl}/${this.url}/${cardId}`);
   }
 
-  public createCard(card: CardInputModel) : Observable<CardlistVm[]>{
+  public createCard(card?: CardInputModel) : Observable<CardlistVm[]>{
     return this.http.post<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, card);
   }
 
   public updateCard(card: CardInputModel) : Observable<CardlistVm[]>{
+    console.log(card);
     return this.http.patch<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, card);
   }
 
@@ -30,7 +31,8 @@ export class CardService {
     return this.http.patch<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardId}/list/${listId}/board/${boardId}`, {});
   }
 
-  public deleteCard(cardId: string, boardId?: string) : Observable<CardlistVm[]>{
+  public deleteCard(cardId?: string, boardId?: string) : Observable<CardlistVm[]>{
+    console.log(`cardId: ${cardId}`);
     return this.http.delete<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardId}/board/${boardId}`);
   }
 }

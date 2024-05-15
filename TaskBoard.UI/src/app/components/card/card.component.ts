@@ -44,7 +44,6 @@ export class CardComponent implements OnChanges{
   loadCardVm(){
     if(this.cardId) {
       this.store.dispatch(CardActions.getCard({Id: this.cardId}));
-      console.log(this.card$)
     }
   }
 

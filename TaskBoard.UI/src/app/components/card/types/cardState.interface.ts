@@ -10,4 +10,5 @@ export interface CardStateInterface{
   cardInput: CardInputModel | undefined;
   error: string | null;
   Id: string | undefined;
+  boardId: string | undefined;
 }

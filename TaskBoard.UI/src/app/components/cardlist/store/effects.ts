@@ -5,6 +5,8 @@ import {catchError, map, mergeMap, of, withLatestFrom} from "rxjs";
 import {CardListService} from "../../../services/cardList.service";
 import {Store} from "@ngrx/store";
 import {AppStateInterface} from "../../../types/appState.interface";
+import * as CardActions from "../../card/store/actions";
+import {CardService} from "../../../services/card.service";
 
 @Injectable()
 export class CardListsEffects {
@@ -38,9 +40,8 @@ export class CardListsEffects {
   deleteCardList$ = createEffect(() =>
     this.actions$.pipe(
       ofType(CardListsActions.deleteCardList),
-      withLatestFrom(this.store.select(state => ({ Id: state.cardLists.Id, boardId: state.cardLists.boardId }))),
-      mergeMap(([action, ids]) => {
-        return this.cardListService.deleteCardList(ids.Id, ids.boardId).pipe(
+      mergeMap((action) => {
+        return this.cardListService.deleteCardList(action.Id, action.boardId).pipe(
           map((cardLists) => CardListsActions.deleteCardListSuccess({ cardLists })),
           catchError((error) => of(CardListsActions.deleteCardListFailure({ error: error.message })))
         );
@@ -62,5 +63,18 @@ export class CardListsEffects {
   );
 
 
-  constructor(private actions$: Actions, private cardListService: CardListService, private store: Store<AppStateInterface>) {}
+  deleteCard$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(CardActions.deleteCard),
+      withLatestFrom(this.store.select(state => ({ Id: state.card.Id, boardId: state.card.boardId }))),
+      mergeMap(([action, ids]) => {
+        return this.cardService.deleteCard(ids.Id, ids.boardId).pipe(
+          map((cardLists) => CardListsActions.deleteCardSuccess({ cardLists })),
+          catchError((error) => of(CardListsActions.deleteCardFailure({ error: error.message })))
+        );
+      })
+    )
+  );
+
+  constructor(private actions$: Actions, private cardListService: CardListService, private cardService: CardService, private store: Store<AppStateInterface>) {}
 }

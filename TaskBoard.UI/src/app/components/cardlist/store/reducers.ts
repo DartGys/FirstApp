@@ -1,6 +1,7 @@
 import {CardListStateInterface} from "../types/cardListState.interface";
 import {createFeature, createReducer, on} from "@ngrx/store";
 import * as CardListsActions from './actions'
+import * as CardActions from "../../card/store/actions";
 
 export const initialState: CardListStateInterface = {
   isLoading: false,
@@ -58,6 +59,16 @@ const cardListsFeature = createFeature({
       ...state,
       isLoading: false,
       error: action.error,
+    })),
+    on(CardListsActions.deleteCardSuccess, (state, action) => ({
+      ...state,
+      isLoading: false,
+      cardLists: action.cardLists
+    })),
+    on(CardListsActions.deleteCardFailure, (state, action) => ({
+      ...state,
+      isLoading: false,
+      error: action.error
     }))
   ),
 });

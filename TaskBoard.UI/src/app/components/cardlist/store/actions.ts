@@ -62,3 +62,13 @@ export const updateCardListFailure = createAction(
   '[CardLists] Update CardList Failure',
   props<{ error: string }>()
 );
+
+export const deleteCardSuccess = createAction(
+  '[Card] Delete Card success',
+  props<{ cardLists: CardlistVm[] }>()
+);
+
+export const deleteCardFailure = createAction(
+  '[Card] Delete Card failure',
+  props<{ error: string }>()
+);

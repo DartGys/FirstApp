@@ -1,10 +1,11 @@
 import {Injectable} from "@angular/core";
 import {Actions, createEffect, ofType} from "@ngrx/effects";
-import {Store} from "@ngrx/store";
+import {select, Store} from "@ngrx/store";
 import {AppStateInterface} from "../../../types/appState.interface";
 import * as CardActions from './actions'
 import {catchError, map, mergeMap, of, withLatestFrom} from "rxjs";
 import {CardService} from "../../../services/card.service";
+import * as CardListsActions from "../../cardlist/store/actions";
 
 @Injectable()
 export class CardEffects {
@@ -18,6 +19,31 @@ export class CardEffects {
           catchError((error) =>
           of(CardActions.getCardFailure({error : error.message })))
         )
+      })
+    )
+  );
+
+  addCard$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(CardActions.addCard),
+      mergeMap((action) => {
+        return this.cardService.createCard(action.cardInput).pipe(
+          map((cardLists) => CardActions.addCardSuccess({ cardLists })),
+          catchError((error) =>
+            of(CardActions.addCardFailure({error : error.message })))
+        )
+      })
+    )
+  );
+
+  updateCard$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(CardActions.updateCard),
+      mergeMap((action) => {
+        return this.cardService.updateCard(action.card).pipe(
+          map((cardLists) => CardListsActions.updateCardListSuccess({ cardLists })),
+          catchError((error) => of(CardListsActions.updateCardListFailure({ error: error.message })))
+        );
       })
     )
   );

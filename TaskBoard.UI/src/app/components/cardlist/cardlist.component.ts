@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
-import {CardListService} from "../../services/cardList.service";
 import {AsyncPipe, DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist.component";
 import {CardlistInputModel} from "../../models/input-models/cardlist-input-model";
@@ -9,12 +8,12 @@ import {CardService} from "../../services/card.service";
 import {EditCardComponent} from "../card/edit-card/edit-card.component";
 import {FormsModule} from "@angular/forms";
 import {CardComponent} from "../card/card.component";
-import {Observable} from "rxjs";
+import {Observable, withLatestFrom} from "rxjs";
 import {select, Store} from "@ngrx/store";
 import {AppStateInterface} from "../../types/appState.interface";
 import {selectCardLists, selectError, selectIsLoading} from "./store/reducers";
 import * as CardListsActions from './store/actions'
-
+import * as CardActions from '../card/store/actions'
 @Component({
   selector: 'app-cardlist',
   standalone: true,
@@ -51,7 +50,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['boardId'] && !changes['boardId'].firstChange) {
+    if (changes['boardId'] && !changes['boardId'].firstChange && this.boardId) {
         this.loadCardLists();
     }
   }
@@ -60,7 +59,8 @@ export class CardlistComponent implements OnChanges{
     this.store.dispatch(CardListsActions.getCardLists({ boardId: this.boardId }));
   }
 
-  closeCardForm(){
+  closeCardForm(cardList: Observable<CardlistVm[]>){
+    this.cardLists$ = cardList;
     this.cardToEdit = undefined;
   }
 
@@ -114,11 +114,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   deleteCard(id: string){
-    this.cardService.deleteCard(id, this.boardId).subscribe(
-      (response) => {
-        this.cardLists = response;
-      },
-    );
+    this.store.dispatch(CardActions.deleteCard({Id: id, boardId: this.boardId}));
   }
 
   selectedListId= '';
