@@ -1,8 +1,13 @@
 import {Component, EventEmitter, Input, OnChanges, Output, SimpleChanges} from '@angular/core';
 import {CardVmDetails} from "../../models/view-models/card-vm-details";
 import {FormsModule} from "@angular/forms";
-import {DatePipe, NgForOf, NgIf} from "@angular/common";
+import {AsyncPipe, DatePipe, NgForOf, NgIf} from "@angular/common";
 import {CardService} from "../../services/card.service";
+import {Observable, of} from "rxjs";
+import {select, Store} from "@ngrx/store";
+import {AppStateInterface} from "../../types/appState.interface";
+import * as CardActions from "./store/actions";
+import {selectCard, selectError, selectIsLoading} from "./store/reducers";
 
 @Component({
   selector: 'app-card',
@@ -11,7 +16,8 @@ import {CardService} from "../../services/card.service";
     FormsModule,
     NgIf,
     DatePipe,
-    NgForOf
+    NgForOf,
+    AsyncPipe
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
@@ -19,10 +25,15 @@ import {CardService} from "../../services/card.service";
 export class CardComponent implements OnChanges{
   @Output() cardClose = new EventEmitter();
   @Input() cardId?: string;
-  card?: CardVmDetails;
+  isLoading$: Observable<boolean>;
+  error$: Observable<string | null>;
+  card$: Observable<CardVmDetails | undefined>;
 
-  constructor(private cardService: CardService) {
-  }
+  constructor(private cardService: CardService, private store: Store<AppStateInterface>) {
+  this.isLoading$ = this.store.pipe(select(selectIsLoading));
+  this.error$ = this.store.pipe(select(selectError));
+  this.card$ = this.store.pipe(select(selectCard));
+}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['cardId'] && !changes['cardId'].firstChange && this.cardId) {
@@ -32,16 +43,12 @@ export class CardComponent implements OnChanges{
 
   loadCardVm(){
     if(this.cardId) {
-      this.cardService.getCard(this.cardId)
-        .subscribe((data: CardVmDetails) => {
-          console.log(data);
-          this.card = data;
-        });
+      this.store.dispatch(CardActions.getCard({Id: this.cardId}));
+      console.log(this.card$)
     }
   }
 
   cancel(){
     this.cardClose.emit();
-    this.card = undefined;
   }
 }

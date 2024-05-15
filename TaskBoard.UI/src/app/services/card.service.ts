@@ -14,7 +14,7 @@ export class CardService {
 
   constructor(private http: HttpClient) { }
 
-  public getCard(cardId: string) : Observable<CardVmDetails>{
+  public getCard(cardId?: string) : Observable<CardVmDetails>{
     return this.http.get<CardVmDetails>(`${environment.apiUrl}/${this.url}/${cardId}`);
   }
 

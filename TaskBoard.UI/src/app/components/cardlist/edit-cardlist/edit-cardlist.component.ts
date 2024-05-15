@@ -21,7 +21,6 @@ import * as CardListsActions from "../store/actions";
 })
 export class EditCardlistComponent {
   @Input() cardlist?: CardlistInputModel;
-  @Output() cardlistsUpdated = new EventEmitter<CardlistVm[]>();
   @Output() cardListFormClose = new EventEmitter();
   errors: { [key: string]: string[] } = {};
   isLoading$: Observable<boolean>;

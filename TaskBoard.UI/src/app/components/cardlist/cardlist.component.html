@@ -47,7 +47,7 @@
         <div class="card-footer">
           <select class="move-to-dropdown" [(ngModel)]="selectedListId" (change)="moveCardTo(card.id)">
             <option value="" disabled selected>Move to:</option>
-            <ng-container *ngFor="let list of cardLists">
+            <ng-container *ngFor="let list of cardLists$ | async">
               <option [value]="list.id" *ngIf="list.id !== card.cardListId">{{ list.name }}</option>
             </ng-container>
           </select>
@@ -60,14 +60,12 @@
   </div>
   <app-edit-cardlist
     [cardlist]="cardlistToEdit"
-    (cardlistsUpdated)="updateCardLists()"
     (cardListFormClose)="closeCardListForm()"
   ></app-edit-cardlist>
 </div>
 
 <app-edit-card
   [card]="cardToEdit"
-  (cardlistsUpdated)="updateCardLists()"
   (cardFormClose)="closeCardForm()"
 ></app-edit-card>
 

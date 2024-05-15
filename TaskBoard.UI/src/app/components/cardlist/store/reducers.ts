@@ -1,4 +1,4 @@
-import {CardListStateInterface} from "../types/CardListStateInterface";
+import {CardListStateInterface} from "../types/cardListState.interface";
 import {createFeature, createReducer, on} from "@ngrx/store";
 import * as CardListsActions from './actions'
 

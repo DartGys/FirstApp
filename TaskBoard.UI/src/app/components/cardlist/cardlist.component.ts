@@ -44,7 +44,7 @@ export class CardlistComponent implements OnChanges{
   cardToEdit?: CardInputModel;
   cardIdToShow?: string;
 
-  constructor(private cardListService: CardListService, private cardService: CardService, private store: Store<AppStateInterface>) {
+  constructor(private cardService: CardService, private store: Store<AppStateInterface>) {
     this.isLoading$ = this.store.pipe(select(selectIsLoading));
     this.error$ = this.store.pipe(select(selectError));
     this.cardLists$ = this.store.pipe(select(selectCardLists));
@@ -58,10 +58,6 @@ export class CardlistComponent implements OnChanges{
 
   loadCardLists() {
     this.store.dispatch(CardListsActions.getCardLists({ boardId: this.boardId }));
-  }
-
-  updateCardLists(){
-    this.loadCardLists();
   }
 
   closeCardForm(){
