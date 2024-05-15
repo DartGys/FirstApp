@@ -114,11 +114,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   deleteCardList(id: string){
-    this.cardListService.deleteCardList(id, this.boardId).subscribe(
-      (response) => {
-        this.cardLists = response;
-      },
-    );
+    this.store.dispatch(CardListsActions.deleteCardList({Id: id, boardId: this.boardId }));
   }
 
   deleteCard(id: string){

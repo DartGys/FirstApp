@@ -28,10 +28,23 @@ export class CardListsEffects {
       ofType(CardListsActions.addCardList),
       mergeMap((action) =>
         this.cardListService.createCardList(action.cardList).pipe(
-          map((cardList) => CardListsActions.addCardListSuccess({ cardList })),
+          map((cardLists) => CardListsActions.addCardListSuccess({ cardLists })),
           catchError((error) => of(CardListsActions.addCardListFailure({ error: error.message })))
         )
       )
+    )
+  );
+
+  deleteCardList$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(CardListsActions.deleteCardList),
+      withLatestFrom(this.store.select(state => ({ Id: state.cardLists.Id, boardId: state.cardLists.boardId }))),
+      mergeMap(([action, ids]) => {
+        return this.cardListService.deleteCardList(ids.Id, ids.boardId).pipe(
+          map((cardLists) => CardListsActions.deleteCardListSuccess({ cardLists })),
+          catchError((error) => of(CardListsActions.deleteCardListFailure({ error: error.message })))
+        );
+      })
     )
   );
 

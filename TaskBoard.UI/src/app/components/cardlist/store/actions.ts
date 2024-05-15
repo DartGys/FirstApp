@@ -25,10 +25,25 @@ export const addCardList = createAction(
 
 export const addCardListSuccess = createAction(
   '[CardLists] Add CardList Success',
-  props<{ cardList: CardlistVm[] }>()
+  props<{ cardLists: CardlistVm[] }>()
 );
 
 export const addCardListFailure = createAction(
   '[CardLists] Add CardList Failure',
+  props<{ error: string }>()
+);
+
+export const deleteCardList = createAction(
+  '[CardLists] Delete CardList',
+  props<{ Id : string | undefined, boardId: string | undefined }>()
+);
+
+export const deleteCardListSuccess = createAction(
+  '[CardLists] Delete CardList Success',
+  props<{ cardLists: CardlistVm[] }>()
+);
+
+export const deleteCardListFailure = createAction(
+  '[CardLists] Delete CardList Failure',
   props<{ error: string }>()
 );

@@ -38,7 +38,7 @@ export class CardListService {
     return this.http.put<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, cardList);
   }
 
-  public deleteCardList(cardListId: string, boardId?: string) : Observable<CardlistVm[]>{
+  public deleteCardList(cardListId?: string, boardId?: string) : Observable<CardlistVm[]>{
     return this.http.delete<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardListId}/board/${boardId}`);
   }
 }

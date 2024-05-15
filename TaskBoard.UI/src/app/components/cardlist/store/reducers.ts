@@ -6,7 +6,8 @@ export const initialState: CardListStateInterface = {
   isLoading: false,
   cardLists: [],
   error: null,
-  boardId: undefined
+  boardId: undefined,
+  Id: undefined,
 };
 
 const cardListsFeature = createFeature({
@@ -28,9 +29,20 @@ const cardListsFeature = createFeature({
     on(CardListsActions.addCardListSuccess, (state, action) => ({
       ...state,
       isLoading: false,
-      cardLists: action.cardList,
+      cardLists: action.cardLists,
     })),
     on(CardListsActions.addCardListFailure, (state, action) => ({
+      ...state,
+      isLoading: false,
+      error: action.error,
+    })),
+    on(CardListsActions.deleteCardList, (state, action) => ({ ...state, isLoading: true, Id: action.Id, boardId: action.boardId })),
+    on(CardListsActions.deleteCardListSuccess, (state, action) => ({
+      ...state,
+      isLoading: false,
+      cardLists: action.cardLists,
+    })),
+    on(CardListsActions.deleteCardListFailure, (state, action) => ({
       ...state,
       isLoading: false,
       error: action.error,

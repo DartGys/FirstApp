@@ -5,6 +5,7 @@ export interface CardListStateInterface {
   cardLists: CardlistVm[];
   error: string | null;
   boardId: string | undefined;
+  Id: string | undefined;
 }
 
 
