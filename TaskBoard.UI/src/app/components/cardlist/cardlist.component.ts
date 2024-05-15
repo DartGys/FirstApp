@@ -114,7 +114,7 @@ export class CardlistComponent implements OnChanges{
   }
 
   deleteCard(id: string){
-    this.store.dispatch(CardActions.deleteCard({Id: id, boardId: this.boardId}));
+    this.store.dispatch(CardListsActions.deleteCard({Id: id, boardId: this.boardId}));
   }
 
   selectedListId= '';

@@ -12,8 +12,8 @@
         </div>
       </div>
     </div>
-    <h4 class="list-count">Card count: {{ board.cardListCount }}</h4>
-    <h4 class="card-count">Card list count: {{ board.cardCount }}</h4>
+    <h4 class="list-count">Card list count: {{ board.cardListCount }}</h4>
+    <h4 class="card-count">Card count: {{ board.cardCount }}</h4>
   </div>
   <div class="board-add" *ngIf="!boardToEdit">
     <button class="board-add-button" (click)="initNewBoard()">Add new board</button>

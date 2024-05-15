@@ -65,10 +65,9 @@ export class CardListsEffects {
 
   deleteCard$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(CardActions.deleteCard),
-      withLatestFrom(this.store.select(state => ({ Id: state.card.Id, boardId: state.card.boardId }))),
-      mergeMap(([action, ids]) => {
-        return this.cardService.deleteCard(ids.Id, ids.boardId).pipe(
+      ofType(CardListsActions.deleteCard),
+      mergeMap((action) => {
+        return this.cardService.deleteCard(action.Id, action.boardId).pipe(
           map((cardLists) => CardListsActions.deleteCardSuccess({ cardLists })),
           catchError((error) => of(CardListsActions.deleteCardFailure({ error: error.message })))
         );

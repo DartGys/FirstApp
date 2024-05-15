@@ -60,6 +60,7 @@ const cardListsFeature = createFeature({
       isLoading: false,
       error: action.error,
     })),
+    on(CardListsActions.deleteCard, (state, action) => ({ ...state, isLoading: true, Id: action.Id, boardId: action.boardId})),
     on(CardListsActions.deleteCardSuccess, (state, action) => ({
       ...state,
       isLoading: false,

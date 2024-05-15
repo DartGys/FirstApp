@@ -41,8 +41,8 @@ export class CardEffects {
       ofType(CardActions.updateCard),
       mergeMap((action) => {
         return this.cardService.updateCard(action.card).pipe(
-          map((cardLists) => CardListsActions.updateCardListSuccess({ cardLists })),
-          catchError((error) => of(CardListsActions.updateCardListFailure({ error: error.message })))
+          map((cardLists) => CardActions.updateCardSuccess({ cardLists })),
+          catchError((error) => of(CardActions.updateCardFailure({ error: error.message })))
         );
       })
     )
