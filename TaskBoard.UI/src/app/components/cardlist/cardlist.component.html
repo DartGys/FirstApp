@@ -2,7 +2,7 @@
   <button class="back-button" (click)="backToBoards()">Back to Boards</button>
   <h1>{{this.boardName}}</h1>
 <div class="card-list-container">
-  <div class="card-list-group" *ngFor="let cardList of cardLists">
+  <div class="card-list-group" *ngFor="let cardList of cardLists$ | async">
     <div class="card-list-item">
       <h4 class="card-list-name">{{ cardList.name }}</h4>
       <h4 class="card-count">{{ cardList.cards.length }}</h4>

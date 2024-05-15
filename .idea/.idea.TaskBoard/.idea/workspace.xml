@@ -8,7 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="board crud">
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="hot fixes">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/store/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/types/CardListStateInterface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/types/appState.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
@@ -30,7 +36,12 @@
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/card/edit-card/edit-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/cardlist.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/app/components/cardlist/edit-cardlist/edit-cardlist.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
@@ -78,7 +89,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/board" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,7 +141,7 @@
     "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/ngrx",
     "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -305,14 +316,6 @@
       <workItem from="1714931045144" duration="6053000" />
       <workItem from="1715684087348" duration="14160000" />
       <workItem from="1715712951589" duration="2265000" />
-    </task>
-    <task id="LOCAL-00010" summary="add Card foreign key to HistoryLog entity">
-      <option name="closed" value="true" />
-      <created>1713977140116</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1713977140116</updated>
     </task>
     <task id="LOCAL-00011" summary="business-logic project created">
       <option name="closed" value="true" />
@@ -698,7 +701,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715704090500</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="hot fixes">
+      <option name="closed" value="true" />
+      <created>1715763432776</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1715763432777</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,7 +728,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/board" />
+                        <option value="feature/ngrx" />
                       </list>
                     </value>
                   </entry>
@@ -731,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="models created" />
     <MESSAGE value="services created" />
     <MESSAGE value="cardlists crud view implemented" />
     <MESSAGE value="edit-form styles" />
@@ -756,6 +766,7 @@
     <MESSAGE value="board menu, open/close board" />
     <MESSAGE value="show cardlist and history for board" />
     <MESSAGE value="board crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="board crud" />
+    <MESSAGE value="hot fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="hot fixes" />
   </component>
 </project>

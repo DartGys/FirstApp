@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {CardlistVm, CardVmList} from "../../models/view-models/cardlist-vm";
 import {CardListService} from "../../services/cardList.service";
-import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {AsyncPipe, DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {EditCardlistComponent} from "./edit-cardlist/edit-cardlist.component";
 import {CardlistInputModel} from "../../models/input-models/cardlist-input-model";
 import {CardInputModel} from "../../models/input-models/card-input-model";
@@ -9,6 +9,11 @@ import {CardService} from "../../services/card.service";
 import {EditCardComponent} from "../card/edit-card/edit-card.component";
 import {FormsModule} from "@angular/forms";
 import {CardComponent} from "../card/card.component";
+import {Observable} from "rxjs";
+import {select, Store} from "@ngrx/store";
+import {AppStateInterface} from "../../types/appState.interface";
+import {selectCardLists, selectError, selectIsLoading} from "./store/reducers";
+import * as CardListsActions from './store/actions'
 
 @Component({
   selector: 'app-cardlist',
@@ -21,12 +26,16 @@ import {CardComponent} from "../card/card.component";
     NgOptimizedImage,
     EditCardComponent,
     FormsModule,
-    CardComponent
+    CardComponent,
+    AsyncPipe
   ],
   templateUrl: './cardlist.component.html',
   styleUrl: './cardlist.component.css'
 })
 export class CardlistComponent implements OnChanges{
+  isLoading$: Observable<boolean>;
+  error$: Observable<string | null>;
+  cardLists$: Observable<CardlistVm[]>;
   cardLists?: CardlistVm[] = [];
   @Input() boardId?: string;
   @Input() boardName?: string;
@@ -35,23 +44,20 @@ export class CardlistComponent implements OnChanges{
   cardToEdit?: CardInputModel;
   cardIdToShow?: string;
 
-  constructor(private cardListService: CardListService, private cardService: CardService) { }
+  constructor(private cardListService: CardListService, private cardService: CardService, private store: Store<AppStateInterface>) {
+    this.isLoading$ = this.store.pipe(select(selectIsLoading));
+    this.error$ = this.store.pipe(select(selectError));
+    this.cardLists$ = this.store.pipe(select(selectCardLists));
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['boardId'] && !changes['boardId'].firstChange) {
-      if(!this.boardId){
-        this.cardLists = undefined;
-      }
-      else {
         this.loadCardLists();
-      }
     }
   }
 
   loadCardLists() {
-    this.cardListService
-      .getCardListByBoard(this.boardId)
-      .subscribe((result: CardlistVm[]) => (this.cardLists = result));
+    this.store.dispatch(CardListsActions.getCardLists({ boardId: this.boardId }));
   }
 
   updateCardLists(){
