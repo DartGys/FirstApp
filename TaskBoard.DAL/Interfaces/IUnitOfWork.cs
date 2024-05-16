@@ -8,6 +8,7 @@ public interface IUnitOfWork : IDisposable
     ICardListRepository CardList { get; }
     IHistoryLogRepository HistoryLog { get; }
     IPriorityRepository Priority { get; }
+    IBoardRepository Board { get;  }
     
     Task<int> SaveChangeAsync(CancellationToken cancellationToken = default);
 }

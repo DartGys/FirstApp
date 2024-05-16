@@ -13,3 +13,10 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.runtimeconfig.json
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.genruntimeconfig.cache
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.sourcelink.json
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/System.IO.Pipelines.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/obj/Debug/net8.0/TaskBoar.269DCC1A.Up2Date

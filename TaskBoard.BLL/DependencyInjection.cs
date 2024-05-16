@@ -15,6 +15,7 @@ public static class DependencyInjection
         services.AddScoped<ICardService, CardService>();
         services.AddScoped<IPriorityService, PriorityService>();
         services.AddScoped<IHistoryLogService, HistoryLogService>();
+        services.AddScoped<IBoardService, BoardService>();
 
         return services;
     }

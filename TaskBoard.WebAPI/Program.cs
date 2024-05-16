@@ -1,5 +1,7 @@
+using System.Runtime.CompilerServices;
 using TaskBoard.BLL;
 using TaskBoard.DAL;
+[assembly: InternalsVisibleTo("TaskBoard.Tests")]
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,8 @@ builder.Services.AddCors(options => options.AddPolicy(name: "TaskBoardOrigins",
 
 
 var app = builder.Build();
+
+app.SeedDbData();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -18,8 +18,16 @@ export class CardListService {
     return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}`);
   }
 
+  public getCardListByBoard(boardId?: string) : Observable<CardlistVm[]>{
+    return this.http.get<CardlistVm[]>(`${environment.apiUrl}/${this.url}/board/${boardId}`);
+  }
+
   public getCardListsList() : Observable<CardlistVmList[]>{
     return this.http.get<CardlistVmList[]>(`${environment.apiUrl}/${this.url}/list`);
+  }
+
+  public getCardListsListByBoard(boardId?: string) : Observable<CardlistVmList[]>{
+    return this.http.get<CardlistVmList[]>(`${environment.apiUrl}/${this.url}/list/board/${boardId}`);
   }
 
   public createCardList(cardList: CardlistInputModel) : Observable<CardlistVm[]> {
@@ -30,7 +38,7 @@ export class CardListService {
     return this.http.put<CardlistVm[]>(`${environment.apiUrl}/${this.url}`, cardList);
   }
 
-  public deleteCardList(cardListId: string) : Observable<CardlistVm[]>{
-    return this.http.delete<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardListId}`);
+  public deleteCardList(cardListId?: string, boardId?: string) : Observable<CardlistVm[]>{
+    return this.http.delete<CardlistVm[]>(`${environment.apiUrl}/${this.url}/${cardListId}/board/${boardId}`);
   }
 }

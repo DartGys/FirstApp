@@ -8,63 +8,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskBoard.UI/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/TaskBoard.DAL.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24,_23_15_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/shelf/Uncommitted_changes_before_Merge_at_26_04_24__23_15__Changes_.xml" beforeDir="false" />
+    <list default="true" id="0f505beb-8dbd-4e93-9fe0-b38fc31ef254" name="Changes" comment="integration tests">
+      <change afterPath="$PROJECT_DIR$/TaskBoard.Tests/UnitTests/BoardServiceTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskBoard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/TaskBoard.BLL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/refint/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.BLL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/TaskBoard.DAL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/ref/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/refint/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/TaskBoard.DAL.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.DAL/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.UI/src/enviroments/enviroment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.UI/src/enviroments/enviroment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.BLL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.DAL.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/bin/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/TaskBoard.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/TaskBoard.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/TaskBoard.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/TaskBoard.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskBoard.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.Tests/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/TaskBoard.WebAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/ref/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/Debug/net8.0/refint/TaskBoard.WebAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.WebAPI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskBoard.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TaskBoard.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +51,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="develop" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ui" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -108,21 +89,12 @@
     <setting file="file://$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogInputModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.BLL/Models/InputModels/HistoryLogInputModels/HistoryLogUpdateCardPriority.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.BLL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.DAL/Data/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/Data/Configurations/CardConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/Data/Entities/HistoryLog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/DependencyInjection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TaskBoard.DAL/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/bohdan/RiderProjects/TaskBoard/TaskBoard.WebAPI/Controllers/CardController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TaskBoard.Tests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -130,6 +102,7 @@
 }</component>
   <component name="ProjectId" id="2fVZys4gEDZfntQXyrdzwWjAi88" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -139,12 +112,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.TaskBoard.WebAPI: http.executor": "Run",
+    "07196638-ec68-4699-816f-865e75bba96d.executor": "Debug",
     "Docker.TaskBoard.BLL/Dockerfile.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.50406504",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/bohdan/RiderProjects/TaskBoard/TaskBoard.UI",
+    "cd9ec195-542f-42fe-963d-312e2f830fc9.executor": "Debug",
+    "git-widget-placeholder": "features/tests",
+    "last_opened_file_path": "/home/bohdan/RiderProjects/TradeMarket",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -167,7 +142,7 @@
       <option value="15" />
     </hideBySeverity>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.TaskBoard.WebAPI: http">
     <configuration name="TaskBoard.WebAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TaskBoard.WebAPI/TaskBoard.WebAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -267,7 +242,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
@@ -288,6 +266,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.TaskBoard.BLL/Dockerfile" />
         <item itemvalue="Docker.TaskBoard.BLL/Dockerfile" />
       </list>
     </recent_temporary>
@@ -312,134 +291,10 @@
       <workItem from="1714731023222" duration="6318000" />
       <workItem from="1714757884944" duration="2617000" />
       <workItem from="1714931045144" duration="6053000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1713893313389</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1713893313389</updated>
-    </task>
-    <task id="LOCAL-00002" summary="entities">
-      <option name="closed" value="true" />
-      <created>1713893915769</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713893915769</updated>
-    </task>
-    <task id="LOCAL-00003" summary="dbcontext">
-      <option name="closed" value="true" />
-      <created>1713894216184</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713894216184</updated>
-    </task>
-    <task id="LOCAL-00004" summary="history log entity">
-      <option name="closed" value="true" />
-      <created>1713894387519</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713894387519</updated>
-    </task>
-    <task id="LOCAL-00005" summary="entities-configurations">
-      <option name="closed" value="true" />
-      <created>1713904419909</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713904419909</updated>
-    </task>
-    <task id="LOCAL-00006" summary="reposiry interfaces">
-      <option name="closed" value="true" />
-      <created>1713905123970</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713905123970</updated>
-    </task>
-    <task id="LOCAL-00007" summary="IUnitOfWork interface">
-      <option name="closed" value="true" />
-      <created>1713905254386</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713905254386</updated>
-    </task>
-    <task id="LOCAL-00008" summary="repository implementation">
-      <option name="closed" value="true" />
-      <created>1713906229859</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713906229859</updated>
-    </task>
-    <task id="LOCAL-00009" summary="business logic project created">
-      <option name="closed" value="true" />
-      <created>1713976451235</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1713976451235</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add Card foreign key to HistoryLog entity">
-      <option name="closed" value="true" />
-      <created>1713977140116</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1713977140116</updated>
-    </task>
-    <task id="LOCAL-00011" summary="business-logic project created">
-      <option name="closed" value="true" />
-      <created>1713977195876</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1713977195876</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Vm created">
-      <option name="closed" value="true" />
-      <created>1713978272636</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1713978272636</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Input models created">
-      <option name="closed" value="true" />
-      <created>1713979035280</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1713979035280</updated>
-    </task>
-    <task id="LOCAL-00014" summary="HistoryLog input model created">
-      <option name="closed" value="true" />
-      <created>1713982969745</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1713982969745</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Service interfaces created">
-      <option name="closed" value="true" />
-      <created>1713983349740</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1713983349740</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Autommaper configuration created">
-      <option name="closed" value="true" />
-      <created>1713987259250</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1713987259250</updated>
+      <workItem from="1715684087348" duration="14160000" />
+      <workItem from="1715712951589" duration="2265000" />
+      <workItem from="1715807717503" duration="116000" />
+      <workItem from="1715807857897" duration="7099000" />
     </task>
     <task id="LOCAL-00017" summary="mapping configuration added to models">
       <option name="closed" value="true" />
@@ -657,7 +512,183 @@
       <option name="project" value="LOCAL" />
       <updated>1714756877807</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="card input date fix">
+      <option name="closed" value="true" />
+      <created>1715618636068</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1715618636068</updated>
+    </task>
+    <task id="LOCAL-00045" summary="board entity created">
+      <option name="closed" value="true" />
+      <created>1715620573283</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1715620573283</updated>
+    </task>
+    <task id="LOCAL-00046" summary="configuration added">
+      <option name="closed" value="true" />
+      <created>1715622570035</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1715622570035</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Board service + models">
+      <option name="closed" value="true" />
+      <created>1715678142574</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678142574</updated>
+    </task>
+    <task id="LOCAL-00048" summary="entity fix">
+      <option name="closed" value="true" />
+      <created>1715678196270</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678196270</updated>
+    </task>
+    <task id="LOCAL-00049" summary="seed data">
+      <option name="closed" value="true" />
+      <created>1715678572900</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678572900</updated>
+    </task>
+    <task id="LOCAL-00050" summary="CardListService, HistoryLogService">
+      <option name="closed" value="true" />
+      <created>1715678962388</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678962389</updated>
+    </task>
+    <task id="LOCAL-00051" summary="web api board">
+      <option name="closed" value="true" />
+      <created>1715679089030</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1715679089030</updated>
+    </task>
+    <task id="LOCAL-00052" summary="dependency">
+      <option name="closed" value="true" />
+      <created>1715679151400</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1715679151400</updated>
+    </task>
+    <task id="LOCAL-00053" summary="api modif">
+      <option name="closed" value="true" />
+      <created>1715683016757</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1715683016757</updated>
+    </task>
+    <task id="LOCAL-00054" summary="board vm update">
+      <option name="closed" value="true" />
+      <created>1715686279420</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1715686279420</updated>
+    </task>
+    <task id="LOCAL-00055" summary="board model + board component">
+      <option name="closed" value="true" />
+      <created>1715694494912</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1715694494912</updated>
+    </task>
+    <task id="LOCAL-00056" summary="board menu, open/close board">
+      <option name="closed" value="true" />
+      <created>1715699771314</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1715699771314</updated>
+    </task>
+    <task id="LOCAL-00057" summary="show cardlist and history for board">
+      <option name="closed" value="true" />
+      <created>1715701726853</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1715701726853</updated>
+    </task>
+    <task id="LOCAL-00058" summary="board crud">
+      <option name="closed" value="true" />
+      <created>1715704090499</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1715704090500</updated>
+    </task>
+    <task id="LOCAL-00059" summary="hot fixes">
+      <option name="closed" value="true" />
+      <created>1715763432776</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1715763432777</updated>
+    </task>
+    <task id="LOCAL-00060" summary="ngrx cardlist add/add">
+      <option name="closed" value="true" />
+      <created>1715780257243</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1715780257243</updated>
+    </task>
+    <task id="LOCAL-00061" summary="ngrx delete cardlist">
+      <option name="closed" value="true" />
+      <created>1715781671732</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1715781671732</updated>
+    </task>
+    <task id="LOCAL-00062" summary="ngrx update cardlist">
+      <option name="closed" value="true" />
+      <created>1715782432611</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1715782432611</updated>
+    </task>
+    <task id="LOCAL-00063" summary="ngrx get card">
+      <option name="closed" value="true" />
+      <created>1715786236143</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1715786236143</updated>
+    </task>
+    <task id="LOCAL-00064" summary="ngrx card add">
+      <option name="closed" value="true" />
+      <created>1715793701772</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1715793701772</updated>
+    </task>
+    <task id="LOCAL-00065" summary="integration tests">
+      <option name="closed" value="true" />
+      <created>1715816667101</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1715816667102</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,19 +701,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -690,31 +709,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Implement IEntity" />
-    <MESSAGE value="update method created in GenericRepository" />
-    <MESSAGE value="Card service implementation + card repository UpdateList method created" />
-    <MESSAGE value="CardListService implemented" />
-    <MESSAGE value="PriorityService implemented" />
-    <MESSAGE value="DependencyInjection added" />
-    <MESSAGE value="WebApi project created" />
-    <MESSAGE value="controllers created" />
-    <MESSAGE value="inject repositories" />
-    <MESSAGE value=" connection string added" />
-    <MESSAGE value="fixes" />
-    <MESSAGE value="merge fixes" />
-    <MESSAGE value="UI project created" />
-    <MESSAGE value="SeedData filled" />
-    <MESSAGE value="Card update fix" />
-    <MESSAGE value="models created" />
-    <MESSAGE value="services created" />
-    <MESSAGE value="cardlists crud view implemented" />
-    <MESSAGE value="edit-form styles" />
-    <MESSAGE value="card update model deleted" />
-    <MESSAGE value="card crud view implemented" />
-    <MESSAGE value="fix load list and priorities in card component" />
     <MESSAGE value="History side bar added" />
     <MESSAGE value="card update hot fix" />
     <MESSAGE value="backend validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend validation" />
+    <MESSAGE value="card input date fix" />
+    <MESSAGE value="board entity created" />
+    <MESSAGE value="configuration added" />
+    <MESSAGE value="Board service + models" />
+    <MESSAGE value="entity fix" />
+    <MESSAGE value="seed data" />
+    <MESSAGE value="CardListService, HistoryLogService" />
+    <MESSAGE value="web api board" />
+    <MESSAGE value="dependency" />
+    <MESSAGE value="api modif" />
+    <MESSAGE value="board vm update" />
+    <MESSAGE value="board model + board component" />
+    <MESSAGE value="board menu, open/close board" />
+    <MESSAGE value="show cardlist and history for board" />
+    <MESSAGE value="board crud" />
+    <MESSAGE value="hot fixes" />
+    <MESSAGE value="ngrx cardlist add/add" />
+    <MESSAGE value="ngrx delete cardlist" />
+    <MESSAGE value="ngrx update cardlist" />
+    <MESSAGE value="ngrx get card" />
+    <MESSAGE value="ngrx card add" />
+    <MESSAGE value="integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration tests" />
   </component>
 </project>

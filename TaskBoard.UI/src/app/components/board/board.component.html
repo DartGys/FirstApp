@@ -1,0 +1,28 @@
+<div class="board-container">
+  <div class="board-group" *ngFor="let board of boards">
+    <div class="board-item">
+      <button (click)="openBoard(board)">
+      <h4 class="board-name">{{ board.name }}</h4>
+      </button>
+      <div class="menu-button">
+        <button class="menu-button-dots">&#8942;</button>
+        <div class="menu">
+          <button class="edit-button" (click)="editBoard(board)">Edit</button>
+          <button class="delete-button" (click)="deleteBoard(board.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <h4 class="list-count">Card list count: {{ board.cardListCount }}</h4>
+    <h4 class="card-count">Card count: {{ board.cardCount }}</h4>
+  </div>
+  <div class="board-add" *ngIf="!boardToEdit">
+    <button class="board-add-button" (click)="initNewBoard()">Add new board</button>
+  </div>
+  <app-edit-board
+    [board]="boardToEdit"
+    (boardsUpdated)="updateBoards($event)"
+    (boardFormClose)="closeBoardForm()"
+  ></app-edit-board>
+</div>
+
+

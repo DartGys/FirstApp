@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskBoard.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d37364fd88773fb22c563a77ea59cf0a782a2a9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722ff1a0499257c478ab8f9433376ddb32d78a01")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskBoard.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskBoard.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

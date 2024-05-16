@@ -14,3 +14,9 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.pdb
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/ref/TaskBoard.BLL.dll
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/obj/Debug/net8.0/TaskBoard.BLL.sourcelink.json
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/System.IO.Pipelines.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.BLL/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll

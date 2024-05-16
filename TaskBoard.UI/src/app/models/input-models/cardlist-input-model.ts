@@ -1,6 +1,7 @@
 export class CardlistInputModel{
   id= '';
   name= '';
+  boardId = '';
 
   validate(): {[key: string]: string[] } {
     const errors: { [key: string]: string[] } = {};

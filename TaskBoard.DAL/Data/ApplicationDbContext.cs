@@ -9,13 +9,13 @@ public sealed class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
         Database.EnsureCreated();
-        SeedData.Initialize(this);
     }
 
     public DbSet<Card> Cards => Set<Card>();
     public DbSet<HistoryLog> HistoryLogs => Set<HistoryLog>();
     public DbSet<CardList> CardLists => Set<CardList>();
     public DbSet<Priority> Priorities => Set<Priority>();
+    public DbSet<Board> Boards => Set<Board>();
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

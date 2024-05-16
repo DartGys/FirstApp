@@ -1,0 +1,122 @@
+.board-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.board-group {
+  border-radius: 20px;
+  border: 1px solid;
+  width: calc(18%);
+  padding: 10px;
+}
+
+.board-item{
+  display: flex;
+  background-color: white;
+  border-top: 2px solid #cccc;
+  border-bottom: 2px solid #cccc;
+  height: 40px;
+}
+
+.board-name{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-item {
+  border: 1px solid #cccc;
+  margin-bottom: 10px;
+}
+
+.card-header h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card-count{
+
+}
+
+.list-count{
+
+}
+
+.menu-button {
+  margin-left: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button-dots {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+}
+
+.menu-button:hover .menu {
+  display: block;
+}
+
+.edit-button, .delete-button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin: 5px;
+  width: 90%;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.delete-button {
+  color: red;
+}
+
+.menu-button-dots:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.edit-button:hover, .delete-button:hover{
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.board-add{
+  margin-top: 20px;
+  width: calc(18%);
+}
+
+.board-add-button {
+  border: none;
+  border-top: 2px solid #cccc;
+  border-bottom: 2px solid #cccc;
+  background-color: #fff;
+  padding-bottom: 12px;
+  padding-top: 11px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.board-add-button::after {
+  content: "+";
+  position: absolute;
+}

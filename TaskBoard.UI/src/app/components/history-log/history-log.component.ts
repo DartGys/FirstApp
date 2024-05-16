@@ -18,6 +18,7 @@ export class HistoryLogComponent implements OnChanges{
   historyLogs?: HistorylogVm[];
   @Output() historyLogClose = new EventEmitter();
   @Input() isOpen!: boolean;
+  @Input() boardId?: string;
 
   constructor(private historyLogService: HistoryLogService) { }
 
@@ -28,7 +29,12 @@ export class HistoryLogComponent implements OnChanges{
   ngOnChanges(changes: SimpleChanges): void {
     this.historyLogs = undefined;
     if (changes['isOpen'] && !changes['isOpen'].firstChange) {
-      this.loadHistory();
+      if(!this.boardId){
+        this.historyLogs = undefined;
+      }
+      else {
+        this.loadHistory();
+      }
     }
   }
 
@@ -37,7 +43,7 @@ export class HistoryLogComponent implements OnChanges{
     let lastRecord = this.historyLogs?.length || 0;
 
     this.historyLogService
-      .getTwentyRecords(lastRecord)
+      .getTwentyRecordsByBoard(this.boardId, lastRecord)
       .subscribe((result: HistorylogVm[]) => {
         if (!this.historyLogs) {
           this.historyLogs = result;

@@ -35,10 +35,35 @@ public class CardListService : ICardListService
 
         return cardLists;
     }
+    
+    public async Task<IEnumerable<CardListVm>> GetByBoardAsync(Guid boardId)
+    {
+        var entities = await _unitOfWork.CardList.FindAsyncNoTracking(x => x.BoardId == boardId);
+        
+        foreach (var cardList in entities)
+        {
+            var cards = await _unitOfWork.Card.FindAsyncNoTracking(x => x.CardListId == cardList.Id, 
+                new CancellationToken(), x => x.Priority);
+            cardList.Cards = cards.OrderByDescending(x => x.DueDate).ToList();
+        }
+        
+        var cardLists = _mapper.Map<IEnumerable<CardListVm>>(entities);
+
+        return cardLists;
+    }
 
     public async Task<IEnumerable<CardListVmList>> GetListAsync()
     {
         var entities = await _unitOfWork.CardList.GetAllAsyncNoTracking();
+
+        var models = _mapper.Map<IEnumerable<CardListVmList>>(entities);
+
+        return models;
+    }
+    
+    public async Task<IEnumerable<CardListVmList>> GetListByBoardAsync(Guid boardId)
+    {
+        var entities = await _unitOfWork.CardList.FindAsyncNoTracking(x => x.BoardId == boardId);
 
         var models = _mapper.Map<IEnumerable<CardListVmList>>(entities);
 

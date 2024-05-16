@@ -15,6 +15,7 @@ public class UnitOfWork : IUnitOfWork
         CardList = new CardListRepository(context);
         HistoryLog = new HistoryLogRepository(context);
         Priority = new PriorityRepository(context);
+        Board = new BoardRepository(context);
     }
     
     public void Dispose()
@@ -26,6 +27,7 @@ public class UnitOfWork : IUnitOfWork
     public ICardListRepository CardList { get; private set; }
     public IHistoryLogRepository HistoryLog { get; private set; }
     public IPriorityRepository Priority { get; private set; }
+    public IBoardRepository Board { get; private set; }
     
     public async Task<int> SaveChangeAsync(CancellationToken cancellationToken = default)
     {

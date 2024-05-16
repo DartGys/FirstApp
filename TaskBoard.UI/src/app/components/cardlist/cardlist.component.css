@@ -220,4 +220,15 @@
   position: absolute;
 }
 
+.back-button {
+  background-color: #919191; /* колір фону */
+  color: white; /* колір тексту */
+  border: none; /* відсутність бордеру */
+  padding: 10px 20px; /* відступи в середині кнопки */
+  border-radius: 5px; /* заокругленість кутів */
+  cursor: pointer; /* зміна курсора при наведенні */
+}
 
+.back-button:hover {
+  background-color: #9c9c9c; /* колір фону при наведенні */
+}

@@ -3,7 +3,11 @@ import {NgIf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {CardlistVm} from "../../../models/view-models/cardlist-vm";
 import {CardlistInputModel} from "../../../models/input-models/cardlist-input-model";
-import {CardListService} from "../../../services/cardList.service";
+import {Observable} from "rxjs";
+import {select, Store} from "@ngrx/store";
+import {selectCardLists, selectError, selectIsLoading} from "../store/reducers";
+import {AppStateInterface} from "../../../types/appState.interface";
+import * as CardListsActions from "../store/actions";
 
 @Component({
   selector: 'app-edit-cardlist',
@@ -17,12 +21,18 @@ import {CardListService} from "../../../services/cardList.service";
 })
 export class EditCardlistComponent {
   @Input() cardlist?: CardlistInputModel;
-  @Output() cardlistsUpdated = new EventEmitter<CardlistVm[]>();
   @Output() cardListFormClose = new EventEmitter();
   errors: { [key: string]: string[] } = {};
+  isLoading$: Observable<boolean>;
+  error$: Observable<string | null>;
+  cardLists$: Observable<CardlistVm[]>;
 
 
-  constructor(private cardListService: CardListService) { }
+  constructor(private store: Store<AppStateInterface>) {
+    this.isLoading$ = this.store.pipe(select(selectIsLoading));
+    this.error$ = this.store.pipe(select(selectError));
+    this.cardLists$ = this.store.pipe(select(selectCardLists));
+  }
 
   createCardList(cardlist: CardlistInputModel){
 
@@ -32,9 +42,7 @@ export class EditCardlistComponent {
       return;
     }
 
-    this.cardListService
-      .createCardList(cardlist)
-      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
+    this.store.dispatch(CardListsActions.addCardList({ cardList: cardlist }));
 
     this.cancel();
   }
@@ -47,9 +55,7 @@ export class EditCardlistComponent {
       return;
     }
 
-    this.cardListService
-      .updateCardList(cardlist)
-      .subscribe((cardlists: CardlistVm[]) => this.cardlistsUpdated.emit(cardlists));
+    this.store.dispatch(CardListsActions.updateCardList({ cardList: cardlist }));
 
     this.cancel();
   }

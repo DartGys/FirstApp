@@ -26,6 +26,15 @@ public class HistoryLogService : IHistoryLogService
 
         return models;
     }
+    
+    public async Task<IEnumerable<HistoryLogVm>> GetByBoardAsync(Guid boardId)
+    {
+        var entities = await _unitOfWork.HistoryLog.FindAsyncNoTracking(x => x.BoardId == boardId);
+
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+
+        return models;
+    }
 
     public async Task<IEnumerable<HistoryLogVm>> GetByCardIdAsync(Guid cardId)
     {
@@ -39,6 +48,15 @@ public class HistoryLogService : IHistoryLogService
     public async Task<IEnumerable<HistoryLogVm>> GetTwentyRecord(int lastRecord)
     {
         var entities = await _unitOfWork.HistoryLog.GetTwentyLogs(lastRecord);
+
+        var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
+
+        return models;
+    }
+    
+    public async Task<IEnumerable<HistoryLogVm>> GetTwentyRecordByBoard(Guid boardId, int lastRecord)
+    {
+        var entities = await _unitOfWork.HistoryLog.GetTwentyLogsByBoard(boardId, lastRecord);
 
         var models = _mapper.Map<IEnumerable<HistoryLogVm>>(entities);
 

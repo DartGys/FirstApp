@@ -1,0 +1,13 @@
+<div class="edit-form-container" *ngIf="board">
+  <div class="form-group">
+    <input class="input-title" [(ngModel)]="board.name" placeholder="Enter board title..." />
+    <div *ngIf="errors['name']" class="text-danger">
+      <p class="text-danger">{{ errors['name'] }}</p>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="button-add" (click)="createBoard(board)" *ngIf="!board.id">Add Board</button>
+    <button class="button-save" (click)="updateBoard(board)" *ngIf="board.id">Save</button>
+    <button class="button-cancel" (click)="cancel()">Cancel</button>
+  </div>
+</div>

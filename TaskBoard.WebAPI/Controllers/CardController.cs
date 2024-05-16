@@ -38,13 +38,13 @@ public class CardController : ControllerBase
         
         await _cardService.AddAsync(input);
 
-        var cardLists = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(input.BoardId);
 
         return Ok(cardLists);
     }
 
     [HttpPatch]
-    public async Task<IActionResult> UpdateCard([FromBody] CardInputModel input)
+    public async Task<IActionResult> UpdateCard( CardInputModel input)
     {
         var error = Validator.Card(input);
 
@@ -55,13 +55,13 @@ public class CardController : ControllerBase
         
         await _cardService.UpdateEntityAsync(input);
 
-        var cardLists = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(input.BoardId);
 
         return Ok(cardLists);
     }
 
-    [HttpPatch("{cardId}/list/{listId}")]
-    public async Task<IActionResult> UpdateListInCard(Guid cardId, Guid listId)
+    [HttpPatch("{cardId}/list/{listId}/board/{boardId}")]
+    public async Task<IActionResult> UpdateListInCard(Guid cardId, Guid listId, Guid boardId)
     {
         if (cardId == Guid.Empty || listId == Guid.Empty)
         {
@@ -70,13 +70,13 @@ public class CardController : ControllerBase
         
         await _cardService.UpdateListAsync(cardId, listId);
 
-        var cardLists = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(boardId);
 
         return Ok(cardLists);
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> Delete([FromRoute] Guid id)
+    [HttpDelete("{id}/board/{boardId}")]
+    public async Task<IActionResult> Delete([FromRoute] Guid id, Guid boardId)
     {
         if (id == Guid.Empty)
         {
@@ -85,7 +85,7 @@ public class CardController : ControllerBase
         
         await _cardService.DeleteAsync(id);
 
-        var cardLists = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(boardId);
 
         return Ok(cardLists);
     }

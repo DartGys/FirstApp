@@ -14,4 +14,8 @@ private url = 'historylog';
   public getTwentyRecords(lastRecord: number) : Observable<HistorylogVm[]>{
     return this.http.get<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/record/${lastRecord}`);
   }
+
+  public getTwentyRecordsByBoard(boardId?: string, lastRecord?: number) : Observable<HistorylogVm[]>{
+    return this.http.get<HistorylogVm[]>(`${environment.apiUrl}/${this.url}/record/${lastRecord}/board/${boardId}`);
+  }
 }

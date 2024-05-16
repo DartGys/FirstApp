@@ -22,6 +22,14 @@ public class HistoryLogController : ControllerBase
 
         return Ok(models);
     }
+    
+    [HttpGet("board")]
+    public async Task<IActionResult> GetAllHistoryByBoard(Guid id)
+    {
+        var models = await _historyLogService.GetByBoardAsync(id);
+
+        return Ok(models);
+    }
 
     [HttpGet("{cardId}")]
     public async Task<IActionResult> GetAllHistoryByCard(Guid cardId)
@@ -35,6 +43,14 @@ public class HistoryLogController : ControllerBase
     public async Task<IActionResult> GetRecords(int lastRecord)
     {
         var models = await _historyLogService.GetTwentyRecord(lastRecord);
+
+        return Ok(models);
+    }
+    
+    [HttpGet("record/{lastRecord}/board/{boardId}")]
+    public async Task<IActionResult> GetRecordsByBoard(Guid boardId, int lastRecord)
+    {
+        var models = await _historyLogService.GetTwentyRecordByBoard(boardId, lastRecord);
 
         return Ok(models);
     }

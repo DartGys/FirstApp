@@ -8,6 +8,7 @@ public class CardListVmList : IMapWith<CardList>
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
+    public Guid BoardId { get; set; }
     
     public void Mapping(Profile profile)
     {

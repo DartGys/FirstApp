@@ -5,6 +5,7 @@ export class CardInputModel{
   dueDate: Date = new Date();
   priorityId= '';
   cardListId= '';
+  boardId = '';
 
   validate(): {[key: string]: string[] } {
     const errors: { [key: string]: string[] } = {};
@@ -15,8 +16,7 @@ export class CardInputModel{
       errors['name'] = ['Card name must be less than 100 characters'];
     }
 
-    if (this.dueDate.getDate() < Date.now())
-    {
+    if (new Date(this.dueDate) < new Date(Date.now())) {
       errors['dueDate'] = ['Choose correct date'];
     }
 

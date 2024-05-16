@@ -1,5 +1,8 @@
+<div *ngIf="boardId">
+  <button class="back-button" (click)="backToBoards()">Back to Boards</button>
+  <h1>{{this.boardName}}</h1>
 <div class="card-list-container">
-  <div class="card-list-group" *ngFor="let cardList of cardLists">
+  <div class="card-list-group" *ngFor="let cardList of cardLists$ | async">
     <div class="card-list-item">
       <h4 class="card-list-name">{{ cardList.name }}</h4>
       <h4 class="card-count">{{ cardList.cards.length }}</h4>
@@ -44,7 +47,7 @@
         <div class="card-footer">
           <select class="move-to-dropdown" [(ngModel)]="selectedListId" (change)="moveCardTo(card.id)">
             <option value="" disabled selected>Move to:</option>
-            <ng-container *ngFor="let list of cardLists">
+            <ng-container *ngFor="let list of cardLists$ | async">
               <option [value]="list.id" *ngIf="list.id !== card.cardListId">{{ list.name }}</option>
             </ng-container>
           </select>
@@ -57,20 +60,18 @@
   </div>
   <app-edit-cardlist
     [cardlist]="cardlistToEdit"
-    (cardlistsUpdated)="updateCardLists($event)"
     (cardListFormClose)="closeCardListForm()"
   ></app-edit-cardlist>
 </div>
 
 <app-edit-card
   [card]="cardToEdit"
-  (cardlistsUpdated)="updateCardLists($event)"
-  (cardFormClose)="closeCardForm()"
+  (cardFormClose)="closeCardForm($event)"
 ></app-edit-card>
 
 <app-card
   [cardId]="cardIdToShow"
   (cardClose) ="closeCard()"
 ></app-card>
-
+</div>
 

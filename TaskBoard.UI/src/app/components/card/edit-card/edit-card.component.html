@@ -47,7 +47,7 @@
       <textarea class="description-input" [(ngModel)]="card.description" placeholder="Enter description"></textarea>
     </div>
     <div class="button-container">
-      <button class="button-add" (click)="createCard(card)" *ngIf="!card.id">Add list</button>
+      <button class="button-add" (click)="createCard(card)" *ngIf="!card.id">Add card</button>
       <button class="button-save" (click)="updateCard(card)" *ngIf="card.id">Save</button>
       <button class="button-cancel" (click)="cancel()">Cancel</button>
     </div>

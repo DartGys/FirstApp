@@ -23,11 +23,27 @@ public class CardListController : ControllerBase
 
         return Ok(models);
     }
+    
+    [HttpGet("board/{id}")]
+    public async Task<IActionResult> GetByBoard([FromRoute] Guid id)
+    {
+        var models = await _cardListService.GetByBoardAsync(id);
+
+        return Ok(models);
+    }
 
     [HttpGet("list")]
     public async Task<IActionResult> GetList()
     {
         var models = await _cardListService.GetListAsync();
+
+        return Ok(models);
+    }
+    
+    [HttpGet("list/board/{boardId}")]
+    public async Task<IActionResult> GetList([FromRoute] Guid boardId)
+    {
+        var models = await _cardListService.GetListByBoardAsync(boardId);
 
         return Ok(models);
     }
@@ -44,9 +60,9 @@ public class CardListController : ControllerBase
         
         await _cardListService.AddAsync(input);
 
-        var models = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(input.BoardId);
     
-        return Ok(models);
+        return Ok(cardLists);
     }
 
     [HttpPut]
@@ -61,13 +77,13 @@ public class CardListController : ControllerBase
 
         await _cardListService.UpdateAsync(input);
 
-        var models = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(input.BoardId);
 
-        return Ok(models);
+        return Ok(cardLists);
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> Delete(Guid id)
+    [HttpDelete("{id}/board/{boardId}")]
+    public async Task<IActionResult> Delete(Guid id, Guid boardId)
     {
         if (id == Guid.Empty)
         {
@@ -76,8 +92,8 @@ public class CardListController : ControllerBase
         
         await _cardListService.DeleteAsync(id);
 
-        var models = await _cardListService.GetAsync();
+        var cardLists = await _cardListService.GetByBoardAsync(boardId);
 
-        return Ok(models);
+        return Ok(cardLists);
     }
 }

@@ -13,6 +13,7 @@ public class CardInputModel : IMapWith<Card>
     public DateTime DueDate { get; set; }
     public Guid PriorityId { get; set; }
     public Guid CardListId { get; set; }
+    public Guid BoardId { get; set; }
     
     public void Mapping(Profile profile)
     {
