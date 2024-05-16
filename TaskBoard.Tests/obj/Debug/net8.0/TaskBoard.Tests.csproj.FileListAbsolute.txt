@@ -433,3 +433,5 @@
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.pdb
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.Tests/obj/Debug/net8.0/TaskBoard.Tests.genruntimeconfig.cache
 /home/bohdan/RiderProjects/TaskBoard/TaskBoard.Tests/obj/Debug/net8.0/ref/TaskBoard.Tests.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.Tests/bin/Debug/net8.0/Castle.Core.dll
+/home/bohdan/RiderProjects/TaskBoard/TaskBoard.Tests/bin/Debug/net8.0/Moq.dll
